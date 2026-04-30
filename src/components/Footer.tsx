@@ -5,7 +5,7 @@ export const Footer = () => {
     <footer className="border-t border-border/60 py-12">
       <div className="max-w-7xl mx-auto px-6 md:px-10 flex flex-wrap justify-between items-center gap-6 text-sm text-muted-foreground">
         <div>
-          <img src={logo} alt="Athena Revenue Partners" className="h-12 w-auto" loading="lazy" width={1024} height={1024} />
+          <img src={logo} alt="Athena Revenue Partners" className="h-24 md:h-28 w-auto -my-4" loading="lazy" width={1024} height={1024} />
           <p className="text-xs mt-2">Predictable revenue, built to scale.</p>
         </div>
         <div className="flex gap-8">
