@@ -46,7 +46,7 @@ export const Services = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.7, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.7, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] as const }}
               className="bg-background p-8 md:p-10 group hover:bg-secondary/50 transition-colors duration-500"
             >
               <div className="flex items-baseline justify-between mb-12">

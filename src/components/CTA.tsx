@@ -10,7 +10,7 @@ export const CTA = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as const }}
           className="relative rounded-md bg-primary text-primary-foreground p-10 md:p-20 overflow-hidden"
         >
           <div
