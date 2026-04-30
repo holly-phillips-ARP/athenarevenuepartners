@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
 const links = [
-  { label: "Work", href: "#work" },
   { label: "Approach", href: "#approach" },
-  { label: "Studio", href: "#studio" },
-  { label: "Contact", href: "#contact" },
+  { label: "Offerings", href: "#offerings" },
+  { label: "Proof", href: "#proof" },
+  { label: "Engage", href: "#engage" },
 ];
 
 export const Navbar = () => {
@@ -18,7 +18,7 @@ export const Navbar = () => {
     >
       <nav className="max-w-7xl mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
         <a href="#" className="font-display text-xl tracking-tight">
-          Atelier<span className="text-accent">.</span>
+          Athena<span className="text-accent">.</span>
         </a>
         <ul className="hidden md:flex items-center gap-10 text-sm">
           {links.map((l) => (
@@ -32,8 +32,8 @@ export const Navbar = () => {
             </li>
           ))}
         </ul>
-        <Button variant="default" size="sm" className="rounded-full px-5">
-          Book a call
+        <Button asChild variant="default" size="sm" className="rounded-full px-5">
+          <a href="#engage">Book a diagnostic</a>
         </Button>
       </nav>
     </motion.header>
