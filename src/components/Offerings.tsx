@@ -157,7 +157,7 @@ export const Offerings = () => {
           </p>
           <div className="grid md:grid-cols-3 gap-px bg-border/60 border border-border/60 rounded-sm overflow-hidden">
             {additional.map((a) => (
-              <div key={a.name} className="bg-background p-8">
+              <div key={a.name} className="bg-background p-8 flex flex-col">
                 <div className="flex items-baseline justify-between mb-4">
                   <h4 className="font-display text-xl">{a.name}</h4>
                   <span className="text-[10px] uppercase tracking-widest text-muted-foreground">
@@ -167,7 +167,7 @@ export const Offerings = () => {
                 <p className="text-sm text-muted-foreground leading-relaxed mb-6">
                   {a.body}
                 </p>
-                <p className="text-sm font-display">{a.investment}</p>
+                <p className="text-sm font-display mt-auto">{a.investment}</p>
               </div>
             ))}
           </div>
