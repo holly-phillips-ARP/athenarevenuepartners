@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo-concept-7.png";
 
 const links = [
   { label: "Approach", href: "#approach" },
@@ -17,8 +18,8 @@ export const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/70 border-b border-border/40"
     >
       <nav className="max-w-7xl mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
-        <a href="#" className="font-display text-xl tracking-tight">
-          Athena<span className="text-accent">.</span>
+        <a href="#" aria-label="Athena Revenue Partners" className="flex items-center">
+          <img src={logo} alt="Athena Revenue Partners" className="h-10 w-auto" width={1024} height={1024} />
         </a>
         <ul className="hidden md:flex items-center gap-10 text-sm">
           {links.map((l) => (
