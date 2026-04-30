@@ -10,7 +10,7 @@ const focus = [
 const pov = [
   "Most forecast issues are not data problems—they're execution and leadership discipline problems.",
   "Pipeline gaps are often qualification issues, not volume issues.",
-  "Founder-led sales doesn't scale because it can't be inspected or replicated.",
+  "Founder-led sales can't be scaled.",
 ];
 
 export const Approach = () => {
