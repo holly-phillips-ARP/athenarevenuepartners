@@ -4,7 +4,7 @@ import partner2 from "@/assets/partner-2.png";
 
 const partners = [
   { name: "Kami Cekosh", title: "Co-Founder", image: partner1 },
-  { name: "Jenna", title: "Co-Founder", image: partner2 },
+  { name: "Holly Phillips", title: "Co-Founder", image: partner2 },
 ];
 
 const pillars = [
