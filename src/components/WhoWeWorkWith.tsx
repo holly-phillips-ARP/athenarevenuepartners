@@ -18,7 +18,7 @@ export const WhoWeWorkWith = () => {
             Founders and CEOs at <em className="italic">startup</em> B2B tech companies.
           </h2>
           <p className="mt-6 text-muted-foreground leading-relaxed">
-            Companies navigating growth, scaling, or ownership transitions—where
+            Companies navigating growth, scaling, or ownership transitions - where
             revenue execution has become the bottleneck.
           </p>
         </div>
