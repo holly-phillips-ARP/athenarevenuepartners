@@ -15,7 +15,7 @@ export const WhoWeWorkWith = () => {
             Who we work with
           </p>
           <h2 className="font-display text-3xl md:text-4xl leading-tight text-balance">
-            Founders and CEOs at <em className="italic">startups</em> B2B tech companies.
+            Founders and CEOs at <em className="italic">startup</em> B2B tech companies.
           </h2>
           <p className="mt-6 text-muted-foreground leading-relaxed">
             Companies navigating growth, scaling, or ownership transitions—where
