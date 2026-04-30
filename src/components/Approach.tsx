@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const focus = [
   { title: "Forecast accuracy", body: "Methodology, inspection, and discipline that produce numbers leadership can trust." },
-  { title: "Pipeline quality & coverage", body: "Qualification rigor and coverage models—not just more volume." },
+  { title: "Pipeline quality & coverage", body: "Qualification rigor and coverage models - not just more volume." },
   { title: "Sales process & inspection", body: "A repeatable process with the inspection layer to enforce it." },
   { title: "Leadership cadence", body: "An executive operating rhythm that drives consistent execution." },
 ];
