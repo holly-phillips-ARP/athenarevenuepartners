@@ -99,8 +99,8 @@ export const Offerings = () => {
               }`}
             >
               {o.featured && (
-                <span className="absolute -top-3 left-8 px-3 py-1 text-[10px] uppercase tracking-widest bg-accent text-accent-foreground rounded-full">
-                  Most common
+                <span className="absolute -top-3 left-8 px-3 py-1 text-[10px] uppercase tracking-widest bg-accent text-accent-foreground rounded-full whitespace-pre-wrap">
+                  RECOMMENDED
                 </span>
               )}
               <div className="flex items-baseline justify-between mb-8">
