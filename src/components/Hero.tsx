@@ -3,14 +3,12 @@ import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero.jpg";
 
-const fade = {
-  hidden: { opacity: 0, y: 24 },
-  show: (i: number = 0) => ({
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.8, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] },
-  }),
-};
+const ease = [0.22, 1, 0.36, 1] as const;
+const fadeUp = (delay = 0) => ({
+  initial: { opacity: 0, y: 24 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.8, delay, ease },
+});
 
 export const Hero = () => {
   return (
@@ -28,10 +26,7 @@ export const Hero = () => {
 
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <motion.div
-          initial="hidden"
-          animate="show"
-          variants={fade}
-          custom={0}
+          {...fadeUp(0)}
           className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border/60 bg-background/50 backdrop-blur-sm text-xs text-muted-foreground mb-8"
         >
           <span className="w-1.5 h-1.5 rounded-full bg-accent" />
@@ -39,10 +34,7 @@ export const Hero = () => {
         </motion.div>
 
         <motion.h1
-          variants={fade}
-          initial="hidden"
-          animate="show"
-          custom={1}
+          {...fadeUp(0.08)}
           className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.95] text-balance max-w-5xl"
         >
           Brands built with <em className="italic text-accent font-light">intention</em>,
@@ -50,10 +42,7 @@ export const Hero = () => {
         </motion.h1>
 
         <motion.p
-          variants={fade}
-          initial="hidden"
-          animate="show"
-          custom={2}
+          {...fadeUp(0.16)}
           className="mt-8 max-w-xl text-lg text-muted-foreground leading-relaxed"
         >
           A small, senior studio crafting identity systems and digital
@@ -61,10 +50,7 @@ export const Hero = () => {
         </motion.p>
 
         <motion.div
-          variants={fade}
-          initial="hidden"
-          animate="show"
-          custom={3}
+          {...fadeUp(0.24)}
           className="mt-12 flex flex-wrap items-center gap-4"
         >
           <Button size="lg" className="rounded-full px-7 h-12 group">
@@ -81,10 +67,7 @@ export const Hero = () => {
         </motion.div>
 
         <motion.div
-          variants={fade}
-          initial="hidden"
-          animate="show"
-          custom={4}
+          {...fadeUp(0.32)}
           className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl"
         >
           {[
