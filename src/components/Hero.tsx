@@ -30,7 +30,7 @@ export const Hero = () => {
           className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border/60 bg-background/60 backdrop-blur-sm text-xs text-muted-foreground mb-8"
         >
           <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-          For Series A–C B2B tech leaders
+          For startup B2B tech leaders
         </motion.div>
 
         <motion.h1
@@ -46,7 +46,7 @@ export const Hero = () => {
           {...fadeUp(0.16)}
           className="mt-8 max-w-2xl text-lg text-muted-foreground leading-relaxed"
         >
-          We help Series A–C tech companies achieve forecast accuracy within
+          We help startup tech companies achieve forecast accuracy within
           10% in six months by replacing intuition with systems, discipline,
           and repeatable execution.
         </motion.p>
@@ -79,7 +79,7 @@ export const Hero = () => {
             ["±10%", "Forecast accuracy target"],
             ["6 mo", "Typical time to impact"],
             ["30+ yrs", "Combined revenue leadership"],
-            ["A–C", "Series stage focus"],
+            ["Startup", "Company focus"],
           ].map(([k, v]) => (
             <div key={v}>
               <div className="font-display text-3xl md:text-4xl">{k}</div>
