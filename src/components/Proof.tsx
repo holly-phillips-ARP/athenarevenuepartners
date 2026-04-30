@@ -3,8 +3,8 @@ import partner1 from "@/assets/partner-1.jpeg";
 import partner2 from "@/assets/partner-2.png";
 
 const partners = [
-  { name: "Kami", title: "Co-Founder", image: partner1 },
-  { name: "Co-Founder", title: "Co-Founder", image: partner2 },
+  { name: "Kami Cekosh", title: "Co-Founder", image: partner1 },
+  { name: "Jenna", title: "Co-Founder", image: partner2 },
 ];
 
 const pillars = [
