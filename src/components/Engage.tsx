@@ -22,7 +22,7 @@ export const Engage = () => {
           <div className="md:col-span-8">
             <h2 className="font-display text-4xl md:text-5xl leading-[1.1] text-balance">
               Most clients start with a Revenue Diagnostic, then move into{" "}
-              <em className="italic">implementation</em>.
+              <em className="italic">optimization</em>.
             </h2>
           </div>
         </div>
