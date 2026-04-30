@@ -3,8 +3,8 @@ import partner1 from "@/assets/partner-1.jpeg";
 import partner2 from "@/assets/partner-2.png";
 
 const partners = [
-  { name: "Kami", title: "Co-Founder", image: partner1 },
-  { name: "Co-Founder", title: "Co-Founder", image: partner2 },
+  { name: "Kami Cekosh", title: "Co-Founder", image: partner1 },
+  { name: "Jenna", title: "Co-Founder", image: partner2 },
 ];
 
 const pillars = [
@@ -15,7 +15,7 @@ const pillars = [
 
 const proofPoints = [
   "Former CRO, VP Sales, and enterprise sales leaders",
-  "Built and scaled teams in Series A–C SaaS companies",
+  "Built and scaled teams in startup SaaS companies",
   "Led through acquisitions and ownership transitions",
   "Rebuilt pipeline and forecasting after missed quarters",
   "Consistently delivered and exceeded revenue targets",
