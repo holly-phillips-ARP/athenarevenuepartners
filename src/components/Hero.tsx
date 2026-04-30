@@ -15,54 +15,59 @@ export const Hero = () => {
     <section className="relative pt-40 pb-32 md:pt-48 md:pb-40 overflow-hidden">
       <div
         aria-hidden
-        className="absolute inset-0 -z-10 opacity-60"
+        className="absolute inset-0 -z-10 opacity-50"
         style={{
           backgroundImage: `url(${heroImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background/40 via-background/70 to-background" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background/50 via-background/75 to-background" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <motion.div
           {...fadeUp(0)}
-          className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border/60 bg-background/50 backdrop-blur-sm text-xs text-muted-foreground mb-8"
+          className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border/60 bg-background/60 backdrop-blur-sm text-xs text-muted-foreground mb-8"
         >
           <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-          Now booking — Summer 2026
+          For Series A–C B2B tech leaders
         </motion.div>
 
         <motion.h1
           {...fadeUp(0.08)}
-          className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.95] text-balance max-w-5xl"
+          className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] leading-[0.98] text-balance max-w-5xl"
         >
-          Brands built with <em className="italic text-accent font-light">intention</em>,
-          not noise.
+          Build a predictable revenue engine—
+          <em className="italic text-accent font-light">without</em> relying on
+          founder-led sales.
         </motion.h1>
 
         <motion.p
           {...fadeUp(0.16)}
-          className="mt-8 max-w-xl text-lg text-muted-foreground leading-relaxed"
+          className="mt-8 max-w-2xl text-lg text-muted-foreground leading-relaxed"
         >
-          A small, senior studio crafting identity systems and digital
-          experiences for founders who care about the details.
+          We help Series A–C tech companies achieve forecast accuracy within
+          10% in six months by replacing intuition with systems, discipline,
+          and repeatable execution.
         </motion.p>
 
         <motion.div
           {...fadeUp(0.24)}
           className="mt-12 flex flex-wrap items-center gap-4"
         >
-          <Button size="lg" className="rounded-full px-7 h-12 group">
-            Start a project
-            <ArrowUpRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+          <Button asChild size="lg" className="rounded-full px-7 h-12 group">
+            <a href="#engage">
+              Book a diagnostic
+              <ArrowUpRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </a>
           </Button>
           <Button
+            asChild
             size="lg"
             variant="ghost"
             className="rounded-full px-7 h-12 hover:bg-secondary"
           >
-            View selected work
+            <a href="#engage">Talk to us</a>
           </Button>
         </motion.div>
 
@@ -71,10 +76,10 @@ export const Hero = () => {
           className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl"
         >
           {[
-            ["12yrs", "Of practice"],
-            ["80+", "Projects shipped"],
-            ["6", "Industry awards"],
-            ["100%", "Founder-led"],
+            ["±10%", "Forecast accuracy target"],
+            ["6 mo", "Typical time to impact"],
+            ["30+ yrs", "Combined revenue leadership"],
+            ["A–C", "Series stage focus"],
           ].map(([k, v]) => (
             <div key={v}>
               <div className="font-display text-3xl md:text-4xl">{k}</div>

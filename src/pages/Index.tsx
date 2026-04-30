@@ -1,10 +1,11 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
-import { Marquee } from "@/components/Marquee";
-import { Services } from "@/components/Services";
-import { Work } from "@/components/Work";
-import { Testimonial } from "@/components/Testimonial";
-import { CTA } from "@/components/CTA";
+import { WhoWeWorkWith } from "@/components/WhoWeWorkWith";
+import { Problem } from "@/components/Problem";
+import { Approach } from "@/components/Approach";
+import { Offerings } from "@/components/Offerings";
+import { Proof } from "@/components/Proof";
+import { Engage } from "@/components/Engage";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
@@ -12,11 +13,12 @@ const Index = () => {
     <main className="min-h-screen bg-background">
       <Navbar />
       <Hero />
-      <Marquee />
-      <Services />
-      <Work />
-      <Testimonial />
-      <CTA />
+      <WhoWeWorkWith />
+      <Problem />
+      <Approach />
+      <Offerings />
+      <Proof />
+      <Engage />
       <Footer />
     </main>
   );
