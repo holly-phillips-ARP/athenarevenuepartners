@@ -34,7 +34,7 @@ export const Navbar = () => {
           ))}
         </ul>
         <Button asChild variant="default" size="sm" className="rounded-full px-5">
-          <a href="#engage">Book a diagnostic</a>
+          <a href="mailto:hello@athenarevenue.com">Book a diagnostic</a>
         </Button>
       </nav>
     </motion.header>
