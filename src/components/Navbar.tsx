@@ -34,7 +34,7 @@ export const Navbar = () => {
           ))}
         </ul>
         <Button asChild variant="default" size="sm" className="rounded-full px-5">
-          <a href="mailto:hello@athenarevenue.com">Book a diagnostic</a>
+          <a href="mailto:hello@athenarevenue.com?subject=Revenue%20Diagnostic%20Inquiry&body=Hi%20Athena%20team%2C%0A%0AI%27d%20like%20to%20book%20a%20Revenue%20Diagnostic.%0A%0AA%20bit%20about%20us%3A%0A-%20Company%3A%20%0A-%20Role%3A%20%0A-%20Current%20ARR%2Fstage%3A%20%0A-%20Top%20revenue%20challenge%3A%20%0A%0AThanks%2C">Book a diagnostic</a>
         </Button>
       </nav>
     </motion.header>
