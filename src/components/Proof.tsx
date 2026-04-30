@@ -1,4 +1,11 @@
 import { motion } from "framer-motion";
+import partner1 from "@/assets/partner-1.jpeg";
+import partner2 from "@/assets/partner-2.png";
+
+const partners = [
+  { name: "Kami", title: "Founding Partner", image: partner1 },
+  { name: "Partner Name", title: "Founding Partner", image: partner2 },
+];
 
 const pillars = [
   { title: "Clarity", body: "What's actually happening in your revenue engine—surfaced and named." },
@@ -67,6 +74,31 @@ export const Proof = () => {
             </p>
           </div>
           <div className="md:col-span-6 md:col-start-7">
+            <div className="grid grid-cols-2 gap-6 mb-10">
+              {partners.map((p, i) => (
+                <motion.figure
+                  key={p.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-80px" }}
+                  transition={{ duration: 0.7, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] as const }}
+                  className="space-y-4"
+                >
+                  <div className="aspect-[4/5] overflow-hidden bg-secondary">
+                    <img
+                      src={p.image}
+                      alt={`${p.name}, ${p.title} at Athena Revenue Partners`}
+                      className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption>
+                    <div className="font-display text-xl leading-tight">{p.name}</div>
+                    <div className="text-sm text-muted-foreground mt-1">{p.title}</div>
+                  </figcaption>
+                </motion.figure>
+              ))}
+            </div>
             <ul className="divide-y divide-border border-y border-border">
               {proofPoints.map((p, i) => (
                 <li key={p} className="py-5 flex items-baseline gap-6">
