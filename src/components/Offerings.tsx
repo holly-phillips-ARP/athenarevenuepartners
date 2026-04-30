@@ -61,12 +61,6 @@ const additional = [
     body: "Deal rescue, pipeline rebuild, or sales leadership alignment when you need fast traction.",
     investment: "$10K – $30K",
   },
-  {
-    name: "Workshops & Offsites",
-    sub: "Half- and full-day",
-    body: "Leadership alignment sessions, sales process resets, and forecasting workshops.",
-    investment: "$8K – $20K",
-  },
 ];
 
 export const Offerings = () => {
