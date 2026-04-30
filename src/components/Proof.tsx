@@ -89,7 +89,7 @@ export const Proof = () => {
                       src={p.image}
                       alt={`${p.name}, ${p.title} at Athena Revenue Partners`}
                       className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-                      style={i === 0 ? { transform: "scale(1.18)", transformOrigin: "center 30%" } : undefined}
+                      style={i === 0 ? { transform: "scale(1.18) translateY(6%)", transformOrigin: "center top" } : undefined}
                       loading="lazy"
                     />
                   </div>
