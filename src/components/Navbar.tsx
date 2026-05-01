@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { DiagnosticDialog } from "@/components/DiagnosticDialog";
 import logo from "@/assets/logo-concept-7.png";
 
 const links = [
