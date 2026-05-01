@@ -12,8 +12,10 @@ const path = [
 ];
 
 export const Engage = () => {
+  const [open, setOpen] = useState(false);
   return (
     <section id="engage" className="py-32 md:py-40">
+      <DiagnosticDialog open={open} onOpenChange={setOpen} />
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="grid md:grid-cols-12 gap-10 mb-20">
           <div className="md:col-span-4">
