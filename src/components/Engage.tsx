@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { DiagnosticDialog } from "@/components/DiagnosticDialog";
+import { ContactDialog } from "@/components/ContactDialog";
 
 const path = [
   { step: "01", name: "Diagnostic", note: "Where most clients begin" },
@@ -13,9 +14,17 @@ const path = [
 
 export const Engage = () => {
   const [open, setOpen] = useState(false);
+  const [contactOpen, setContactOpen] = useState(false);
   return (
     <section id="engage" className="py-32 md:py-40">
       <DiagnosticDialog open={open} onOpenChange={setOpen} />
+      <ContactDialog
+        open={contactOpen}
+        onOpenChange={setContactOpen}
+        title="Book a conversation"
+        description="Share a quick note and we'll reach out to set up a time."
+        source="Engage — Book a conversation"
+      />
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="grid md:grid-cols-12 gap-10 mb-20">
           <div className="md:col-span-4">
@@ -89,12 +98,13 @@ export const Engage = () => {
                 <ArrowUpRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </Button>
               <div>
-                <a
-                  href="mailto:hello@athenarevenuepartners.com?subject=Hello%20from%20your%20website"
+                <button
+                  type="button"
+                  onClick={() => setContactOpen(true)}
                   className="inline-flex items-center gap-2 text-sm opacity-80 hover:opacity-100 transition-opacity"
                 >
                   Or book a conversation <ArrowUpRight className="h-3.5 w-3.5" />
-                </a>
+                </button>
               </div>
             </div>
           </div>
