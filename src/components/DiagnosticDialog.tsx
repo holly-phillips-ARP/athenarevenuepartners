@@ -45,18 +45,26 @@ export const DiagnosticDialog = ({ open, onOpenChange }: Props) => {
       return;
     }
     setSubmitting(true);
-    const { error } = await supabase.from("diagnostic_requests").insert({
+    const payload = {
       name: parsed.data.name,
       email: parsed.data.email,
       company: parsed.data.company || null,
       role: parsed.data.role || null,
       arr_stage: parsed.data.arr_stage || null,
       challenge: parsed.data.challenge || null,
-    });
-    setSubmitting(false);
+    };
+    const { error } = await supabase.from("diagnostic_requests").insert(payload);
     if (error) {
+      setSubmitting(false);
       toast({ title: "Submission failed", description: error.message, variant: "destructive" });
       return;
+    }
+    const { error: emailError } = await supabase.functions.invoke("send-diagnostic-email", {
+      body: payload,
+    });
+    setSubmitting(false);
+    if (emailError) {
+      console.error("Email notification failed", emailError);
     }
     toast({ title: "Request received", description: "We'll be in touch within one business day." });
     setForm({ name: "", email: "", company: "", role: "", arr_stage: "", challenge: "" });
