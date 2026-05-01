@@ -69,7 +69,7 @@ export const Hero = () => {
             variant="ghost"
             className="rounded-full px-7 h-12 hover:bg-secondary"
           >
-            <a href="#engage">Talk to us</a>
+            <a href="mailto:hello@athenarevenuepartners.com?subject=Hello%20from%20your%20website">Talk to us</a>
           </Button>
         </motion.div>
 

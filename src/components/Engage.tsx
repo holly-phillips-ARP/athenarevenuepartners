@@ -90,7 +90,7 @@ export const Engage = () => {
               </Button>
               <div>
                 <a
-                  href="mailto:hello@athenarevenue.com"
+                  href="mailto:hello@athenarevenuepartners.com?subject=Hello%20from%20your%20website"
                   className="inline-flex items-center gap-2 text-sm opacity-80 hover:opacity-100 transition-opacity"
                 >
                   Or book a conversation <ArrowUpRight className="h-3.5 w-3.5" />
