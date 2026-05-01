@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { DiagnosticDialog } from "@/components/DiagnosticDialog";
 import heroImage from "@/assets/hero.jpg";
 
 const ease = [0.22, 1, 0.36, 1] as const;
