@@ -13,8 +13,10 @@ const fadeUp = (delay = 0) => ({
 });
 
 export const Hero = () => {
+  const [open, setOpen] = useState(false);
   return (
     <section className="relative pt-40 pb-32 md:pt-48 md:pb-40 overflow-hidden">
+      <DiagnosticDialog open={open} onOpenChange={setOpen} />
       <div
         aria-hidden
         className="absolute inset-0 -z-10 opacity-50"
