@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { DiagnosticDialog } from "@/components/DiagnosticDialog";
 
 const path = [
   { step: "01", name: "Diagnostic", note: "Where most clients begin" },
