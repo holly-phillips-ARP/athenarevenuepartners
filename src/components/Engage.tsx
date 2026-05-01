@@ -80,6 +80,7 @@ export const Engage = () => {
             </div>
             <div className="md:col-span-4 md:text-right space-y-3">
               <Button
+                onClick={() => setOpen(true)}
                 size="lg"
                 variant="secondary"
                 className="w-full md:w-auto rounded-full px-7 h-12 group bg-background text-foreground hover:bg-background/90"
