@@ -45,7 +45,9 @@ export const DiagnosticDialog = ({ open, onOpenChange }: Props) => {
       return;
     }
     setSubmitting(true);
+    const id = crypto.randomUUID();
     const payload = {
+      id,
       name: parsed.data.name,
       email: parsed.data.email,
       company: parsed.data.company || null,
@@ -59,8 +61,19 @@ export const DiagnosticDialog = ({ open, onOpenChange }: Props) => {
       toast({ title: "Submission failed", description: error.message, variant: "destructive" });
       return;
     }
-    const { error: emailError } = await supabase.functions.invoke("send-diagnostic-email", {
-      body: payload,
+    const { error: emailError } = await supabase.functions.invoke("send-transactional-email", {
+      body: {
+        templateName: "diagnostic-request",
+        idempotencyKey: `diagnostic-request-${id}`,
+        templateData: {
+          name: payload.name,
+          email: payload.email,
+          company: payload.company,
+          role: payload.role,
+          arr_stage: payload.arr_stage,
+          challenge: payload.challenge,
+        },
+      },
     });
     setSubmitting(false);
     if (emailError) {
