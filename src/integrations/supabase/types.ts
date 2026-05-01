@@ -14,7 +14,39 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      diagnostic_requests: {
+        Row: {
+          arr_stage: string | null
+          challenge: string | null
+          company: string | null
+          created_at: string
+          email: string
+          id: string
+          name: string
+          role: string | null
+        }
+        Insert: {
+          arr_stage?: string | null
+          challenge?: string | null
+          company?: string | null
+          created_at?: string
+          email: string
+          id?: string
+          name: string
+          role?: string | null
+        }
+        Update: {
+          arr_stage?: string | null
+          challenge?: string | null
+          company?: string | null
+          created_at?: string
+          email?: string
+          id?: string
+          name?: string
+          role?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

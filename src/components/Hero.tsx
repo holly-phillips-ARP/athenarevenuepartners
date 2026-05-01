@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { DiagnosticDialog } from "@/components/DiagnosticDialog";
 import heroImage from "@/assets/hero.jpg";
 
 const ease = [0.22, 1, 0.36, 1] as const;
@@ -11,8 +13,10 @@ const fadeUp = (delay = 0) => ({
 });
 
 export const Hero = () => {
+  const [open, setOpen] = useState(false);
   return (
     <section className="relative pt-40 pb-32 md:pt-48 md:pb-40 overflow-hidden">
+      <DiagnosticDialog open={open} onOpenChange={setOpen} />
       <div
         aria-hidden
         className="absolute inset-0 -z-10 opacity-50"
@@ -55,11 +59,9 @@ export const Hero = () => {
           {...fadeUp(0.24)}
           className="mt-12 flex flex-wrap items-center gap-4"
         >
-          <Button asChild size="lg" className="rounded-full px-7 h-12 group">
-            <a href="#engage">
-              Book a diagnostic
-              <ArrowUpRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </a>
+          <Button onClick={() => setOpen(true)} size="lg" className="rounded-full px-7 h-12 group">
+            Book a diagnostic
+            <ArrowUpRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </Button>
           <Button
             asChild

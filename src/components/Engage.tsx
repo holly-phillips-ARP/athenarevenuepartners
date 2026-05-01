@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { DiagnosticDialog } from "@/components/DiagnosticDialog";
 
 const path = [
   { step: "01", name: "Diagnostic", note: "Where most clients begin" },
@@ -10,8 +12,10 @@ const path = [
 ];
 
 export const Engage = () => {
+  const [open, setOpen] = useState(false);
   return (
     <section id="engage" className="py-32 md:py-40">
+      <DiagnosticDialog open={open} onOpenChange={setOpen} />
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="grid md:grid-cols-12 gap-10 mb-20">
           <div className="md:col-span-4">
@@ -76,6 +80,7 @@ export const Engage = () => {
             </div>
             <div className="md:col-span-4 md:text-right space-y-3">
               <Button
+                onClick={() => setOpen(true)}
                 size="lg"
                 variant="secondary"
                 className="w-full md:w-auto rounded-full px-7 h-12 group bg-background text-foreground hover:bg-background/90"
