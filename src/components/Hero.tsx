@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { DiagnosticDialog } from "@/components/DiagnosticDialog";
+import { ContactDialog } from "@/components/ContactDialog";
 import heroImage from "@/assets/hero.jpg";
 
 const ease = [0.22, 1, 0.36, 1] as const;
@@ -14,9 +15,17 @@ const fadeUp = (delay = 0) => ({
 
 export const Hero = () => {
   const [open, setOpen] = useState(false);
+  const [contactOpen, setContactOpen] = useState(false);
   return (
     <section className="relative pt-40 pb-32 md:pt-48 md:pb-40 overflow-hidden">
       <DiagnosticDialog open={open} onOpenChange={setOpen} />
+      <ContactDialog
+        open={contactOpen}
+        onOpenChange={setContactOpen}
+        title="Talk to us"
+        description="Tell us what's on your mind — we'll reply within one business day."
+        source="Hero — Talk to us"
+      />
       <div
         aria-hidden
         className="absolute inset-0 -z-10 opacity-50"
@@ -64,12 +73,12 @@ export const Hero = () => {
             <ArrowUpRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </Button>
           <Button
-            asChild
+            onClick={() => setContactOpen(true)}
             size="lg"
             variant="ghost"
             className="rounded-full px-7 h-12 hover:bg-secondary"
           >
-            <a href="mailto:hello@athenarevenuepartners.com?subject=Hello%20from%20your%20website">Talk to us</a>
+            Talk to us
           </Button>
         </motion.div>
 
