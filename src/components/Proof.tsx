@@ -67,7 +67,7 @@ export const Proof = () => {
               Proof
             </p>
             <h2 className="font-display text-4xl md:text-5xl leading-[1.1] text-balance mb-6">
-              <em className="italic">30+ years</em> of combined experience leading revenue organizations.
+              <em className="italic">30+ years</em> of combined experience building revenue organizations.
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               We've seen this exact stage—and fixed it—multiple times.
