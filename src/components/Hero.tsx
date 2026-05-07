@@ -32,10 +32,10 @@ export const Hero = () => {
         style={{
           backgroundImage: `url(${heroImage})`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "center top",
         }}
       />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background/50 via-background/75 to-background" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-background/60 to-background" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <motion.div
