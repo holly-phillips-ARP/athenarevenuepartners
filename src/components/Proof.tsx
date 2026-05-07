@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import partner1 from "@/assets/partner-1.jpeg";
+import partner1 from "@/assets/partner-1.png";
 import partner2 from "@/assets/partner-2.png";
 
 const partners = [
