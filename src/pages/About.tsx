@@ -29,11 +29,11 @@ const partners: Partner[] = [
     image: partnerKami,
     bio: [
       "Kami is a sales leader who has spent her career building and scaling enterprise revenue organizations inside high-growth software companies.",
-      "Most recently Vice President of Sales at Posit PBC, she has led enterprise sales teams through every stage of growth — from founder-led selling into repeatable, forecastable revenue motions.",
+      "Most recently serving as Vice President of Sales at a high-growth data platform, she has led enterprise sales teams through every stage of growth — from founder-led selling into repeatable, forecastable revenue motions.",
       "She is known across the industry for her ability to recruit, develop, and elevate sales talent, and for installing the operational discipline that turns ambitious targets into predictable outcomes.",
     ],
     highlights: [
-      "VP of Sales, Posit PBC",
+      "Vice President of Sales at a high-growth data platform",
       "Enterprise sales leadership across SaaS and data platforms",
       "Builder of high-performing, accountable revenue teams",
       "Operator-first approach to forecasting and pipeline rigor",
@@ -46,13 +46,13 @@ const partners: Partner[] = [
     linkedin: "https://www.linkedin.com/in/holly-marie-phillips/",
     image: partnerHolly,
     bio: [
-      "Holly is a revenue executive whose career spans some of the most respected names in modern go-to-market — including LinkedIn, Pavilion, and Learn In — culminating in her current role as Chief Revenue Officer at Pragmatic Institute.",
+      "Holly is a revenue executive whose career spans some of the most respected names in modern go-to-market — culminating in her current role as Chief Revenue Officer at a leading product and GTM education company.",
       "She has spent two decades architecting revenue functions, leading sales and customer organizations, and coaching executives through scale.",
       "Her work blends commercial strategy, operational discipline, and a deep belief that revenue performance is a leadership problem before it is ever a tactics problem.",
     ],
     highlights: [
-      "Chief Revenue Officer, Pragmatic Institute",
-      "Prior leadership at LinkedIn, Pavilion, and Learn In",
+      "Chief Revenue Officer at a leading product and GTM education company",
+      "Prior leadership across global SaaS, professional networks, and learning platforms",
       "Two decades architecting GTM and revenue organizations",
       "Executive coach to CEOs, founders, and revenue leaders",
     ],
