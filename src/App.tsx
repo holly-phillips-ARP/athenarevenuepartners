@@ -7,6 +7,7 @@ import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import OfferingDetail from "./pages/OfferingDetail.tsx";
 import RevenueDiagnostic from "./pages/RevenueDiagnostic.tsx";
+import RevenueSystemBuild from "./pages/RevenueSystemBuild.tsx";
 import Unsubscribe from "./pages/Unsubscribe.tsx";
 
 const queryClient = new QueryClient();
@@ -20,6 +21,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/offerings/revenue-diagnostic" element={<RevenueDiagnostic />} />
+          <Route path="/offerings/revenue-system-build" element={<RevenueSystemBuild />} />
           <Route path="/offerings/:slug" element={<OfferingDetail />} />
           <Route path="/unsubscribe" element={<Unsubscribe />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
