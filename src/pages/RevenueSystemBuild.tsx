@@ -176,6 +176,8 @@ const RevenueSystemBuild = () => {
         </div>
       </section>
 
+      <EngagementTimeline phases={phases} heading="What happens, month by month." />
+
       {/* CTA */}
       <section className="py-24 md:py-32 border-t border-border bg-primary text-primary-foreground">
         <div className="max-w-5xl mx-auto px-6 md:px-10">
