@@ -7,7 +7,8 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { DiagnosticDialog } from "@/components/DiagnosticDialog";
-import { offerings } from "@/data/offerings";
+import { offerings, getOfferingBySlug } from "@/data/offerings";
+import { EngagementTimeline } from "@/components/EngagementTimeline";
 
 const systemElements = [
   "Sales process",
