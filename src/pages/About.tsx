@@ -22,7 +22,7 @@ interface Partner {
 
 const partners: Partner[] = [
   {
-    name: "Kami C.",
+    name: "Kami Cekosh",
     role: "Co-Founder & Partner",
     location: "Greater Minneapolis–St. Paul",
     linkedin: "https://linkedin.com/in/kami-c-281b481/",
@@ -40,7 +40,7 @@ const partners: Partner[] = [
     ],
   },
   {
-    name: "Holly Marie Phillips",
+    name: "Holly Phillips",
     role: "Co-Founder & Partner",
     location: "Detroit Metropolitan Area",
     linkedin: "https://www.linkedin.com/in/holly-marie-phillips/",
