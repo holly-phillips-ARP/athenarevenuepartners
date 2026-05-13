@@ -1,52 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-
-const offerings = [
-  {
-    no: "01",
-    name: "Revenue Diagnostic",
-    duration: "2–3 weeks",
-    summary: "A fast, deep assessment of your revenue engine.",
-    includes: [
-      "Pipeline quality + coverage analysis",
-      "Forecast methodology review",
-      "Sales process + inspection gaps",
-      "Leadership cadence evaluation",
-    ],
-    output: "Forecast reality vs. fiction · Top 3 revenue blockers · 90-day action plan",
-    investment: "$15K – $25K",
-  },
-  {
-    no: "02",
-    name: "Forecast Accuracy Sprint",
-    duration: "6–8 weeks",
-    summary: "Our core engagement to stabilize revenue predictability.",
-    includes: [
-      "Deal inspection rigor",
-      "Forecast methodology",
-      "Pipeline coverage model",
-      "Executive operating cadence",
-    ],
-    output: "Move toward ±10–15% forecast accuracy",
-    investment: "$35K – $75K",
-    featured: true,
-  },
-  {
-    no: "03",
-    name: "Revenue System Build",
-    duration: "3–6 months",
-    summary: "A full transformation of your revenue engine.",
-    includes: [
-      "Scalable sales process",
-      "Pipeline generation system",
-      "Hiring and role design",
-      "Forecast discipline",
-      "Leadership coaching",
-    ],
-    output: "Predictable, scalable revenue",
-    investment: "$90K – $200K+",
-  },
-];
+import { Link } from "react-router-dom";
+import { offerings } from "@/data/offerings";
 
 const additional = [
   {
@@ -145,7 +100,17 @@ export const Offerings = () => {
                 <p className="text-[10px] uppercase tracking-widest opacity-60 mb-1">
                   Investment
                 </p>
-                <p className="font-display text-xl">{o.investment}</p>
+                <p className="font-display text-xl mb-6">{o.investment}</p>
+                <Link
+                  to={`/offerings/${o.slug}`}
+                  className={`inline-flex items-center gap-2 text-sm border-b pb-1 w-fit transition-colors ${
+                    o.featured
+                      ? "border-primary-foreground/40 hover:border-primary-foreground"
+                      : "border-foreground/30 hover:border-foreground"
+                  }`}
+                >
+                  Learn more <ArrowUpRight className="h-4 w-4" />
+                </Link>
               </div>
             </motion.div>
           ))}
