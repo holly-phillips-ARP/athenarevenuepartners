@@ -128,7 +128,7 @@ const About = () => {
                       <img
                         src={p.image}
                         alt={p.name}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                         loading="lazy"
                       />
                     ) : (
