@@ -8,6 +8,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { DiagnosticDialog } from "@/components/DiagnosticDialog";
 import partnerKami from "@/assets/partner-1.png";
+import partnerHolly from "@/assets/partner-2.png";
 
 interface Partner {
   name: string;
@@ -43,6 +44,7 @@ const partners: Partner[] = [
     role: "Co-Founder & Partner",
     location: "Detroit Metropolitan Area",
     linkedin: "https://www.linkedin.com/in/holly-marie-phillips/",
+    image: partnerHolly,
     bio: [
       "Holly is a revenue executive whose career spans some of the most respected names in modern go-to-market — including LinkedIn, Pavilion, and Learn In — culminating in her current role as Chief Revenue Officer at Pragmatic Institute.",
       "She has spent two decades architecting revenue functions, leading sales and customer organizations, and coaching executives through scale.",
