@@ -52,6 +52,7 @@ const engagementAreas = [
 const RevenueSystemBuild = () => {
   const [open, setOpen] = useState(false);
   const others = offerings.filter((o) => o.slug !== "revenue-system-build");
+  const phases = getOfferingBySlug("revenue-system-build")?.process ?? [];
 
   return (
     <main className="min-h-screen bg-background">

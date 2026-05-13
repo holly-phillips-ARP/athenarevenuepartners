@@ -55,6 +55,7 @@ const deliverables = [
 const RevenueDiagnostic = () => {
   const [open, setOpen] = useState(false);
   const others = offerings.filter((o) => o.slug !== "revenue-diagnostic");
+  const phases = getOfferingBySlug("revenue-diagnostic")?.process ?? [];
 
   return (
     <main className="min-h-screen bg-background">

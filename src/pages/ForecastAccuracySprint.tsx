@@ -51,6 +51,7 @@ const outcomes = [
 const ForecastAccuracySprint = () => {
   const [open, setOpen] = useState(false);
   const others = offerings.filter((o) => o.slug !== "forecast-accuracy-sprint");
+  const phases = getOfferingBySlug("forecast-accuracy-sprint")?.process ?? [];
 
   return (
     <main className="min-h-screen bg-background">
