@@ -11,6 +11,7 @@ import RevenueDiagnostic from "./pages/RevenueDiagnostic.tsx";
 import ForecastAccuracySprint from "./pages/ForecastAccuracySprint.tsx";
 import RevenueSystemBuild from "./pages/RevenueSystemBuild.tsx";
 import Unsubscribe from "./pages/Unsubscribe.tsx";
+import { ScrollToTop } from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
