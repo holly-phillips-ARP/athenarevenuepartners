@@ -7,7 +7,8 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { DiagnosticDialog } from "@/components/DiagnosticDialog";
-import { offerings } from "@/data/offerings";
+import { offerings, getOfferingBySlug } from "@/data/offerings";
+import { EngagementTimeline } from "@/components/EngagementTimeline";
 
 const systemElements = [
   "Sales process",
@@ -51,6 +52,7 @@ const engagementAreas = [
 const RevenueSystemBuild = () => {
   const [open, setOpen] = useState(false);
   const others = offerings.filter((o) => o.slug !== "revenue-system-build");
+  const phases = getOfferingBySlug("revenue-system-build")?.process ?? [];
 
   return (
     <main className="min-h-screen bg-background">
@@ -173,6 +175,8 @@ const RevenueSystemBuild = () => {
           </div>
         </div>
       </section>
+
+      <EngagementTimeline phases={phases} heading="What happens, month by month." />
 
       {/* CTA */}
       <section className="py-24 md:py-32 border-t border-border bg-primary text-primary-foreground">

@@ -7,7 +7,8 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { DiagnosticDialog } from "@/components/DiagnosticDialog";
-import { offerings } from "@/data/offerings";
+import { offerings, getOfferingBySlug } from "@/data/offerings";
+import { EngagementTimeline } from "@/components/EngagementTimeline";
 
 const audience = [
   "Series A–C SaaS companies",
@@ -54,6 +55,7 @@ const deliverables = [
 const RevenueDiagnostic = () => {
   const [open, setOpen] = useState(false);
   const others = offerings.filter((o) => o.slug !== "revenue-diagnostic");
+  const phases = getOfferingBySlug("revenue-diagnostic")?.process ?? [];
 
   return (
     <main className="min-h-screen bg-background">
@@ -196,6 +198,8 @@ const RevenueDiagnostic = () => {
           </ul>
         </div>
       </section>
+
+      <EngagementTimeline phases={phases} heading="What happens, week by week." />
 
       {/* SECTION — DIFFERENTIATOR */}
       <section className="py-24 md:py-32 border-t border-border bg-primary text-primary-foreground">

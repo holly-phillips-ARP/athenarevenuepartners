@@ -7,7 +7,8 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { DiagnosticDialog } from "@/components/DiagnosticDialog";
-import { offerings } from "@/data/offerings";
+import { offerings, getOfferingBySlug } from "@/data/offerings";
+import { EngagementTimeline } from "@/components/EngagementTimeline";
 
 const breakCauses = [
   "Inconsistent qualification",
@@ -50,6 +51,7 @@ const outcomes = [
 const ForecastAccuracySprint = () => {
   const [open, setOpen] = useState(false);
   const others = offerings.filter((o) => o.slug !== "forecast-accuracy-sprint");
+  const phases = getOfferingBySlug("forecast-accuracy-sprint")?.process ?? [];
 
   return (
     <main className="min-h-screen bg-background">
@@ -183,6 +185,8 @@ const ForecastAccuracySprint = () => {
           </div>
         </div>
       </section>
+
+      <EngagementTimeline phases={phases} heading="What happens, week by week." />
 
       {/* SECTION — BUSINESS IMPACT */}
       <section className="py-24 md:py-32 border-t border-border bg-primary text-primary-foreground">
