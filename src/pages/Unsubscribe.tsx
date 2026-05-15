@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { supabase } from "@/integrations/supabase/client";
 
@@ -65,6 +66,16 @@ const Unsubscribe = () => {
 
   return (
     <main className="min-h-screen bg-background flex items-center justify-center px-6 py-16">
+      <Helmet>
+        <title>Email preferences | Athena Revenue Partners</title>
+        <meta name="description" content="Manage your email subscription preferences for Athena Revenue Partners." />
+        <meta name="robots" content="noindex" />
+        <link rel="canonical" href="https://athenarevenuepartners.com/unsubscribe" />
+        <meta property="og:title" content="Email preferences | Athena Revenue Partners" />
+        <meta property="og:description" content="Manage your email subscription preferences." />
+        <meta property="og:url" content="https://athenarevenuepartners.com/unsubscribe" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div className="max-w-md w-full text-center">
         <h1 className="font-display text-3xl text-foreground mb-4">Email preferences</h1>
         {status === "validating" && (

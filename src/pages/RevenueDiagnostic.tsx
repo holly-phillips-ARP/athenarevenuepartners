@@ -60,19 +60,28 @@ const RevenueDiagnostic = () => {
   return (
     <main className="min-h-screen bg-background">
       <Helmet>
-        <title>Revenue Diagnostic for SaaS Companies | Athena Revenue Partners</title>
+        <title>Revenue Diagnostic | Athena Revenue Partners</title>
         <meta
           name="description"
-          content="Identify the root causes behind inaccurate forecasting, stalled pipeline growth, and inconsistent revenue performance. Athena Revenue Partners helps Series A-C SaaS companies build predictable revenue systems."
+          content="A 2–3 week diagnostic that identifies the root causes behind inaccurate forecasts and stalled pipeline growth in Series A–C SaaS companies."
         />
         <link rel="canonical" href="https://athenarevenuepartners.com/offerings/revenue-diagnostic" />
-        <meta property="og:title" content="Revenue Diagnostic for SaaS Companies | Athena Revenue Partners" />
+        <meta property="og:title" content="Revenue Diagnostic | Athena Revenue Partners" />
         <meta
           property="og:description"
-          content="Identify the root causes behind inaccurate forecasting, stalled pipeline growth, and inconsistent revenue performance. Athena Revenue Partners helps Series A-C SaaS companies build predictable revenue systems."
+          content="A focused diagnostic of your revenue engine — forecast credibility, top blockers, and a 90-day action plan."
         />
         <meta property="og:url" content="https://athenarevenuepartners.com/offerings/revenue-diagnostic" />
         <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Revenue Diagnostic",
+          "description": "A 2–3 week diagnostic of your revenue engine for Series A–C SaaS companies.",
+          "provider": { "@type": "Organization", "name": "Athena Revenue Partners", "url": "https://athenarevenuepartners.com/" },
+          "areaServed": "Global",
+          "url": "https://athenarevenuepartners.com/offerings/revenue-diagnostic",
+        })}</script>
       </Helmet>
 
       <Navbar />

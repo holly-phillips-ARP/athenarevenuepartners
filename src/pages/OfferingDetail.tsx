@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, useParams, Navigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
@@ -16,9 +17,19 @@ const OfferingDetail = () => {
   if (!offering) return <Navigate to="/" replace />;
 
   const others = offerings.filter((o) => o.slug !== offering.slug);
+  const url = `https://athenarevenuepartners.com/offerings/${offering.slug}`;
 
   return (
     <main className="min-h-screen bg-background">
+      <Helmet>
+        <title>{`${offering.name} | Athena Revenue Partners`}</title>
+        <meta name="description" content={offering.summary} />
+        <link rel="canonical" href={url} />
+        <meta property="og:title" content={`${offering.name} | Athena Revenue Partners`} />
+        <meta property="og:description" content={offering.summary} />
+        <meta property="og:url" content={url} />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <Navbar />
 
       <article className="pt-40 pb-24">

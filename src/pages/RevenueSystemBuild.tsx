@@ -57,19 +57,28 @@ const RevenueSystemBuild = () => {
   return (
     <main className="min-h-screen bg-background">
       <Helmet>
-        <title>Revenue System Consulting for SaaS Companies | Athena Revenue Partners</title>
+        <title>Revenue System Build | Athena Revenue Partners</title>
         <meta
           name="description"
-          content="Build a scalable revenue engine with Athena Revenue Partners. Revenue system consulting for Series A-C SaaS companies focused on forecast accuracy, operational rigor, and predictable growth."
+          content="A 3–6 month transformation that designs, installs, and coaches a scalable revenue operating system for Series A–C SaaS companies."
         />
         <link rel="canonical" href="https://athenarevenuepartners.com/offerings/revenue-system-build" />
-        <meta property="og:title" content="Revenue System Consulting for SaaS Companies | Athena Revenue Partners" />
+        <meta property="og:title" content="Revenue System Build | Athena Revenue Partners" />
         <meta
           property="og:description"
-          content="Build a scalable revenue engine with Athena Revenue Partners. Revenue system consulting for Series A-C SaaS companies focused on forecast accuracy, operational rigor, and predictable growth."
+          content="Design, install, and coach a scalable revenue operating system in three to six months."
         />
         <meta property="og:url" content="https://athenarevenuepartners.com/offerings/revenue-system-build" />
         <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Revenue System Build",
+          "description": "A 3–6 month transformation of your revenue function — process, pipeline, hiring, forecast, and leadership cadence.",
+          "provider": { "@type": "Organization", "name": "Athena Revenue Partners", "url": "https://athenarevenuepartners.com/" },
+          "areaServed": "Global",
+          "url": "https://athenarevenuepartners.com/offerings/revenue-system-build",
+        })}</script>
       </Helmet>
 
       <Navbar />

@@ -65,19 +65,30 @@ const About = () => {
   return (
     <main className="min-h-screen bg-background">
       <Helmet>
-        <title>About Athena Revenue Partners | Revenue Leadership for SaaS Companies</title>
+        <title>About | Athena Revenue Partners</title>
         <meta
           name="description"
-          content="Athena Revenue Partners is led by Kami C. and Holly Marie Phillips — two operators who have built and scaled enterprise revenue organizations inside the world's leading SaaS companies."
+          content="Founded by Kami Cekosh and Holly Phillips — operators who have built and scaled enterprise revenue organizations inside leading SaaS companies."
         />
         <link rel="canonical" href="https://athenarevenuepartners.com/about" />
-        <meta property="og:title" content="About Athena Revenue Partners" />
+        <meta property="og:title" content="About | Athena Revenue Partners" />
         <meta
           property="og:description"
-          content="Founded by operators who have led revenue at LinkedIn, Posit, Pavilion, and Pragmatic Institute."
+          content="Meet the operators behind Athena Revenue Partners — Kami Cekosh and Holly Phillips."
         />
         <meta property="og:url" content="https://athenarevenuepartners.com/about" />
         <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfilePage",
+          "mainEntity": partners.map((p) => ({
+            "@type": "Person",
+            "name": p.name,
+            "jobTitle": p.role,
+            "worksFor": { "@type": "Organization", "name": "Athena Revenue Partners" },
+            "sameAs": [p.linkedin],
+          })),
+        })}</script>
       </Helmet>
 
       <Navbar />

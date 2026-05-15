@@ -56,19 +56,28 @@ const ForecastAccuracySprint = () => {
   return (
     <main className="min-h-screen bg-background">
       <Helmet>
-        <title>Forecast Accuracy Consulting for SaaS Companies | Athena Revenue Partners</title>
+        <title>Forecast Accuracy Sprint | Athena Revenue Partners</title>
         <meta
           name="description"
-          content="Improve forecast accuracy, pipeline visibility, and revenue predictability with Athena Revenue Partners’ Forecast Accuracy Sprint for Series A-C SaaS companies."
+          content="A 6–8 week sprint that installs the inspection rigor and methodology to forecast within ±10–15% for Series A–C SaaS companies."
         />
         <link rel="canonical" href="https://athenarevenuepartners.com/offerings/forecast-accuracy-sprint" />
-        <meta property="og:title" content="Forecast Accuracy Consulting for SaaS Companies | Athena Revenue Partners" />
+        <meta property="og:title" content="Forecast Accuracy Sprint | Athena Revenue Partners" />
         <meta
           property="og:description"
-          content="Improve forecast accuracy, pipeline visibility, and revenue predictability with Athena Revenue Partners’ Forecast Accuracy Sprint for Series A-C SaaS companies."
+          content="Install forecast discipline and reach ±10–15% accuracy in six to eight weeks."
         />
         <meta property="og:url" content="https://athenarevenuepartners.com/offerings/forecast-accuracy-sprint" />
         <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Forecast Accuracy Sprint",
+          "description": "A 6–8 week sprint to install forecast discipline and pipeline inspection rigor.",
+          "provider": { "@type": "Organization", "name": "Athena Revenue Partners", "url": "https://athenarevenuepartners.com/" },
+          "areaServed": "Global",
+          "url": "https://athenarevenuepartners.com/offerings/forecast-accuracy-sprint",
+        })}</script>
       </Helmet>
 
       <Navbar />
