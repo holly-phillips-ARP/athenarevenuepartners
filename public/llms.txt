@@ -1,0 +1,13 @@
+# Athena Revenue Partners
+
+> Revenue leadership consultancy helping Series A–C SaaS companies build predictable, scalable revenue systems. Founded by operators, not consultants.
+
+We help startup tech companies achieve forecast accuracy within 10% in six months by replacing intuition with systems, discipline, and repeatable execution.
+
+## Pages
+
+- [Home](/): Overview of our approach, offerings, and proof.
+- [About](/about): Founders Kami Cekosh and Holly Phillips — operators who have led revenue at high-growth SaaS companies.
+- [Revenue Diagnostic](/offerings/revenue-diagnostic): A 2–3 week assessment of your revenue engine.
+- [Forecast Accuracy Sprint](/offerings/forecast-accuracy-sprint): A 6–8 week sprint to install forecast discipline and reach ±10–15% accuracy.
+- [Revenue System Build](/offerings/revenue-system-build): A 3–6 month transformation that builds a scalable revenue operating system.
