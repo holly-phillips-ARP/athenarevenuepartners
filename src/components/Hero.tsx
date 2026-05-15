@@ -26,14 +26,15 @@ export const Hero = () => {
         description="Tell us what's on your mind — we'll reply within one business day."
         source="Hero — Talk to us"
       />
-      <div
+      <img
+        src={heroImage}
+        alt=""
         aria-hidden
-        className="absolute inset-0 -z-10 opacity-50"
-        style={{
-          backgroundImage: `url(${heroImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center top",
-        }}
+        width={1920}
+        height={1080}
+        fetchPriority="high"
+        decoding="async"
+        className="absolute inset-0 -z-10 h-full w-full object-cover object-top opacity-50"
       />
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-background/60 to-background" />
 
