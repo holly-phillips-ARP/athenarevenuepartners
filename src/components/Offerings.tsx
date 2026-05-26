@@ -114,7 +114,7 @@ export const Offerings = () => {
           <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-8">
             Additional ways we support
           </p>
-          <div className="grid md:grid-cols-3 gap-px bg-border/60 border border-border/60 rounded-sm overflow-hidden">
+          <div className="grid md:grid-cols-2 gap-px bg-border/60 border border-border/60 rounded-sm overflow-hidden">
             {additional.map((a) => (
               <div key={a.name} className="bg-background p-8 flex flex-col">
                 <div className="flex items-baseline justify-between mb-4">
