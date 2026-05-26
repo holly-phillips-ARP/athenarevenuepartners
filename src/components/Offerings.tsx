@@ -5,22 +5,16 @@ import { offerings } from "@/data/offerings";
 
 const additional = [
   {
+    name: "Revenue Bridge",
+    sub: "Interim leadership coverage",
+    body: "For companies navigating a revenue leadership transition — we stabilize the forecast, maintain pipeline discipline, and build the system your next leader inherits.",
+    investment: "$20K / month",
+  },
+  {
     name: "Executive Advisory",
     sub: "Retainer",
     body: "Ongoing strategic support for CEOs and CROs—deal and forecast reviews, leadership coaching, revenue strategy.",
     investment: "$10K – $20K / month",
-  },
-  {
-    name: "Targeted Interventions",
-    sub: "Short, high-impact",
-    body: "Deal rescue, pipeline rebuild, or sales leadership alignment when you need fast traction.",
-    investment: "$10K – $30K",
-  },
-  {
-    name: "Agentic GTM Enablement",
-    sub: "Embedded",
-    body: "Embedding agentic GTM support into your workflows to accelerate execution and scale revenue operations.",
-    investment: "$15K – $25K",
   },
 ];
 
