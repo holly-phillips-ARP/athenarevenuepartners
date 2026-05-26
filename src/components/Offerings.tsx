@@ -13,7 +13,7 @@ const additional = [
   {
     name: "Executive Advisory",
     sub: "Retainer",
-    body: "Ongoing strategic support for CEOs and CROs—deal and forecast reviews, leadership coaching, revenue strategy.",
+    body: "Ongoing strategic support for Founders and Sales Leaders—deal and forecast reviews, leadership coaching, revenue strategy.",
     investment: "$10K – $20K / month",
   },
 ];
