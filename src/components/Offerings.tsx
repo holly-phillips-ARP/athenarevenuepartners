@@ -5,22 +5,16 @@ import { offerings } from "@/data/offerings";
 
 const additional = [
   {
+    name: "Revenue Bridge",
+    sub: "Interim leadership coverage",
+    body: "For companies navigating a revenue leadership transition — we stabilize the forecast, maintain pipeline discipline, and build the system your next leader inherits.",
+    investment: "$20K / month",
+  },
+  {
     name: "Executive Advisory",
     sub: "Retainer",
     body: "Ongoing strategic support for CEOs and CROs—deal and forecast reviews, leadership coaching, revenue strategy.",
     investment: "$10K – $20K / month",
-  },
-  {
-    name: "Targeted Interventions",
-    sub: "Short, high-impact",
-    body: "Deal rescue, pipeline rebuild, or sales leadership alignment when you need fast traction.",
-    investment: "$10K – $30K",
-  },
-  {
-    name: "Agentic GTM Enablement",
-    sub: "Embedded",
-    body: "Embedding agentic GTM support into your workflows to accelerate execution and scale revenue operations.",
-    investment: "$15K – $25K",
   },
 ];
 
@@ -120,7 +114,7 @@ export const Offerings = () => {
           <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-8">
             Additional ways we support
           </p>
-          <div className="grid md:grid-cols-3 gap-px bg-border/60 border border-border/60 rounded-sm overflow-hidden">
+          <div className="grid md:grid-cols-2 gap-px bg-border/60 border border-border/60 rounded-sm overflow-hidden">
             {additional.map((a) => (
               <div key={a.name} className="bg-background p-8 flex flex-col">
                 <div className="flex items-baseline justify-between mb-4">
