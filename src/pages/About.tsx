@@ -118,6 +118,41 @@ const About = () => {
         </div>
       </section>
 
+      {/* ABOUT THE NAME */}
+      <section className="py-20 md:py-28 border-t border-border bg-secondary/30">
+        <div className="max-w-5xl mx-auto px-6 md:px-10">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as const }}
+          >
+            <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-6">
+              Why Athena
+            </p>
+            <h2 className="font-display text-3xl md:text-5xl leading-[1.05] mb-8 text-balance max-w-4xl">
+              Wisdom over spectacle.
+            </h2>
+            <div className="space-y-5 text-lg text-muted-foreground leading-relaxed max-w-3xl">
+              <p>
+                In ancient Greece, the gods competed to win patronage of a great city.
+                Poseidon struck the earth and produced a powerful spring. Athena reached
+                down and planted an olive tree.
+              </p>
+              <p>
+                The citizens chose Athena — not because the spring wasn't impressive,
+                but because the olive tree offered something more lasting: food, oil,
+                timber, and trade. Wealth that compounded over generations.
+              </p>
+              <p>
+                She didn't win with force or spectacle. She won with wisdom, simplicity,
+                and strategy. That's the company we set out to build.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* PARTNERS */}
       <section className="border-t border-border">
         {partners.map((p, idx) => (
