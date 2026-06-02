@@ -63,7 +63,7 @@ const RevenueDiagnostic = () => {
         <title>Revenue Diagnostic | Athena Revenue Partners</title>
         <meta
           name="description"
-          content="A 2–3 week diagnostic that identifies the root causes behind inaccurate forecasts and stalled pipeline growth in Series A–C SaaS companies."
+          content="A 2–3 week diagnostic that identifies the root causes behind inaccurate forecasts and stalled pipeline growth in SaaS startups."
         />
         <link rel="canonical" href="https://athenarevenuepartners.com/offerings/revenue-diagnostic" />
         <meta property="og:title" content="Revenue Diagnostic | Athena Revenue Partners" />
@@ -77,7 +77,7 @@ const RevenueDiagnostic = () => {
           "@context": "https://schema.org",
           "@type": "Service",
           "name": "Revenue Diagnostic",
-          "description": "A 2–3 week diagnostic of your revenue engine for Series A–C SaaS companies.",
+          "description": "A 2–3 week diagnostic of your revenue engine for SaaS startups.",
           "provider": { "@type": "Organization", "name": "Athena Revenue Partners", "url": "https://athenarevenuepartners.com/" },
           "areaServed": "Global",
           "url": "https://athenarevenuepartners.com/offerings/revenue-diagnostic",
