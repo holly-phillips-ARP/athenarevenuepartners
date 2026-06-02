@@ -34,6 +34,7 @@ const Index = () => {
       <Approach />
       
       <Proof />
+      <Engage />
       <Footer />
     </main>
   );
