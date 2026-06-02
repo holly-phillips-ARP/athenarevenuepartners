@@ -199,37 +199,6 @@ const About = () => {
         ))}
       </section>
 
-      {/* PHILOSOPHY */}
-      <section className="py-24 md:py-32 border-t border-border bg-primary text-primary-foreground">
-        <div className="max-w-5xl mx-auto px-6 md:px-10">
-          <p className="text-xs uppercase tracking-[0.2em] opacity-60 mb-6">Our philosophy</p>
-          <h2 className="font-display text-4xl md:text-6xl leading-[1.05] mb-10 text-balance max-w-4xl">
-            Revenue is a leadership problem before it is a tactics problem.
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8 md:gap-16 text-lg leading-relaxed opacity-90 max-w-4xl">
-            <p>
-              Most revenue problems aren't solved by a new playbook, a new tool, or a new hire.
-              They're solved by clarity — clarity on the deals, the pipeline, the people, and the
-              cadence that holds it all together.
-            </p>
-            <p>
-              We work shoulder-to-shoulder with leadership teams to install that clarity. The
-              result isn't a deck. It's a revenue function leaders can actually run.
-            </p>
-          </div>
-          <div className="mt-12">
-            <Button
-              onClick={() => setOpen(true)}
-              size="lg"
-              variant="secondary"
-              className="rounded-full px-8"
-            >
-              Book a diagnostic
-            </Button>
-          </div>
-        </div>
-      </section>
-
       {/* ABOUT THE NAME */}
       <section className="py-20 md:py-28 border-t border-border bg-secondary/30">
         <div className="max-w-5xl mx-auto px-6 md:px-10">
@@ -262,6 +231,37 @@ const About = () => {
               </p>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* PHILOSOPHY */}
+      <section className="py-24 md:py-32 border-t border-border bg-primary text-primary-foreground">
+        <div className="max-w-5xl mx-auto px-6 md:px-10">
+          <p className="text-xs uppercase tracking-[0.2em] opacity-60 mb-6">Our philosophy</p>
+          <h2 className="font-display text-4xl md:text-6xl leading-[1.05] mb-10 text-balance max-w-4xl">
+            Revenue is a leadership problem before it is a tactics problem.
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8 md:gap-16 text-lg leading-relaxed opacity-90 max-w-4xl">
+            <p>
+              Most revenue problems aren't solved by a new playbook, a new tool, or a new hire.
+              They're solved by clarity — clarity on the deals, the pipeline, the people, and the
+              cadence that holds it all together.
+            </p>
+            <p>
+              We work shoulder-to-shoulder with leadership teams to install that clarity. The
+              result isn't a deck. It's a revenue function leaders can actually run.
+            </p>
+          </div>
+          <div className="mt-12">
+            <Button
+              onClick={() => setOpen(true)}
+              size="lg"
+              variant="secondary"
+              className="rounded-full px-8"
+            >
+              Book a diagnostic
+            </Button>
+          </div>
         </div>
       </section>
 
