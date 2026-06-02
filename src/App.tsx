@@ -11,6 +11,8 @@ import RevenueDiagnostic from "./pages/RevenueDiagnostic.tsx";
 import ForecastAccuracySprint from "./pages/ForecastAccuracySprint.tsx";
 import RevenueSystemBuild from "./pages/RevenueSystemBuild.tsx";
 import Unsubscribe from "./pages/Unsubscribe.tsx";
+import Investors from "./pages/Investors.tsx";
+import Founders from "./pages/Founders.tsx";
 import { ScrollToTop } from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -30,6 +32,8 @@ const App = () => (
           <Route path="/offerings/revenue-system-build" element={<RevenueSystemBuild />} />
           <Route path="/offerings/:slug" element={<OfferingDetail />} />
           <Route path="/unsubscribe" element={<Unsubscribe />} />
+          <Route path="/who-we-work-with/investors" element={<Investors />} />
+          <Route path="/who-we-work-with/founders" element={<Founders />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
