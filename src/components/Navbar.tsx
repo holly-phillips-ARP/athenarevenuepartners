@@ -7,7 +7,7 @@ import logo from "@/assets/logo-concept-7.png";
 const links = [
   { label: "About", href: "/about" },
   { label: "Approach", href: "/#approach" },
-  { label: "Offerings", href: "/#offerings" },
+  { label: "Offerings", href: "/who-we-work-with/founders#offerings" },
   { label: "Proof", href: "/#proof" },
   { label: "Engage", href: "/#engage" },
 ];

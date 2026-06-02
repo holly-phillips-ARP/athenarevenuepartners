@@ -6,20 +6,8 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { DiagnosticDialog } from "@/components/DiagnosticDialog";
 
-const offerings = [
-  {
-    title: "Revenue Diagnostic",
-    body: "We start by finding out what's actually broken. In a focused engagement, we audit your pipeline, your motion, your forecast, and your team — and give you a clear picture of what's holding revenue back and what to fix first.",
-  },
-  {
-    title: "Forecast Accuracy Sprint",
-    body: "If your numbers aren't predictable, we fix that. We build the pipeline discipline, reporting cadence, and stage definitions that turn your forecast from a guess into a commitment.",
-  },
-  {
-    title: "Revenue System Build",
-    body: "This is the full engagement. We design and install the complete revenue system — ICP definition, sales motion, process, enablement, and handoff — and we stay with you through implementation. By the end, the system runs without you in it.",
-  },
-];
+import { Offerings } from "@/components/Offerings";
+
 
 const Founders = () => {
   const [open, setOpen] = useState(false);
@@ -107,25 +95,9 @@ const Founders = () => {
         </div>
       </section>
 
-      {/* WHERE WE WORK / OFFERINGS */}
-      <section className="border-t border-border py-20 md:py-28">
-        <div className="max-w-5xl mx-auto px-6 md:px-10">
-          <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
-            Where we work
-          </p>
-          <h2 className="font-display text-3xl md:text-5xl leading-[1.05] mb-14 text-balance max-w-3xl">
-            Three ways we help.
-          </h2>
-          <div className="grid md:grid-cols-3 gap-px bg-border border border-border">
-            {offerings.map((o) => (
-              <div key={o.title} className="bg-background p-8 md:p-10">
-                <h3 className="font-display text-xl md:text-2xl mb-4 leading-snug">{o.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{o.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* OFFERINGS */}
+      <Offerings />
+
 
       {/* WHAT MAKES US DIFFERENT */}
       <section className="border-t border-border py-24 md:py-32 bg-secondary/30">
