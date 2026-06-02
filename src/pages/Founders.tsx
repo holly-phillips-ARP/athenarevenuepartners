@@ -138,7 +138,7 @@ const Founders = () => {
           </div>
           <div className="md:col-span-8 space-y-6 text-lg md:text-xl leading-relaxed">
             <p>
-              We work with B2B founders at Series A through C who have product-market fit and
+              We work with B2B startup founders who have product-market fit and
               real revenue — but whose growth is bottlenecked by a sales process that still
               depends on them.
             </p>

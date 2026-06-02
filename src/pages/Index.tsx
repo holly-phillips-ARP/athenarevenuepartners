@@ -16,7 +16,7 @@ const Index = () => {
         <title>Athena Revenue Partners — Predictable Revenue at Scale</title>
         <meta
           name="description"
-          content="We help Series A–C tech companies achieve forecast accuracy within 10% in 6 months — built by operators, not consultants."
+          content="We help tech startups achieve forecast accuracy within 10% in 6 months — built by operators, not consultants."
         />
         <link rel="canonical" href="https://athenarevenuepartners.com/" />
         <meta property="og:title" content="Athena Revenue Partners — Predictable Revenue at Scale" />

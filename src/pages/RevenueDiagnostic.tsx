@@ -11,7 +11,7 @@ import { offerings, getOfferingBySlug } from "@/data/offerings";
 import { EngagementTimeline } from "@/components/EngagementTimeline";
 
 const audience = [
-  "Series A–C SaaS companies",
+  "SaaS startups",
   "Founder-led sales organizations",
   "Teams preparing for scale or ownership transition",
   "Companies struggling with forecast accuracy",
@@ -63,7 +63,7 @@ const RevenueDiagnostic = () => {
         <title>Revenue Diagnostic | Athena Revenue Partners</title>
         <meta
           name="description"
-          content="A 2–3 week diagnostic that identifies the root causes behind inaccurate forecasts and stalled pipeline growth in Series A–C SaaS companies."
+          content="A 2–3 week diagnostic that identifies the root causes behind inaccurate forecasts and stalled pipeline growth in SaaS startups."
         />
         <link rel="canonical" href="https://athenarevenuepartners.com/offerings/revenue-diagnostic" />
         <meta property="og:title" content="Revenue Diagnostic | Athena Revenue Partners" />
@@ -77,7 +77,7 @@ const RevenueDiagnostic = () => {
           "@context": "https://schema.org",
           "@type": "Service",
           "name": "Revenue Diagnostic",
-          "description": "A 2–3 week diagnostic of your revenue engine for Series A–C SaaS companies.",
+          "description": "A 2–3 week diagnostic of your revenue engine for SaaS startups.",
           "provider": { "@type": "Organization", "name": "Athena Revenue Partners", "url": "https://athenarevenuepartners.com/" },
           "areaServed": "Global",
           "url": "https://athenarevenuepartners.com/offerings/revenue-diagnostic",
@@ -109,7 +109,7 @@ const RevenueDiagnostic = () => {
             </h1>
             <div className="space-y-5 max-w-3xl text-lg md:text-xl text-muted-foreground leading-relaxed">
               <p>
-                Most Series A–C companies don’t struggle because they lack opportunity. They struggle because their revenue engine lacks operational discipline, forecasting accuracy, and scalable systems.
+                Most startups don’t struggle because they lack opportunity. They struggle because their revenue engine lacks operational discipline, forecasting accuracy, and scalable systems.
               </p>
               <p>
                 The Revenue Diagnostic identifies the gaps preventing predictable growth — and gives leadership a clear path forward.
