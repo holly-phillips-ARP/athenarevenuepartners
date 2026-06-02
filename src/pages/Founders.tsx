@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { DiagnosticDialog } from "@/components/DiagnosticDialog";
 
 import { Offerings } from "@/components/Offerings";
+import { Engage } from "@/components/Engage";
 
 
 const Founders = () => {
