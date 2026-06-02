@@ -44,7 +44,7 @@ export const Hero = () => {
           className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border/60 bg-background/60 backdrop-blur-sm text-xs text-muted-foreground mb-8"
         >
           <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-          For startup B2B tech leaders
+          For startup B2B tech leaders and investors
         </motion.div>
 
         <motion.h1
