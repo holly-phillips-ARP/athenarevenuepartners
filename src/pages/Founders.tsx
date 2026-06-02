@@ -6,12 +6,19 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { DiagnosticDialog } from "@/components/DiagnosticDialog";
 
-const moments = [
-  "Missed forecast or lack of visibility",
-  "Founder still carrying key deals",
-  "Inconsistent pipeline and conversion",
-  "Scaling from early traction to repeatable growth",
-  "M&A or structural change",
+const offerings = [
+  {
+    title: "Revenue Diagnostic",
+    body: "We start by finding out what's actually broken. In a focused engagement, we audit your pipeline, your motion, your forecast, and your team — and give you a clear picture of what's holding revenue back and what to fix first.",
+  },
+  {
+    title: "Forecast Accuracy Sprint",
+    body: "If your numbers aren't predictable, we fix that. We build the pipeline discipline, reporting cadence, and stage definitions that turn your forecast from a guess into a commitment.",
+  },
+  {
+    title: "Revenue System Build",
+    body: "This is the full engagement. We design and install the complete revenue system — ICP definition, sales motion, process, enablement, and handoff — and we stay with you through implementation. By the end, the system runs without you in it.",
+  },
 ];
 
 const Founders = () => {
@@ -23,13 +30,13 @@ const Founders = () => {
         <title>For Founders | Athena Revenue Partners</title>
         <meta
           name="description"
-          content="We work with founders and CEOs at startup B2B tech companies — installing the revenue systems that turn early traction into repeatable, forecastable growth."
+          content="We get founders out of the sales process and install a repeatable revenue system that runs without them."
         />
         <link rel="canonical" href="https://athenarevenuepartners.com/who-we-work-with/founders" />
         <meta property="og:title" content="For Founders | Athena Revenue Partners" />
         <meta
           property="og:description"
-          content="Founders and CEOs at startup B2B tech companies."
+          content="You built something that works. Now revenue has to work without you."
         />
         <meta property="og:url" content="https://athenarevenuepartners.com/who-we-work-with/founders" />
         <meta property="og:type" content="website" />
@@ -49,42 +56,122 @@ const Founders = () => {
               For Founders
             </p>
             <h1 className="font-display text-5xl md:text-7xl leading-[1.02] mb-8 text-balance">
-              Founders and CEOs at{" "}
-              <em className="italic text-muted-foreground">startup B2B tech companies.</em>
+              You built something that works.{" "}
+              <em className="italic text-muted-foreground">
+                Now revenue has to work without you.
+              </em>
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl leading-relaxed">
-              Companies navigating growth, scaling, or ownership transitions — where revenue
-              execution has become the bottleneck.
-            </p>
+            <div className="space-y-6 text-xl md:text-2xl text-muted-foreground max-w-3xl leading-relaxed">
+              <p>
+                You closed the early deals yourself. That made sense — you knew the product, the
+                pitch, and the customer better than anyone. But somewhere between then and now, that
+                stopped being a feature and became a ceiling.
+              </p>
+              <p>
+                Maybe you're still the one closing every deal and you can't figure out how to change
+                that. Maybe your revenue numbers are real but they're not predictable — and that's
+                making your next raise harder than it should be. Maybe you've hit a growth wall and
+                you're not sure if the problem is the market, the team, the motion, or something
+                else entirely.
+              </p>
+              <p>
+                It's usually the system. Or the absence of one.
+              </p>
+              <p className="text-foreground font-medium">
+                That's what we fix.
+              </p>
+            </div>
           </motion.div>
         </div>
       </section>
 
-      {/* MOMENTS */}
+      {/* WHAT WE DO */}
+      <section className="border-t border-border py-24 md:py-32 bg-secondary/30">
+        <div className="max-w-5xl mx-auto px-6 md:px-10 grid md:grid-cols-12 gap-12">
+          <div className="md:col-span-4">
+            <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
+              What we do
+            </p>
+          </div>
+          <div className="md:col-span-8 space-y-6 text-lg md:text-xl leading-relaxed">
+            <p>
+              We get founders out of the sales process and install a repeatable revenue system
+              that runs without them — one built on how mature companies actually scale, adapted
+              for where you actually are.
+            </p>
+            <p className="text-muted-foreground">
+              Not a playbook. Not a framework. A working system your team can execute, your
+              investors can underwrite, and your business can grow on.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* WHERE WE WORK / OFFERINGS */}
+      <section className="border-t border-border py-20 md:py-28">
+        <div className="max-w-5xl mx-auto px-6 md:px-10">
+          <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
+            Where we work
+          </p>
+          <h2 className="font-display text-3xl md:text-5xl leading-[1.05] mb-14 text-balance max-w-3xl">
+            Three ways we help.
+          </h2>
+          <div className="grid md:grid-cols-3 gap-px bg-border border border-border">
+            {offerings.map((o) => (
+              <div key={o.title} className="bg-background p-8 md:p-10">
+                <h3 className="font-display text-xl md:text-2xl mb-4 leading-snug">{o.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{o.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WHAT MAKES US DIFFERENT */}
+      <section className="border-t border-border py-24 md:py-32 bg-secondary/30">
+        <div className="max-w-5xl mx-auto px-6 md:px-10 grid md:grid-cols-12 gap-12">
+          <div className="md:col-span-4">
+            <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
+              What makes us different
+            </p>
+          </div>
+          <div className="md:col-span-8 space-y-6 text-lg md:text-xl leading-relaxed">
+            <p>
+              We've spent careers inside Fortune 50 companies, where revenue systems are mature,
+              rigorous, and built to scale. We've also spent years inside high-growth startups,
+              where we learned what from that world actually transfers — and what doesn't.
+            </p>
+            <p className="text-muted-foreground">
+              Most consultants come from one side or the other. We've lived both. That's what
+              makes the difference between a system that looks right on paper and one that
+              actually works inside your business.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* WHO WE WORK WITH */}
       <section className="border-t border-border py-20 md:py-28">
         <div className="max-w-5xl mx-auto px-6 md:px-10 grid md:grid-cols-12 gap-12">
           <div className="md:col-span-4">
             <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
-              When founders call us
+              Who we work with
             </p>
             <h2 className="font-display text-3xl md:text-4xl leading-tight text-balance">
-              Typical moments we're brought in.
+              The right fit.
             </h2>
           </div>
-          <div className="md:col-span-7 md:col-start-6">
-            <ul className="divide-y divide-border/60 border-y border-border/60">
-              {moments.map((m, i) => (
-                <li
-                  key={m}
-                  className="py-4 flex items-baseline gap-6 group hover:text-foreground transition-colors"
-                >
-                  <span className="font-display text-sm text-muted-foreground tabular-nums w-8">
-                    0{i + 1}
-                  </span>
-                  <span className="text-base md:text-lg">{m}</span>
-                </li>
-              ))}
-            </ul>
+          <div className="md:col-span-8 space-y-6 text-lg md:text-xl leading-relaxed">
+            <p>
+              We work with B2B founders at Series A through C who have product-market fit and
+              real revenue — but whose growth is bottlenecked by a sales process that still
+              depends on them.
+            </p>
+            <p className="text-muted-foreground">
+              If you're pre-revenue or still finding your customer, we're probably not the right
+              fit yet. If you've got traction and you're ready to build something that scales, we
+              are.
+            </p>
           </div>
         </div>
       </section>
