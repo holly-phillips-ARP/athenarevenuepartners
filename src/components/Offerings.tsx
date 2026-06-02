@@ -8,15 +8,14 @@ const additional = [
     name: "Revenue Bridge",
     sub: "Interim leadership coverage",
     body: "For companies navigating a revenue leadership transition — we stabilize the forecast, maintain pipeline discipline, and build the system your next leader inherits.",
-    investment: "$20K / month",
   },
   {
     name: "Executive Advisory",
     sub: "Retainer",
     body: "Ongoing strategic support for Founders and Sales Leaders—deal and forecast reviews, leadership coaching, revenue strategy.",
-    investment: "$10K – $20K / month",
   },
 ];
+
 
 export const Offerings = () => {
   return (
@@ -83,7 +82,7 @@ export const Offerings = () => {
                 </ul>
               </div>
 
-              <div className={`mb-8 pb-8 border-b ${o.featured ? "border-primary-foreground/20" : "border-border"}`}>
+              <div className="mb-8">
                 <p className="text-[10px] uppercase tracking-widest opacity-60 mb-3">
                   Outcome
                 </p>
@@ -91,10 +90,6 @@ export const Offerings = () => {
               </div>
 
               <div className="mt-auto">
-                <p className="text-[10px] uppercase tracking-widest opacity-60 mb-1">
-                  Investment
-                </p>
-                <p className="font-display text-xl mb-6">{o.investment}</p>
                 <Link
                   to={`/offerings/${o.slug}`}
                   className={`inline-flex items-center gap-2 text-sm border-b pb-1 w-fit transition-colors ${
@@ -106,6 +101,7 @@ export const Offerings = () => {
                   View {o.name} details <ArrowUpRight className="h-4 w-4" />
                 </Link>
               </div>
+
             </motion.div>
           ))}
         </div>
@@ -123,12 +119,12 @@ export const Offerings = () => {
                     {a.sub}
                   </span>
                 </div>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-6">
+                <p className="text-sm text-muted-foreground leading-relaxed">
                   {a.body}
                 </p>
-                <p className="text-sm font-display mt-auto">{a.investment}</p>
               </div>
             ))}
+
           </div>
         </div>
       </div>

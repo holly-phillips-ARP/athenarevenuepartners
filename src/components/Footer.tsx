@@ -11,7 +11,7 @@ export const Footer = () => {
         <div className="flex gap-8">
           <a href="/about" className="hover:text-foreground transition-colors">About</a>
           <a href="/#approach" className="hover:text-foreground transition-colors">Approach</a>
-          <a href="/#offerings" className="hover:text-foreground transition-colors">Offerings</a>
+          <a href="/who-we-work-with/founders#offerings" className="hover:text-foreground transition-colors">Offerings</a>
           <a href="/#engage" className="hover:text-foreground transition-colors">Contact</a>
         </div>
         <div>© 2026 Athena Revenue Partners. All rights reserved.</div>
