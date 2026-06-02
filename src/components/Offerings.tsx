@@ -103,7 +103,7 @@ export const Offerings = () => {
                       : "border-foreground/30 hover:border-foreground"
                   }`}
                 >
-                  Learn more <ArrowUpRight className="h-4 w-4" />
+                  View {o.name} details <ArrowUpRight className="h-4 w-4" />
                 </Link>
               </div>
             </motion.div>
