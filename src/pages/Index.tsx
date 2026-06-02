@@ -6,7 +6,6 @@ import { Problem } from "@/components/Problem";
 import { Approach } from "@/components/Approach";
 
 import { Proof } from "@/components/Proof";
-import { Engage } from "@/components/Engage";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
@@ -34,7 +33,6 @@ const Index = () => {
       <Approach />
       
       <Proof />
-      <Engage />
       <Footer />
     </main>
   );

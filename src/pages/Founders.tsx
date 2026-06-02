@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { DiagnosticDialog } from "@/components/DiagnosticDialog";
 
 import { Offerings } from "@/components/Offerings";
+import { Engage } from "@/components/Engage";
 
 
 const Founders = () => {
@@ -121,6 +122,8 @@ const Founders = () => {
           </div>
         </div>
       </section>
+
+      <Engage />
 
       {/* WHO WE WORK WITH */}
       <section className="border-t border-border py-20 md:py-28">
