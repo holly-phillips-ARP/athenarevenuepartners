@@ -109,7 +109,7 @@ const RevenueDiagnostic = () => {
             </h1>
             <div className="space-y-5 max-w-3xl text-lg md:text-xl text-muted-foreground leading-relaxed">
               <p>
-                Most Series A–C companies don’t struggle because they lack opportunity. They struggle because their revenue engine lacks operational discipline, forecasting accuracy, and scalable systems.
+                Most startups don’t struggle because they lack opportunity. They struggle because their revenue engine lacks operational discipline, forecasting accuracy, and scalable systems.
               </p>
               <p>
                 The Revenue Diagnostic identifies the gaps preventing predictable growth — and gives leadership a clear path forward.
