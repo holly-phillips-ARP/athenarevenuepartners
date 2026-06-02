@@ -27,7 +27,7 @@ export const Offerings = () => {
               Our offerings
             </p>
             <h2 className="font-display text-4xl md:text-6xl leading-[1.05] max-w-3xl text-balance">
-              Three engagements. <em className="italic text-muted-foreground">One outcome.</em>
+              Three core engagements. <em className="italic text-muted-foreground">One outcome.</em>
             </h2>
           </div>
           <a
