@@ -11,7 +11,7 @@ import { offerings, getOfferingBySlug } from "@/data/offerings";
 import { EngagementTimeline } from "@/components/EngagementTimeline";
 
 const audience = [
-  "Series A–C SaaS companies",
+  "SaaS startups",
   "Founder-led sales organizations",
   "Teams preparing for scale or ownership transition",
   "Companies struggling with forecast accuracy",

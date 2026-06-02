@@ -59,7 +59,7 @@ const ForecastAccuracySprint = () => {
         <title>Forecast Accuracy Sprint | Athena Revenue Partners</title>
         <meta
           name="description"
-          content="A 6–8 week sprint that installs the inspection rigor and methodology to forecast within ±10–15% for Series A–C SaaS companies."
+          content="A 6–8 week sprint that installs the inspection rigor and methodology to forecast within ±10–15% for SaaS startups."
         />
         <link rel="canonical" href="https://athenarevenuepartners.com/offerings/forecast-accuracy-sprint" />
         <meta property="og:title" content="Forecast Accuracy Sprint | Athena Revenue Partners" />

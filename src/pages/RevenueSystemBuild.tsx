@@ -60,7 +60,7 @@ const RevenueSystemBuild = () => {
         <title>Revenue System Build | Athena Revenue Partners</title>
         <meta
           name="description"
-          content="A 3–6 month transformation that designs, installs, and coaches a scalable revenue operating system for Series A–C SaaS companies."
+          content="A 3–6 month transformation that designs, installs, and coaches a scalable revenue operating system for SaaS startups."
         />
         <link rel="canonical" href="https://athenarevenuepartners.com/offerings/revenue-system-build" />
         <meta property="og:title" content="Revenue System Build | Athena Revenue Partners" />

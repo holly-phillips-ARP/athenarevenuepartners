@@ -17,7 +17,7 @@ const dealCycle = [
   },
   {
     title: "Ongoing Portfolio Support",
-    body: "Revenue predictability isn't a one-time fix. We stay alongside portfolio leaders to ensure systems scale as the business scales — so you're not putting out the same fires at Series B that you were at Series A.",
+    body: "Revenue predictability isn't a one-time fix. We stay alongside portfolio leaders to ensure systems scale as the business scales — so you're not putting out the same fires as your portfolio companies grow.",
   },
 ];
 
