@@ -281,9 +281,9 @@ const Founders = () => {
             Project-based. Defined scope. Clean handoff.
           </h2>
           <p className="text-muted-foreground leading-relaxed max-w-3xl mb-12">
-            We're not a fractional VP Sales. We're not an ongoing retainer. We come in,
-            install the system, train your team on it, and hand it back. The goal is for you
-            not to need us — and to know it's working before we leave.
+            We're not a fractional VP of Sales. We come in, install the system, train your
+            team on it, and hand it back. The goal is for you not to need us — and to know
+            it's working before we leave.
           </p>
 
           <div className="grid md:grid-cols-2 gap-px bg-border border border-border">
