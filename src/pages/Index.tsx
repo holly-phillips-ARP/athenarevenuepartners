@@ -230,7 +230,7 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 max-w-3xl">
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {partners.map((p, i) => (
               <motion.figure
                 key={p.name}
