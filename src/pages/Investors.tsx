@@ -173,7 +173,7 @@ const Investors = () => {
             transition={{ duration: 0.7, ease }}
           >
             <p className="text-xs uppercase tracking-[0.2em] text-accent mb-6">
-              For PE & VC Investors · Operating Partners · Portfolio Leaders
+              For investors · Operating Partners · Portfolio Leaders
             </p>
             <h1 className="font-display text-5xl md:text-7xl leading-[1.05] mb-8 text-balance">
               Your portfolio company has product-market fit.{" "}
@@ -182,7 +182,7 @@ const Investors = () => {
               </em>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">
-              Most PE-backed companies are running on founder relationships, gut-feel
+              Most investor-backed companies are running on founder relationships, gut-feel
               forecasts, and a sales process that lives in someone's head. That's not a people
               problem. It's an architecture problem. We fix it in 90 days.
             </p>

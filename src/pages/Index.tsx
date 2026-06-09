@@ -26,7 +26,7 @@ const stats = [
 
 const routes = [
   {
-    label: "For PE & VC investors",
+    label: "For investors",
     headline: "Protecting portfolio value starts with predictable revenue.",
     body:
       "We work with operating partners and deal teams to install revenue architecture in portfolio companies — post-acquisition, pre-raise, and pre-hire.",
