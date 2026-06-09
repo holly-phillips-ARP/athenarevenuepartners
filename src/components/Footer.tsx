@@ -8,12 +8,6 @@ export const Footer = () => {
           <img src={logo} alt="Athena Revenue Partners" className="h-24 md:h-28 w-auto -my-4" loading="lazy" width={1024} height={1024} />
           <p className="text-xs mt-2">Predictable revenue, built to scale.</p>
         </div>
-        <div className="flex gap-8">
-          <a href="/about" className="hover:text-foreground transition-colors">About</a>
-          <a href="/#approach" className="hover:text-foreground transition-colors">Approach</a>
-          <a href="/who-we-work-with/founders#offerings" className="hover:text-foreground transition-colors">Offerings</a>
-          <a href="/#engage" className="hover:text-foreground transition-colors">Contact</a>
-        </div>
         <div>© 2026 Athena Revenue Partners. All rights reserved.</div>
       </div>
     </footer>
