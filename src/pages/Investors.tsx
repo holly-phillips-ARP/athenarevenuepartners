@@ -17,7 +17,7 @@ const audiences = [
   {
     title: "Service businesses being tech-enabled",
     body:
-      "HVAC, home services, field services, and multi-location consumer brands — acquired from a founder or family operator and now being professionalized and scaled under PE ownership.",
+      "HVAC, home services, field services, and multi-location consumer brands — acquired from a founder or family operator and now being professionalized and scaled under investor ownership.",
   },
 ];
 
