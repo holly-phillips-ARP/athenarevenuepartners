@@ -78,6 +78,12 @@ const deliverables = [
 
 const engagements = [
   {
+    tag: "Not sure yet",
+    name: "Revenue Diagnostic",
+    desc:
+      "A 2–3 week assessment of where the gaps are and which lever has the highest ROI. A good starting point if you're not sure what the problem is or where to focus first.",
+  },
+  {
     tag: "Most common",
     name: "Revenue System Build",
     desc:
@@ -91,12 +97,6 @@ const engagements = [
       "If you're searching for a VP Sales or CRO, we stabilize and document the revenue operation so your new hire steps into infrastructure — not a blank page.",
     note:
       "For searches that run longer than expected, Revenue Bridge can extend to 3–6 months without changing what we're building.",
-  },
-  {
-    tag: "Not sure yet",
-    name: "Revenue Diagnostic",
-    desc:
-      "A 2–3 week assessment of where the gaps are and which lever has the highest ROI. A good starting point if you're not sure what the problem is or where to focus first.",
   },
   {
     tag: "Post-engagement",
