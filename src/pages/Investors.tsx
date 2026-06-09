@@ -193,6 +193,9 @@ const Investors = () => {
       {/* AUDIENCES */}
       <section className="border-t border-border py-20 md:py-24">
         <div className="max-w-5xl mx-auto px-6 md:px-10">
+          <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-6">
+            Who we serve
+          </p>
           <div className="grid md:grid-cols-2 gap-px bg-border border border-border mb-10">
             {audiences.map((a) => (
               <div key={a.title} className="bg-background p-8 md:p-10">
