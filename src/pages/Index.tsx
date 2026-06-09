@@ -26,7 +26,7 @@ const stats = [
 
 const routes = [
   {
-    label: "For PE & VC investors",
+    label: "For investors",
     headline: "Protecting portfolio value starts with predictable revenue.",
     body:
       "We work with operating partners and deal teams to install revenue architecture in portfolio companies — post-acquisition, pre-raise, and pre-hire.",
@@ -81,7 +81,7 @@ const Index = () => {
         <title>Athena Revenue Partners — B2B Revenue Architecture</title>
         <meta
           name="description"
-          content="We install repeatable revenue systems for PE-backed companies and B2B founders — replacing founder-dependent sales with a process your board can underwrite and your team can execute."
+          content="We install repeatable revenue systems for investor-backed companies and B2B founders — replacing founder-dependent sales with a process your board can underwrite and your team can execute."
         />
         <link rel="canonical" href="https://athenarevenuepartners.com/" />
         <meta property="og:title" content="Athena Revenue Partners — B2B Revenue Architecture" />
@@ -125,7 +125,7 @@ const Index = () => {
             {...fadeUp(0.16)}
             className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl"
           >
-            We install repeatable revenue systems for PE-backed companies and B2B founders —
+            We install repeatable revenue systems for investor-backed companies and B2B founders —
             replacing founder-dependent sales with a process your board can underwrite and
             your team can execute.
           </motion.p>

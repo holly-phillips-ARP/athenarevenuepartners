@@ -7,7 +7,7 @@ const audiences = [
     href: "/who-we-work-with/investors",
     headline: "Protecting portfolio value starts with predictable revenue.",
     description:
-      "VC and PE firms partnering with us on diligence, post-close execution, and ongoing portfolio support.",
+      "Investor firms partnering with us on diligence, post-close execution, and ongoing portfolio support.",
   },
   {
     label: "Founders",
