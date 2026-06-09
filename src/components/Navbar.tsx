@@ -5,11 +5,10 @@ import { DiagnosticDialog } from "@/components/DiagnosticDialog";
 import logo from "@/assets/logo-concept-7.png";
 
 const links = [
+  { label: "Investors", href: "/who-we-work-with/investors" },
+  { label: "Founders", href: "/who-we-work-with/founders" },
   { label: "About", href: "/about" },
-  { label: "Approach", href: "/#approach" },
-  { label: "Offerings", href: "/who-we-work-with/founders#offerings" },
   { label: "Proof", href: "/#proof" },
-  { label: "Engage", href: "/#engage" },
 ];
 
 export const Navbar = () => {
