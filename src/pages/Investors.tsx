@@ -103,6 +103,12 @@ const levers = [
 
 const engagements = [
   {
+    tag: "Pre-investment",
+    name: "Revenue Diagnostic",
+    desc:
+      "A diligence-grade assessment of forecast accuracy, pipeline quality, and sales process maturity. Identifies the highest-ROI lever and quantifies the gap — before you close.",
+  },
+  {
     tag: "Core engagement",
     name: "Revenue System Build",
     desc:
@@ -116,12 +122,6 @@ const engagements = [
       "For companies mid-search for a CRO, VP Sales, or GM — we stabilize and document the revenue operation so the incoming hire steps into infrastructure, not a blank page.",
     note:
       "For searches that run longer than expected, Revenue Bridge can extend to 3–6 months without changing what we're building.",
-  },
-  {
-    tag: "Pre-investment",
-    name: "Revenue Diagnostic",
-    desc:
-      "A diligence-grade assessment of forecast accuracy, pipeline quality, and sales process maturity. Identifies the highest-ROI lever and quantifies the gap — before you close.",
   },
   {
     tag: "Post-engagement",
