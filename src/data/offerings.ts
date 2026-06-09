@@ -100,7 +100,7 @@ export const offerings: Offering[] = [
       "A three-to-six month transformation of your revenue function—from pipeline generation through forecast discipline. We design, install, and coach the system that turns revenue from a guess into a discipline.",
     whoFor: [
       "Founder-led companies stepping into a real revenue org",
-      "PE-backed businesses preparing for the next leg of growth",
+      "Investor-backed businesses preparing for the next leg of growth",
       "CEOs replacing duct-tape with a true operating system",
     ],
     process: [
