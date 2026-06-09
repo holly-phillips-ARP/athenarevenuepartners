@@ -241,15 +241,12 @@ const About = () => {
           <h2 className="font-display text-4xl md:text-6xl leading-[1.05] mb-10 text-balance max-w-4xl">
             Revenue is a leadership problem before it is a tactics problem.
           </h2>
-          <div className="grid md:grid-cols-2 gap-8 md:gap-16 text-lg leading-relaxed opacity-90 max-w-4xl">
+          <div className="space-y-6 text-lg leading-relaxed opacity-90 max-w-4xl">
             <p>
-              Most revenue problems aren't solved by a new playbook, a new tool, or a new hire.
-              They're solved by clarity — clarity on the deals, the pipeline, the people, and the
-              cadence that holds it all together.
+              Most revenue problems get solved at the wrong level. A new tool, a new hire, a new playbook — and the same forecast miss happens again. The issue isn't tactics. It's the absence of a system underneath them.
             </p>
             <p>
-              We work shoulder-to-shoulder with leadership teams to install that clarity. The
-              result isn't a deck. It's a revenue function leaders can actually run.
+              We work shoulder-to-shoulder with leadership teams to install that system — clarity on the deals, the pipeline, the process, and the cadence that holds it all together. The result isn't a deck. It's a revenue function that runs.
             </p>
           </div>
           <div className="mt-12">
