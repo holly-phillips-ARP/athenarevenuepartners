@@ -239,11 +239,11 @@ const About = () => {
         <div className="max-w-5xl mx-auto px-6 md:px-10">
           <p className="text-xs uppercase tracking-[0.2em] opacity-60 mb-6">Our philosophy</p>
           <h2 className="font-display text-4xl md:text-6xl leading-[1.05] mb-10 text-balance max-w-4xl">
-            Revenue is a leadership problem before it is a tactics problem.
+            Most revenue problems get solved at the wrong level.
           </h2>
           <div className="space-y-6 text-lg leading-relaxed opacity-90 max-w-4xl">
             <p>
-              Most revenue problems get solved at the wrong level. A new tool, a new hire, a new playbook — and the same forecast miss happens again. The issue isn't tactics. It's the absence of a system underneath them.
+              A new tool, a new hire, a new playbook — and the same forecast miss happens again. The issue isn't tactics. It's the absence of a system underneath them.
             </p>
             <p>
               We work shoulder-to-shoulder with leadership teams to install that system — clarity on the deals, the pipeline, the process, and the cadence that holds it all together. The result isn't a deck. It's a revenue function that runs.
