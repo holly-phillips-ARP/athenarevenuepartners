@@ -231,24 +231,28 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 max-w-3xl">
-            {partners.map((p) => (
-              <div
+            {partners.map((p, i) => (
+              <motion.figure
                 key={p.name}
-                className="flex items-center gap-5 bg-background border border-border p-5"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.7, delay: i * 0.1, ease }}
+                className="space-y-4"
               >
-                <div className="w-14 h-14 rounded-full overflow-hidden bg-secondary border border-border flex-shrink-0">
+                <div className="aspect-[4/5] overflow-hidden bg-secondary">
                   <img
                     src={p.image}
-                    alt={`${p.name}, ${p.role}`}
-                    className="w-full h-full object-cover grayscale"
+                    alt={`${p.name}, ${p.role} at Athena Revenue Partners`}
+                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                     loading="lazy"
                   />
                 </div>
-                <div>
-                  <div className="font-display text-lg leading-tight">{p.name}</div>
-                  <div className="text-xs text-accent mt-1">{p.role}</div>
-                </div>
-              </div>
+                <figcaption>
+                  <div className="font-display text-xl leading-tight">{p.name}</div>
+                  <div className="text-sm text-muted-foreground mt-1">{p.role}</div>
+                </figcaption>
+              </motion.figure>
             ))}
           </div>
         </div>
