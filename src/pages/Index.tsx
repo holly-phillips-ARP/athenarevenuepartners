@@ -189,9 +189,7 @@ const Index = () => {
                 The same four pillars — in every engagement.
               </h2>
               <p className="text-muted-foreground leading-relaxed max-w-2xl">
-                The vocabulary changes depending on the business — enterprise software, HVAC
-                service agreements, recurring field services contracts — but the architecture
-                doesn't.
+                The vocabulary changes depending on the business—but the architecture doesn't.
               </p>
             </div>
           </div>
