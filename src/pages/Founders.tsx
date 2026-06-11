@@ -94,7 +94,7 @@ const engagements = [
     tag: "In transition",
     name: "Revenue Bridge",
     desc:
-      "If you're searching for a VP Sales or CRO, we stabilize and document the revenue operation so your new hire steps into infrastructure — not a blank page.",
+      "If you're searching for a VP of Sales or CRO, we stabilize and document the revenue operation so your new hire steps into infrastructure — not a blank page.",
     note:
       "For searches that run longer than expected, Revenue Bridge can extend to 3–6 months without changing what we're building.",
   },

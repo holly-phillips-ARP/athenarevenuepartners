@@ -84,7 +84,7 @@ const timing = [
     trigger: "Pre-leadership hire",
     sub: "Before or during the search",
     body:
-      "A VP Sales, CRO, or GM stepping into infrastructure executes from Day 1. One stepping into chaos spends six months diagnosing. ARP installs the infrastructure so the hire compounds — not compensates.",
+      "A VP of Sales, CRO, or GM stepping into infrastructure executes from Day 1. One stepping into chaos spends six months diagnosing. ARP installs the infrastructure so the hire compounds — not compensates.",
   },
   {
     trigger: "Pre-raise",
@@ -119,7 +119,7 @@ const engagements = [
     tag: "Transition situations",
     name: "Revenue Bridge",
     desc:
-      "For companies mid-search for a CRO, VP Sales, or GM — we stabilize and document the revenue operation so the incoming hire steps into infrastructure, not a blank page.",
+      "For companies mid-search for a CRO, VP of Sales, or GM — we stabilize and document the revenue operation so the incoming hire steps into infrastructure, not a blank page.",
     note:
       "For searches that run longer than expected, Revenue Bridge can extend to 3–6 months without changing what we're building.",
   },
@@ -232,7 +232,7 @@ const Investors = () => {
               is a negotiation.
             </p>
             <p>
-              A VP Sales or GM hire without infrastructure burns their first six months
+              A VP of Sales or GM hire without infrastructure burns their first six months
               diagnosing instead of executing. The fix isn't a hire. It's a system — built
               before the hire lands, or instead of a premature one.
             </p>
@@ -358,7 +358,7 @@ const Investors = () => {
             Project-based. Fixed scope. Defined handoff.
           </h2>
           <p className="text-muted-foreground leading-relaxed max-w-3xl mb-12">
-            We don't take fractional VP Sales roles. We don't embed indefinitely. We install a
+            We don't take fractional VP of Sales roles. We don't embed indefinitely. We install a
             system with a clear start, a clear end, and a clean handoff — so the business runs
             without us.
           </p>
