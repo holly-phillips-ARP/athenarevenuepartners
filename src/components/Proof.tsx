@@ -14,7 +14,7 @@ const pillars = [
 ];
 
 const proofPoints = [
-  "Former CRO, VP Sales, and enterprise sales leaders",
+  "Former CRO, VP of Sales, and enterprise sales leaders",
   "Built and scaled teams in startup SaaS companies",
   "Led through acquisitions and ownership transitions",
   "Rebuilt pipeline and forecasting after missed quarters",

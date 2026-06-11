@@ -37,7 +37,7 @@ const offerings = [
     name: "Revenue Bridge",
     duration: "3–6 months",
     desc:
-      "For companies mid-search for a CRO, VP Sales, or GM — we stabilize and document the revenue operation so the incoming hire steps into infrastructure, not a blank page.",
+      "For companies mid-search for a CRO, VP of Sales, or GM — we stabilize and document the revenue operation so the incoming hire steps into infrastructure, not a blank page.",
     forInvestors:
       "Protects the asset during a leadership search and de-risks the hire.",
     forFounders:
@@ -105,7 +105,7 @@ const Offerings = () => {
               </em>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">
-              We don't take fractional VP Sales roles. We don't embed indefinitely. Every
+              We don't take fractional VP of Sales roles. We don't embed indefinitely. Every
               engagement has a clear start, a clear end, and leaves a system the business can
               run without us.
             </p>
