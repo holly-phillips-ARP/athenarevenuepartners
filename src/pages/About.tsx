@@ -29,7 +29,7 @@ const partners: Partner[] = [
     image: partnerKami,
     bio: [
       "Kami is a revenue leader who has spent her career building and scaling revenue organizations inside both Fortune 50 and high-growth software companies.",
-      "Most recently serving as Vice President of Sales at a high-growth data science company, she has led go-to-market teams through every stage of growth — from founder-led selling into repeatable, forecastable revenue motions.",
+      "Most recently serving as Global Vice President of Sales at a high-growth data science company, she has led go-to-market teams through every stage of growth — from founder-led selling into repeatable, forecastable revenue motions.",
       "She is known across the industry for her ability to attract and retain top talent, installing the operational discipline that turns ambitious targets into predictable outcomes.",
       "Personally, she resides in the Greater Minneapolis-St. Paul Metro Area and when she is not working, loves to watch her two boys on the field or rink (football, soccer, hockey). Also, a wanna be chef and sourdough baker + huge dog lover.",
     ],
