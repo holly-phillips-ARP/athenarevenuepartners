@@ -216,11 +216,7 @@ const PrivateEquity = () => {
                 <div className="font-display text-xs text-accent mb-4 tracking-widest">{d.no}</div>
                 <h3 className="font-display text-lg mb-3 leading-snug">{d.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{d.body}</p>
-                {d.example && (
-                  <p className="text-xs italic text-muted-foreground mt-4 pt-4 border-t border-border leading-relaxed">
-                    {d.example}
-                  </p>
-                )}
+
               </div>
             ))}
           </div>
