@@ -207,10 +207,9 @@ const PrivateEquity = () => {
           </h2>
           <p className="text-muted-foreground leading-relaxed max-w-3xl mb-12">
             We don't advise. We install. Every engagement ends with a working system — not a deck,
-            not a strategy, not a set of recommendations. The same four pillars apply whether the
-            portfolio company sells enterprise software, HVAC service agreements, or recurring
-            field services contracts.
+            not a strategy, not a set of recommendations.
           </p>
+
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-border/60 border border-border/60">
             {deliverables.map((d) => (
