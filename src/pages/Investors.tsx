@@ -211,7 +211,6 @@ const Investors = () => {
                   <h3 className="font-display text-xl md:text-2xl mb-4 leading-snug">
                     {a.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">{a.body}</p>
                 </div>
                 <div className="mt-8 inline-flex items-center gap-2 text-sm border-b border-foreground/30 group-hover:border-foreground pb-1 w-fit transition-colors">
                   How we work with {a.title.toLowerCase().replace(" investors", "")}
@@ -219,12 +218,6 @@ const Investors = () => {
                 </div>
               </Link>
             ))}
-          </div>
-          <div className="border-l-2 border-accent bg-secondary/40 px-6 py-5 italic text-muted-foreground leading-relaxed max-w-3xl">
-            Whether you've acquired a B2B software company or an HVAC platform, the challenge
-            is the same: revenue was built on the previous owner's relationships and
-            reputation. We install the system that replaces it — so the business scales on
-            process, not personality.
           </div>
         </div>
       </section>
