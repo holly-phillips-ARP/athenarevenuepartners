@@ -12,14 +12,16 @@ const ease = [0.22, 1, 0.36, 1] as const;
 
 const audiences = [
   {
-    title: "B2B technology & SaaS",
+    title: "Private Equity Investors",
+    href: "/who-we-work-with/investors/private-equity",
     body:
-      "Post-PMF software companies where the founder is still the primary closer and the board can't get a defensible forecast number.",
+      "PE firms acquiring founder- or family-owned businesses — B2B software, HVAC, home services, field services, and multi-location consumer brands — that need to be professionalized and scaled under new ownership.",
   },
   {
-    title: "Service businesses being tech-enabled",
+    title: "Venture Capital Investors",
+    href: "/who-we-work-with/investors/venture-capital",
     body:
-      "HVAC, home services, field services, and multi-location consumer brands — acquired from a founder or family operator and now being professionalized and scaled under investor ownership.",
+      "VC firms backing post-PMF B2B software and SaaS companies where the founder is still the primary closer and the board can't get a defensible forecast number.",
   },
 ];
 
