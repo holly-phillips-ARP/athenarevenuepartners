@@ -43,9 +43,8 @@ const deliverables = [
     title: "Revenue qualification",
     body:
       "A consistent standard for what's real versus assumed — so coverage gaps are visible before they become misses.",
-    example:
-      "In B2B software: pipeline qualification. In field services: service agreement conversion and contract renewal coverage.",
   },
+
   {
     no: "03",
     title: "Repeatable sales process",
@@ -217,11 +216,7 @@ const PrivateEquity = () => {
                 <div className="font-display text-xs text-accent mb-4 tracking-widest">{d.no}</div>
                 <h3 className="font-display text-lg mb-3 leading-snug">{d.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{d.body}</p>
-                {d.example && (
-                  <p className="text-xs italic text-muted-foreground mt-4 pt-4 border-t border-border leading-relaxed">
-                    {d.example}
-                  </p>
-                )}
+
               </div>
             ))}
           </div>
