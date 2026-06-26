@@ -14,6 +14,8 @@ import Unsubscribe from "./pages/Unsubscribe.tsx";
 import Investors from "./pages/Investors.tsx";
 import Founders from "./pages/Founders.tsx";
 import Offerings from "./pages/Offerings.tsx";
+import PrivateEquity from "./pages/PrivateEquity.tsx";
+import VentureCapital from "./pages/VentureCapital.tsx";
 import { ScrollToTop } from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
