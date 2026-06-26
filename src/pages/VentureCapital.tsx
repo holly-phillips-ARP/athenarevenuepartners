@@ -120,22 +120,6 @@ const VentureCapital = () => {
         </div>
       </section>
 
-      {/* WHO */}
-      <section className="border-t border-border py-20 md:py-24">
-        <div className="max-w-5xl mx-auto px-6 md:px-10">
-          <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-6">
-            Where we work
-          </p>
-          <div className="grid md:grid-cols-2 gap-px bg-border border border-border">
-            {targets.map((a) => (
-              <div key={a.title} className="bg-background p-8 md:p-10">
-                <h3 className="font-display text-xl md:text-2xl mb-4 leading-snug">{a.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{a.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* PROBLEM */}
       <section className="border-t border-border py-24 md:py-32 bg-secondary/40">
