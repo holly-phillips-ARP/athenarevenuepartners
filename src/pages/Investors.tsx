@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { ArrowUpRight } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -10,14 +12,16 @@ const ease = [0.22, 1, 0.36, 1] as const;
 
 const audiences = [
   {
-    title: "B2B technology & SaaS",
+    title: "Private Equity Investors",
+    href: "/who-we-work-with/investors/private-equity",
     body:
-      "Post-PMF software companies where the founder is still the primary closer and the board can't get a defensible forecast number.",
+      "PE firms acquiring founder- or family-owned businesses — B2B software, HVAC, home services, field services, and multi-location consumer brands — that need to be professionalized and scaled under new ownership.",
   },
   {
-    title: "Service businesses being tech-enabled",
+    title: "Venture Capital Investors",
+    href: "/who-we-work-with/investors/venture-capital",
     body:
-      "HVAC, home services, field services, and multi-location consumer brands — acquired from a founder or family operator and now being professionalized and scaled under investor ownership.",
+      "VC firms backing post-PMF B2B software and SaaS companies where the founder is still the primary closer and the board can't get a defensible forecast number.",
   },
 ];
 
@@ -198,12 +202,22 @@ const Investors = () => {
           </p>
           <div className="grid md:grid-cols-2 gap-px bg-border border border-border mb-10">
             {audiences.map((a) => (
-              <div key={a.title} className="bg-background p-8 md:p-10">
-                <h3 className="font-display text-xl md:text-2xl mb-4 leading-snug">
-                  {a.title}
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">{a.body}</p>
-              </div>
+              <Link
+                key={a.title}
+                to={a.href}
+                className="group bg-background p-8 md:p-10 flex flex-col justify-between hover:bg-secondary/40 transition-colors"
+              >
+                <div>
+                  <h3 className="font-display text-xl md:text-2xl mb-4 leading-snug">
+                    {a.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">{a.body}</p>
+                </div>
+                <div className="mt-8 inline-flex items-center gap-2 text-sm border-b border-foreground/30 group-hover:border-foreground pb-1 w-fit transition-colors">
+                  How we work with {a.title.toLowerCase().replace(" investors", "")}
+                  <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                </div>
+              </Link>
             ))}
           </div>
           <div className="border-l-2 border-accent bg-secondary/40 px-6 py-5 italic text-muted-foreground leading-relaxed max-w-3xl">
