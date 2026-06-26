@@ -43,9 +43,8 @@ const deliverables = [
     title: "Revenue qualification",
     body:
       "A consistent standard for what's real versus assumed — so coverage gaps are visible before they become misses.",
-    example:
-      "In B2B software: pipeline qualification. In field services: service agreement conversion and contract renewal coverage.",
   },
+
   {
     no: "03",
     title: "Repeatable sales process",
