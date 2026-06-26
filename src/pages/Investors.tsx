@@ -202,12 +202,22 @@ const Investors = () => {
           </p>
           <div className="grid md:grid-cols-2 gap-px bg-border border border-border mb-10">
             {audiences.map((a) => (
-              <div key={a.title} className="bg-background p-8 md:p-10">
-                <h3 className="font-display text-xl md:text-2xl mb-4 leading-snug">
-                  {a.title}
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">{a.body}</p>
-              </div>
+              <Link
+                key={a.title}
+                to={a.href}
+                className="group bg-background p-8 md:p-10 flex flex-col justify-between hover:bg-secondary/40 transition-colors"
+              >
+                <div>
+                  <h3 className="font-display text-xl md:text-2xl mb-4 leading-snug">
+                    {a.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">{a.body}</p>
+                </div>
+                <div className="mt-8 inline-flex items-center gap-2 text-sm border-b border-foreground/30 group-hover:border-foreground pb-1 w-fit transition-colors">
+                  How we work with {a.title.toLowerCase().replace(" investors", "")}
+                  <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                </div>
+              </Link>
             ))}
           </div>
           <div className="border-l-2 border-accent bg-secondary/40 px-6 py-5 italic text-muted-foreground leading-relaxed max-w-3xl">
