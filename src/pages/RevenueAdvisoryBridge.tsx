@@ -317,7 +317,8 @@ const RevenueAdvisoryBridge = () => {
                       className="flex items-start gap-2 text-sm md:text-base text-muted-foreground"
                     >
                       <span className="text-accent mt-1.5">•</span>
-                      <span>{item}</n                    </li>
+                      <span>{item}</span>
+                    </li>
                   ))}
                 </ul>
               </div>
