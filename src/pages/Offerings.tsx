@@ -12,28 +12,28 @@ const ease = [0.22, 1, 0.36, 1] as const;
 const methodology = [
   {
     no: "01",
-    phase: "DESIGN",
+    phase: "Design",
     product: "Revenue Architecture Sprint",
     body:
       "Define the revenue operating system the business needs before investing in people, process, or technology.",
   },
   {
     no: "02",
-    phase: "ASSESS",
+    phase: "Assess",
     product: "Revenue Diagnostic",
     body:
       "Identify the operational constraints limiting predictable growth and prioritize the improvements with the greatest impact.",
   },
   {
     no: "03",
-    phase: "BUILD",
+    phase: "Build",
     product: "Revenue System Build",
     body:
       "Install the people, process, metrics, technology, and leadership cadence that create a repeatable revenue operating system.",
   },
   {
     no: "04",
-    phase: "OPTIMIZE",
+    phase: "Optimize",
     product: "Revenue Advisory",
     body:
       "Provide ongoing strategic oversight to help leadership teams evolve the operating system as the business grows.",
@@ -163,10 +163,10 @@ const Offerings = () => {
           <div className="grid md:grid-cols-2 gap-px bg-border border border-border">
             {methodology.map((m) => (
               <div key={m.no} className="bg-background p-6 md:p-8 flex flex-col">
+                <h3 className="font-display text-2xl mb-3">{m.phase}</h3>
                 <span className="inline-block self-start text-[10px] uppercase tracking-widest text-accent bg-accent/10 px-2 py-1 rounded mb-4">
-                  {m.phase}
+                  {m.product}
                 </span>
-                <h3 className="font-display text-2xl mb-3">{m.product}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   {m.body}
                 </p>
