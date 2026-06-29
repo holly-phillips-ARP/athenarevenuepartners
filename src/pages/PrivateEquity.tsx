@@ -281,7 +281,7 @@ const PrivateEquity = () => {
                 )}
               </div>
             ))}
-            <div className="bg-background p-6 md:p-8 md:col-span-2">
+            <div className="bg-secondary/40 p-6 md:p-8 md:col-span-2">
               <span className="inline-block text-[10px] uppercase tracking-widest text-accent bg-accent/10 px-2 py-1 rounded mb-4">
                 Leadership Transition
               </span>
