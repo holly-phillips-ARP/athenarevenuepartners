@@ -84,33 +84,33 @@ const deliverables = [
 
 const engagements = [
   {
-    tag: "Not sure yet",
-    name: "Revenue Diagnostic",
+    slug: "revenue-architecture-sprint",
+    tag: "BUILDING THE FOUNDATION",
+    name: "Revenue Architecture Sprint",
     desc:
-      "A 2–3 week assessment of where the gaps are and which lever has the highest ROI. A good starting point if you're not sure what the problem is or where to focus first.",
+      "For founder-led companies preparing for the next stage of growth.\n\nDesign the Revenue Operating System before investing in additional people, technology, or leadership.",
   },
   {
-    tag: "Most common",
+    slug: "revenue-diagnostic",
+    tag: "PERFORMANCE PLATEAU",
+    name: "Revenue Diagnostic",
+    desc:
+      "For companies missing growth targets or struggling to create predictable execution.\n\nIdentify the operational constraints limiting scale and prioritize the improvements with the greatest business impact.",
+  },
+  {
+    slug: "revenue-system-build",
+    tag: "CORE ENGAGEMENT",
     name: "Revenue System Build",
     desc:
-      "Full installation of all four pillars across 90 days. Ends with a trained team, a working forecast, and a sales process your next hire can step into.",
+      "For companies ready to operationalize growth.\n\nInstall the people, process, metrics, technology, and leadership cadence that create predictable revenue.",
     featured: true,
   },
   {
-    tag: "In transition",
-    name: "Revenue Bridge",
+    slug: "revenue-advisory",
+    tag: "ONGOING",
+    name: "Revenue Advisory",
     desc:
-      "If you're searching for a VP of Sales or CRO, we stabilize and document the revenue operation so your new hire steps into infrastructure — not a blank page.",
-    note:
-      "For searches that run longer than expected, Revenue Bridge can extend to 3–6 months without changing what we're building.",
-  },
-  {
-    tag: "Post-engagement",
-    name: "Executive Advisory",
-    desc:
-      "For founders who have completed a Revenue System Build and want ongoing outside perspective. A quarterly cadence to review performance, pressure-test the forecast, and identify what to tune as the business grows.",
-    note:
-      "You own the system. We're the outside eyes. Available to Revenue System Build alumni on a defined quarterly basis.",
+      "For leadership teams committed to continuous improvement.\n\nQuarterly strategic oversight to pressure-test forecasts, coach leaders, and evolve the Revenue Operating System as the business grows.",
     advisory: true,
   },
 ];
