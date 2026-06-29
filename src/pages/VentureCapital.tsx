@@ -165,6 +165,32 @@ const VentureCapital = () => {
         </div>
       </section>
 
+      {/* WHEN */}
+      <section className="border-t border-border py-24 md:py-32 bg-secondary/40">
+        <div className="max-w-5xl mx-auto px-6 md:px-10">
+          <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
+            When to bring us in
+          </p>
+          <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-12 max-w-4xl">
+            From product-market fit through scale.
+          </h2>
+          <div className="border-t border-border">
+            {moments.map((t) => (
+              <div
+                key={t.trigger}
+                className="grid md:grid-cols-[240px_1fr] gap-6 md:gap-10 py-6 border-b border-border items-start"
+              >
+                <div>
+                  <div className="font-display text-lg">{t.trigger}</div>
+                  <div className="text-xs text-muted-foreground mt-1">{t.sub}</div>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">{t.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* PROBLEM */}
       <section className="border-t border-border py-24 md:py-32 bg-secondary/40">
         <div className="max-w-5xl mx-auto px-6 md:px-10">
@@ -213,33 +239,6 @@ const VentureCapital = () => {
           </div>
         </div>
       </section>
-
-      {/* WHEN */}
-      <section className="border-t border-border py-24 md:py-32 bg-secondary/40">
-        <div className="max-w-5xl mx-auto px-6 md:px-10">
-          <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
-            When to bring us in
-          </p>
-          <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-12 max-w-4xl">
-            From product-market fit through scale.
-          </h2>
-          <div className="border-t border-border">
-            {moments.map((t) => (
-              <div
-                key={t.trigger}
-                className="grid md:grid-cols-[240px_1fr] gap-6 md:gap-10 py-6 border-b border-border items-start"
-              >
-                <div>
-                  <div className="font-display text-lg">{t.trigger}</div>
-                  <div className="text-xs text-muted-foreground mt-1">{t.sub}</div>
-                </div>
-                <p className="text-muted-foreground leading-relaxed">{t.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
 
       {/* OFFERINGS */}
       <section className="border-t border-border py-24 md:py-32 bg-secondary/40">
