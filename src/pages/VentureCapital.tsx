@@ -160,15 +160,16 @@ const VentureCapital = () => {
               For Venture Capital Investors
             </p>
             <h1 className="font-display text-5xl md:text-7xl leading-[1.05] mb-8 text-balance">
-              The product works.{" "}
+              Every founder eventually outgrows founder-led selling.{" "}
               <em className="italic text-accent font-light">
-                The go-to-market hasn't graduated from the founder.
+                The best companies recognize it before growth stalls.
               </em>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">
-              Most post-PMF B2B SaaS companies stall at the same spot: revenue still runs through
-              the founder, the forecast is a guess, and the next round depends on showing a
-              repeatable motion. We install the system that gets them there — in 90 days.
+              Whether you're preparing a portfolio company for its next stage of growth, helping a
+              founder build their first revenue organization, or preparing for the next funding
+              round, Athena installs the revenue operating systems that transform founder-led growth
+              into repeatable execution.
             </p>
           </motion.div>
         </div>
