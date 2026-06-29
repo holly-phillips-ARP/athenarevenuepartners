@@ -81,12 +81,6 @@ const moments = [
   },
 ];
 
-const levers = [
-  { name: "Win rate", impact: "More qualified deals close" },
-  { name: "Average deal size", impact: "Better discovery, better scope" },
-  { name: "Stage conversion", impact: "Deals move faster, stall less" },
-  { name: "Pipeline volume", impact: "Qualified coverage, not noise" },
-];
 
 const engagements = [
   {
@@ -246,38 +240,6 @@ const VentureCapital = () => {
         </div>
       </section>
 
-      {/* THE RETURN */}
-      <section className="border-t border-border py-24 md:py-32">
-        <div className="max-w-5xl mx-auto px-6 md:px-10">
-          <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
-            The return
-          </p>
-          <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-10 max-w-4xl">
-            A 10% improvement in any one lever is a multiple of our fee.
-          </h2>
-
-          <div className="bg-secondary/40 p-8 md:p-10 border border-border">
-            <p className="text-muted-foreground leading-relaxed mb-8 max-w-3xl">
-              We work across four revenue levers. Improving any one of them — win rate, deal size,
-              stage conversion, or pipeline volume — compounds across the others. The ROI
-              conversation usually takes care of itself before the SOW is signed.
-            </p>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {levers.map((l) => (
-                <div key={l.name} className="bg-background border border-border p-4">
-                  <div className="text-xs uppercase tracking-widest text-muted-foreground mb-2">
-                    {l.name}
-                  </div>
-                  <div className="text-sm font-medium">{l.impact}</div>
-                </div>
-              ))}
-            </div>
-            <p className="text-sm italic text-muted-foreground mt-6">
-              Our benchmark: ±10% forecast accuracy within six months of engagement.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* OFFERINGS */}
       <section className="border-t border-border py-24 md:py-32 bg-secondary/40">
