@@ -284,7 +284,7 @@ const Index = () => {
       <section id="engage" className="border-t border-border py-24 md:py-32 bg-secondary/40">
         <div className="max-w-7xl mx-auto px-6 md:px-10 text-center">
           <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance max-w-3xl mx-auto mb-6">
-            If your forecast isn't reliable, your growth isn't either.
+            If your system isn't reliable, your growth isn't either.
           </h2>
           <p className="text-muted-foreground leading-relaxed max-w-xl mx-auto mb-10">
             Most clients start with a Revenue Diagnostic. It's the fastest way to see where
