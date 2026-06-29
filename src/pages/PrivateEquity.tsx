@@ -273,7 +273,7 @@ const PrivateEquity = () => {
                   {e.tag}
                 </span>
                 <h3 className="font-display text-xl mb-3">{e.name}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{e.desc}</p>
+                <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">{e.desc}</p>
                 {e.note && (
                   <p className="text-xs italic text-muted-foreground mt-4 pt-4 border-t border-border leading-relaxed">
                     {e.note}
