@@ -29,7 +29,7 @@ const routes = [
     label: "For investors",
     headline: "Creating and protecting portfolio value starts with predictable revenue.",
     body:
-      "We partner with venture capital and private equity firms to evaluate, build and scale revenue operating systems across portfolio companies - from pre-investment diligence to post acquisition transformation, leadership transitions and exit readiness.",
+      "We partner with venture capital and private equity firms at the moments that matter most - pre investment diligence, post-acquisition transformation, leadership transitions and exit readiness.\u00a0",
     href: "/who-we-work-with/investors",
     cta: "How we work with investors",
   },
