@@ -35,6 +35,53 @@ const scenarios = [
   },
 ];
 
+const evaluationCategories = [
+  {
+    title: "Revenue Quality",
+    question: "Can revenue be explained, repeated, and forecast with confidence?",
+    items: [
+      "Revenue concentration",
+      "Customer quality",
+      "Revenue mix",
+      "Retention trends",
+      "Expansion opportunity",
+    ],
+  },
+  {
+    title: "Forecast Confidence",
+    question: "Can leadership reliably predict future performance?",
+    items: [
+      "Forecast methodology",
+      "Pipeline coverage",
+      "Stage definitions",
+      "Conversion consistency",
+      "Forecast accuracy",
+    ],
+  },
+  {
+    title: "Revenue Operating System",
+    question: "Does the company have the infrastructure required to scale?",
+    items: [
+      "Sales process",
+      "Qualification methodology",
+      "CRM architecture",
+      "KPIs & dashboards",
+      "Management cadence",
+    ],
+  },
+  {
+    title: "Leadership Readiness",
+    question: "Can the current leadership team execute the investment thesis?",
+    items: [
+      "Organizational structure",
+      "Decision-making cadence",
+      "Sales management capability",
+      "Hiring readiness",
+      "Accountability systems",
+    ],
+  },
+];
+
 const methodology = [
   { phase: "Design", label: "Revenue Architecture Sprint", current: true },
   { phase: "Assess", label: "Revenue Diagnostic", current: false },
@@ -332,6 +379,44 @@ const RevenueArchitectureSprint = () => {
         </div>
       </section>
 
+      {/* WHAT WE EVALUATE */}
+      <section className="border-t border-border py-24 md:py-32">
+        <div className="max-w-5xl mx-auto px-6 md:px-10">
+          <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
+            What We Evaluate
+          </p>
+          <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-12 max-w-4xl">
+            Instead of listing deliverables, organize them into the questions every PE investor is asking.
+          </h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            {evaluationCategories.map((category) => (
+              <div
+                key={category.title}
+                className="bg-secondary/40 border border-border/60 p-8 flex flex-col gap-4"
+              >
+                <h3 className="font-display text-2xl md:text-3xl leading-tight">
+                  {category.title}
+                </h3>
+                <p className="text-base md:text-lg leading-relaxed text-muted-foreground">
+                  {category.question}
+                </p>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2">
+                  {category.items.map((item) => (
+                    <li
+                      key={item}
+                      className="flex items-start gap-2 text-sm md:text-base text-muted-foreground"
+                    >
+                      <span className="text-accent mt-1.5">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* WHAT WE BUILD */}
       <section className="border-t border-border py-24 md:py-32">
         <div className="max-w-5xl mx-auto px-6 md:px-10">
@@ -505,6 +590,6 @@ const RevenueArchitectureSprint = () => {
       <Footer />
     </main>
   );
-};
+}
 
 export default RevenueArchitectureSprint;
