@@ -29,7 +29,7 @@ const routes = [
     label: "For investors",
     headline: "Creating and protecting portfolio value starts with predictable revenue.",
     body:
-      "We partner with venture capital and private equity firms to evaluate, build and scale revenue operating systems across portfolio companies - from pre-investment diligence to post acquisition transformation, leadership transitions and exit readiness.",
+      "We partner with venture capital and private equity firms at the moments that matter most - pre investment diligence, post-acquisition transformation, leadership transitions and exit readiness.\u00a0",
     href: "/who-we-work-with/investors",
     cta: "How we work with investors",
   },
@@ -37,7 +37,7 @@ const routes = [
     label: "For founders & CEOs",
     headline: "You built the revenue. Now let's make it run without you.",
     body:
-      "We work with post-PMF B2B founders who are ready to step back from deals and build a sales motion that doesn't depend on them being in every room.",
+      "We help founders and leadership teams replace founder dependence with a repeatable revenue operation system - that scales beyond any one individual.",
     href: "/who-we-work-with/founders",
     cta: "How we work with founders",
   },
