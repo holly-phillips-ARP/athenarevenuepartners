@@ -322,41 +322,65 @@ const Founders = () => {
         </div>
       </section>
 
-      {/* HOW WE WORK */}
-      <section className="border-t border-border py-24 md:py-32">
+      {/* OFFERINGS */}
+      <section className="border-t border-border py-24 md:py-32 bg-secondary/40">
         <div className="max-w-5xl mx-auto px-6 md:px-10">
           <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
             Offerings
           </p>
           <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-8 max-w-4xl">
-            Project-based. Defined scope. Clean handoff.
+            Project-based. Fixed scope. Defined handoff.
           </h2>
           <p className="text-muted-foreground leading-relaxed max-w-3xl mb-12">
-            We're not a fractional VP of Sales. We come in, install the system, train your
-            team on it, and hand it back. The goal is for you not to need us — and to know
-            it's working before we leave.
+            We're not your fractional VP of Sales.
+            <br />
+            We're not your long-term CRO.
+            <br />
+            We build the Revenue Operating System your company will own long after we're gone.
           </p>
 
           <div className="grid md:grid-cols-2 gap-px bg-border border border-border">
             {engagements.map((e) => (
               <div
                 key={e.name}
-                className={`bg-background p-6 md:p-8 ${
+                className={`bg-background p-6 md:p-8 flex flex-col ${
                   e.featured ? "border-2 border-accent" : ""
                 } ${e.advisory ? "bg-secondary/40" : ""}`}
               >
-                <span className="inline-block text-[10px] uppercase tracking-widest text-accent bg-accent/10 px-2 py-1 rounded mb-4">
+                <span className="inline-block self-start text-[10px] uppercase tracking-widest text-accent bg-accent/10 px-2 py-1 rounded mb-4">
                   {e.tag}
                 </span>
                 <h3 className="font-display text-xl mb-3">{e.name}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{e.desc}</p>
-                {e.note && (
-                  <p className="text-xs italic text-muted-foreground mt-4 pt-4 border-t border-border leading-relaxed">
-                    {e.note}
-                  </p>
-                )}
+                <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">{e.desc}</p>
+                <div className="mt-6 pt-2">
+                  <Link
+                    to={`/who-we-work-with/investors/private-equity/${e.slug}`}
+                    className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent/80 transition-colors"
+                  >
+                    Learn More →
+                  </Link>
+                </div>
               </div>
             ))}
+            <div className="bg-accent/10 p-6 md:p-8 md:col-span-2 border border-accent/20 flex flex-col">
+              <span className="inline-block self-start text-[10px] uppercase tracking-widest text-accent bg-accent/10 px-2 py-1 rounded mb-4">
+                LEADERSHIP TRANSITION
+              </span>
+              <h3 className="font-display text-xl mb-3">Revenue Bridge</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
+                A leadership transition doesn't require a different methodology—it requires a different starting point.
+
+                Whether you're hiring your first VP of Sales, your first CRO, or replacing an executive, we install the operating system before or alongside the transition so new leaders spend their first months executing—not diagnosing.
+              </p>
+              <div className="mt-6 pt-2">
+                <Link
+                  to="/who-we-work-with/investors/private-equity/revenue-bridge"
+                  className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent/80 transition-colors"
+                >
+                  Learn More →
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
