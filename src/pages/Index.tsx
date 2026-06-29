@@ -163,7 +163,7 @@ const Index = () => {
                 Acquisition.{"\n"}
                 Leadership change.{"\n"}
                 Exit.{"\n\n"}
-                Athena helps companies navigate each with a revenue operating system built to scale.
+                Athena helps companies navigate each by building a revenue operating system that makes growth repeatable.
               </p>
             </div>
           </div>
