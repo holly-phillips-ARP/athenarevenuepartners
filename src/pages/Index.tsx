@@ -286,9 +286,9 @@ const Index = () => {
           <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance max-w-3xl mx-auto mb-6">
             If your system isn't reliable, your growth isn't either.
           </h2>
-          <p className="text-muted-foreground leading-relaxed max-w-xl mx-auto mb-10">
-            Most clients start with a Revenue Diagnostic. It's the fastest way to see where
-            the gaps are and what to fix first.
+          <p className="text-muted-foreground leading-relaxed max-w-xl mx-auto mb-10 whitespace-pre-line">
+            Every engagement starts with understanding where you are today.{"\n"}
+            Whether that's a Revenue Architecture Sprint or a Revenue Diagnostic depends on the maturity of your business. We'll help you determine the right starting point.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Button
@@ -296,7 +296,7 @@ const Index = () => {
               size="lg"
               className="rounded-full px-7 h-12"
             >
-              Start with a diagnostic
+              Find your starting point
             </Button>
             <Button
               onClick={() => setContactOpen(true)}
