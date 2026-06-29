@@ -87,6 +87,9 @@ const Investors = () => {
           <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-6">
             HOW WE PARTNER
           </p>
+          <p className="text-sm text-muted-foreground mb-10 max-w-2xl">
+            Financial diligence tells you what happened. Revenue diligence tells you what happens next.
+          </p>
           <div className="grid md:grid-cols-2 gap-px bg-border border border-border">
             {audiences.map((a) => (
               <Link
