@@ -153,13 +153,17 @@ const Index = () => {
                 Who we work with
               </p>
               <h2 className="font-display text-2xl md:text-3xl leading-snug text-balance">
+                Built for moments that matter.
               </h2>
             </div>
             <div className="md:col-span-5 md:col-start-8">
               <p className="text-muted-foreground leading-relaxed md:pt-10 whitespace-pre-line">
-                Every investor backed company eventually reaches a point where growth depends less on individual talent and more on a repeatable revenue operating system.
-                {"\n\n\n"}
-                Whether you're investing in the business or leading it, Athena helps install the systems that make revenue predictable, measurable, and scalable.
+                Whether you're investing in a company or leading one, the moments that create the most value—and the most risk—are remarkably similar.{"\n\n"}
+                Growth.{"\n"}
+                Acquisition.{"\n"}
+                Leadership change.{"\n"}
+                Exit.{"\n\n"}
+                Athena helps companies navigate each with a revenue operating system built to scale.
               </p>
             </div>
           </div>
