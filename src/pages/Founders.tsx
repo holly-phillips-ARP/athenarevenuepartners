@@ -57,27 +57,27 @@ const fromTo = [
 const deliverables = [
   {
     no: "01",
-    title: "Forecast methodology",
+    title: "Forecast Methodology",
     body:
-      "A defined process so your team builds the forecast — and you can defend the number to your board without the Sunday night scramble.",
+      "A repeatable forecasting process your leadership team can build, inspect, and confidently defend.",
   },
   {
     no: "02",
-    title: "Revenue qualification",
+    title: "Revenue Qualification",
     body:
-      "A consistent standard for what's real versus assumed. Less noise, better coverage, fewer surprises at end of quarter.",
+      "A consistent framework that separates real opportunities from optimistic ones.",
   },
   {
     no: "03",
-    title: "Repeatable sales process",
+    title: "Repeatable Sales Process",
     body:
-      "A defined motion your whole team runs — so winning isn't dependent on one person's instinct, and losing tells you something useful.",
+      "A documented sales motion that allows every seller—not just the founder—to execute consistently.",
   },
   {
     no: "04",
-    title: "Leadership operating cadence",
+    title: "Leadership Operating Cadence",
     body:
-      "A weekly rhythm that keeps your team accountable and surfaces problems before they hit your board deck.",
+      "A management rhythm that creates accountability, surfaces problems early, and gives leadership confidence in the number.",
   },
 ];
 
@@ -260,12 +260,11 @@ const Founders = () => {
             THE REVENUE OPERATING SYSTEM
           </p>
           <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-8 max-w-4xl">
-            Four things. Ninety days. A revenue operation that runs without you.
+            Four pillars. Ninety days. A revenue operation that scales beyond the founder.
           </h2>
           <p className="text-muted-foreground leading-relaxed max-w-3xl mb-12">
-            We don't consult. We don't advise from the outside. We get in the business, work
-            alongside your team, and leave a system that keeps running after we're gone. The
-            vocabulary adapts to your business — the architecture doesn't change.
+            We don't advise. We install. Every engagement ends with a Revenue Operating System your
+            leadership team owns—not a deck, not a strategy, not a list of recommendations.
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-border/60 border border-border/60">
