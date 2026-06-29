@@ -14,10 +14,14 @@ const audiences = [
   {
     title: "Private Equity Investors",
     href: "/who-we-work-with/investors/private-equity",
+    description: "Increase enterprise value through revenue quality",
+    items: ["Due diligence", "First 100 days", "Leadership transition", "Exit readiness"],
   },
   {
     title: "Venture Capital Investors",
     href: "/who-we-work-with/investors/venture-capital",
+    description: "Build the revenue engine that gets companies to the next stage",
+    items: ["Founder transition", "First sales hires", "Revenue architecture sprint", "Revenue systems build"],
   },
 ];
 
@@ -91,6 +95,15 @@ const Investors = () => {
                 className="group bg-background p-8 md:p-10 flex flex-col justify-between min-h-[200px] hover:bg-secondary/40 transition-colors"
               >
                 <h3 className="font-display text-xl md:text-2xl leading-snug">{a.title}</h3>
+                <p className="mt-3 text-muted-foreground leading-relaxed">{a.description}</p>
+                <ul className="mt-6 space-y-2 text-sm text-muted-foreground">
+                  {a.items.map((item) => (
+                    <li key={item} className="flex items-center gap-2">
+                      <span className="h-1 w-1 rounded-full bg-accent" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
                 <div className="mt-8 inline-flex items-center gap-2 text-sm border-b border-foreground/30 group-hover:border-foreground pb-1 w-fit transition-colors">
                   How we work with {a.title.toLowerCase().replace(" investors", "")}
                   <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
