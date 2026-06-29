@@ -161,15 +161,13 @@ const PrivateEquity = () => {
               For Private Equity Investors
             </p>
             <h1 className="font-display text-5xl md:text-7xl leading-[1.05] mb-8 text-balance">
-              You bought a business.{" "}
+              Every investment comes with a value creation plan.{" "}
               <em className="italic text-accent font-light">
-                You inherited the prior owner's revenue habits.
+                Very few come with the revenue operating system needed to execute it.
               </em>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">
-              In most PE-backed companies, revenue was built on the founder's relationships,
-              reputation, and gut. That doesn't scale, and it doesn't underwrite. We install the
-              system that replaces it — so the value-creation plan runs on architecture, not personality.
+              Whether you're evaluating an acquisition, integrating a new portfolio company, preparing for a leadership transition, or positioning for exit, Athena installs the revenue operating systems that turn investment theses into operational reality.
             </p>
           </motion.div>
         </div>
