@@ -42,6 +42,8 @@ const App = () => (
           <Route path="/who-we-work-with/investors/private-equity/revenue-architecture-sprint" element={<RevenueArchitectureSprint />} />
           <Route path="/who-we-work-with/investors/private-equity/revenue-diagnostic" element={<RevenueDiagnostic />} />
           <Route path="/who-we-work-with/investors/private-equity/revenue-system-build" element={<RevenueSystemBuild />} />
+          <Route path="/who-we-work-with/investors/private-equity/revenue-advisory" element={<RevenueAdvisoryBridge />} />
+          <Route path="/who-we-work-with/investors/private-equity/revenue-bridge" element={<RevenueAdvisoryBridge />} />
           <Route path="/who-we-work-with/investors/private-equity/:slug" element={<PEOfferingDetail />} />
           <Route path="/who-we-work-with/investors/venture-capital" element={<VentureCapital />} />
           <Route path="/who-we-work-with/founders" element={<Founders />} />
