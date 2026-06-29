@@ -194,6 +194,46 @@ const Founders = () => {
         </div>
       </section>
 
+      {/* WHEN TO BRING US IN */}
+      <section className="border-t border-border py-24 md:py-32">
+        <div className="max-w-5xl mx-auto px-6 md:px-10">
+          <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
+            WHEN TO BRING US IN
+          </p>
+          <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-12 max-w-4xl">
+            From founder-led selling through scalable growth.
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-px bg-border border border-border">
+            {[
+              {
+                title: "Product-Market Fit",
+                body: "The product works. The system doesn't exist yet.\n\nYou've proven customers will buy. Now it's time to design the Revenue Operating System before adding people, technology, and complexity.",
+              },
+              {
+                title: "First Sales Team",
+                body: "Hiring before building the system creates expensive chaos.\n\nBefore adding more salespeople, install the process, forecasting, and operating cadence they'll inherit.",
+              },
+              {
+                title: "First Revenue Leader",
+                body: "Before or during the search\n\nA VP of Sales or CRO stepping into infrastructure executes from Day One. We install the operating system so the hire compounds—not compensates.",
+              },
+              {
+                title: "Preparing for the Next Stage",
+                body: "Growth is starting to outpace the way you've always operated.\n\nThe founder is still the best salesperson.\n\nForecasts are still based on intuition.\n\nThe company is ready for a system.",
+              },
+            ].map((item) => (
+              <div key={item.title} className="bg-background p-6 md:p-8">
+                <h3 className="font-display text-lg mb-3">{item.title}</h3>
+                <p className="text-sm text-muted-foreground whitespace-pre-line">
+                  {item.body}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* SOUND FAMILIAR */}
       <section className="border-t border-border py-24 md:py-32 bg-secondary/40">
         <div className="max-w-5xl mx-auto px-6 md:px-10">
