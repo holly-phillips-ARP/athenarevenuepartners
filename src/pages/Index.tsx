@@ -224,7 +224,7 @@ const Index = () => {
                   Thirty years of combined experience — not learning revenue operations from the sidelines, but building them.
                 </p>
                 <p>
-                  We didn't learn revenue operations in consulting. We built them while carrying quotas, forecasting to boards, rebuilding pipelines and leading organizations through growth, restructuring and transformation.&nbsp;
+                  We didn't learn revenue operations in consulting. We built them while carrying quotas, defending forecasts in board rooms, rebuilding pipelines and leading organizations through growth, restructuring and transformation.&nbsp;
                 </p>
               </div>
             </div>
