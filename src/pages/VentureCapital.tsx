@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { Navbar } from "@/components/Navbar";
@@ -83,34 +84,40 @@ const moments = [
 
 const engagements = [
   {
-    tag: "Pre-investment",
-    name: "Revenue Diagnostic",
+    tag: "POST-PRODUCT MARKET FIT",
+    name: "Revenue Architecture Sprint",
     desc:
-      "A diligence-grade assessment of forecast accuracy, pipeline quality, and sales process maturity. Identifies the highest-ROI lever and quantifies the gap — before you lead or follow on.",
+      "For founder-led companies preparing for the next stage of growth. Design the revenue operating system before scaling the team.",
+    link: "/who-we-work-with/investors/private-equity/revenue-architecture-sprint",
   },
   {
-    tag: "Core engagement",
+    tag: "SCALING COMPANY",
+    name: "Revenue Diagnostic",
+    desc:
+      "For companies missing growth targets or struggling to create predictable execution. Identify the operational constraints limiting scale and prioritize improvements with the greatest business impact.",
+    link: "/who-we-work-with/investors/private-equity/revenue-diagnostic",
+  },
+  {
+    tag: "CORE ENGAGEMENT",
     name: "Revenue System Build",
     desc:
-      "Full installation of all four pillars across 90 days. Ends with a trained team, a working forecast, and a sales process your next hire can step into.",
+      "For companies ready to operationalize growth. Install the people, process, metrics, technology, and leadership cadence that create predictable revenue.",
+    link: "/who-we-work-with/investors/private-equity/revenue-system-build",
     featured: true,
   },
   {
-    tag: "Transition situations",
-    name: "Revenue Bridge",
+    tag: "ONGOING",
+    name: "Revenue Advisory",
     desc:
-      "For companies mid-search for a CRO or VP of Sales — we stabilize and document the revenue operation so the incoming hire steps into infrastructure, not a blank page.",
-    note:
-      "For searches that run longer than expected, Revenue Bridge can extend to 3–6 months without changing what we're building.",
+      "For companies committed to continuous improvement. Quarterly strategic oversight to pressure-test forecasts, coach leadership, and evolve the revenue operating system as the business grows.",
+    link: "/who-we-work-with/investors/private-equity/revenue-advisory",
   },
   {
-    tag: "Post-engagement",
-    name: "Executive Advisory",
+    tag: "LEADERSHIP TRANSITION",
+    name: "Revenue Bridge",
     desc:
-      "For companies that have completed a Revenue System Build and want ongoing outside perspective. A quarterly cadence to review performance, pressure-test the forecast, and identify what to tune.",
-    note:
-      "You own the system. We're the outside eyes. Available to Revenue System Build alumni on a defined quarterly basis.",
-    advisory: true,
+      "A leadership transition doesn't require a different methodology—it requires a different starting point. Whether you're hiring your first VP of Sales, your first CRO, or replacing an executive, we install the operating system before or alongside the transition so new leaders spend their first months executing—not diagnosing.",
+    link: "/who-we-work-with/investors/private-equity/revenue-bridge",
   },
 ];
 
@@ -250,29 +257,32 @@ const VentureCapital = () => {
             Project-based. Fixed scope. Defined handoff.
           </h2>
           <p className="text-muted-foreground leading-relaxed max-w-3xl mb-12">
-            We don't take fractional VP of Sales roles. We don't embed indefinitely. We install a
-            system with a clear start, a clear end, and a clean handoff — so the business runs
-            without us.
+            We don't become your VP of Sales.
+            <br />
+            We don't become your CRO.
+            <br />
+            We build the operating system your leadership team owns.
           </p>
 
           <div className="grid md:grid-cols-2 gap-px bg-border border border-border">
             {engagements.map((e) => (
               <div
                 key={e.name}
-                className={`bg-background p-6 md:p-8 ${
+                className={`bg-background p-6 md:p-8 flex flex-col ${
                   e.featured ? "border-2 border-accent" : ""
-                } ${e.advisory ? "bg-secondary/40" : ""}`}
+                }`}
               >
                 <span className="inline-block text-[10px] uppercase tracking-widest text-accent bg-accent/10 px-2 py-1 rounded mb-4">
                   {e.tag}
                 </span>
                 <h3 className="font-display text-xl mb-3">{e.name}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{e.desc}</p>
-                {e.note && (
-                  <p className="text-xs italic text-muted-foreground mt-4 pt-4 border-t border-border leading-relaxed">
-                    {e.note}
-                  </p>
-                )}
+                <p className="text-sm text-muted-foreground leading-relaxed mb-6">{e.desc}</p>
+                <Link
+                  to={e.link}
+                  className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent/80 transition-colors mt-auto"
+                >
+                  Learn More <span aria-hidden="true">→</span>
+                </Link>
               </div>
             ))}
           </div>
