@@ -128,7 +128,7 @@ const Investors = () => {
             size="lg"
             className="rounded-full px-8 h-12"
           >
-            Schedule a conversation →
+            Start the conversation →
           </Button>
         </div>
       </section>
