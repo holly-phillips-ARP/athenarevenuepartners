@@ -91,13 +91,30 @@ const methodology = [
 
 
 const deliverables = [
-  "Revenue Operating Blueprint",
-  "Revenue Quality Assessment",
-  "Forecast Confidence Score",
-  "Revenue Maturity Assessment",
-  "Investment Risk Summary",
-  "100-Day Roadmap",
-  "Executive Presentation",
+  {
+    title: "Executive Readout",
+    body: "Board-ready summary of findings and recommendations.",
+  },
+  {
+    title: "Revenue Operating Blueprint",
+    body: "Current-state assessment and future-state design.",
+  },
+  {
+    title: "Forecast Confidence Score",
+    body: "Assessment of revenue predictability.",
+  },
+  {
+    title: "Revenue Quality Assessment",
+    body: "Strengths, risks, and improvement opportunities.",
+  },
+  {
+    title: "Value Creation Roadmap",
+    body: "Prioritized initiatives for the first 100 days after close.",
+  },
+  {
+    title: "Investment Risk Summary",
+    body: "Revenue-specific diligence observations that should influence execution planning.",
+  },
 ];
 
 const timeline = [
@@ -404,16 +421,23 @@ const RevenueArchitectureSprint = () => {
             Deliverables
           </p>
           <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-12 max-w-4xl">
-            You'll receive.
+            What you leave with.
           </h2>
-          <ul className="grid md:grid-cols-2 gap-px bg-border/60 border border-border/60">
+          <div className="grid md:grid-cols-2 gap-6">
             {deliverables.map((d) => (
-              <li key={d} className="bg-background p-6 flex items-start gap-4">
-                <Check className="h-5 w-5 text-accent mt-1 flex-shrink-0" />
-                <span className="text-lg">{d}</span>
-              </li>
+              <div
+                key={d.title}
+                className="bg-background border border-border/60 p-8 flex flex-col gap-3"
+              >
+                <h3 className="font-display text-xl md:text-2xl leading-tight">
+                  {d.title}
+                </h3>
+                <p className="text-base md:text-lg leading-relaxed text-muted-foreground">
+                  {d.body}
+                </p>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       </section>
 
