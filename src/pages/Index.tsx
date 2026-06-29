@@ -219,10 +219,14 @@ const Index = () => {
               </h2>
             </div>
             <div className="md:col-span-7 md:col-start-6">
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Thirty years of combined experience — building teams, rebuilding pipelines, and
-                installing the systems that make revenue predictable when it isn't.
-              </p>
+              <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+                <p>
+                  Thirty years of combined experience — not learning revenue operations from the sidelines, but building them.
+                </p>
+                <p>
+                  We've carried quotas, hired the teams, rebuilt the pipelines, forecasted to boards and installed the systems that make revenue predictable when it isn't.
+                </p>
+              </div>
             </div>
           </div>
 
