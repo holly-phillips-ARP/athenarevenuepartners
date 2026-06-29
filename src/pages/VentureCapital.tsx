@@ -81,7 +81,6 @@ const moments = [
   },
 ];
 
-
 const engagements = [
   {
     tag: "Pre-investment",
