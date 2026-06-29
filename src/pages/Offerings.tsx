@@ -43,23 +43,23 @@ const methodology = [
 const offerings = [
   {
     name: "Revenue Architecture Sprint",
-    desc: "Design the revenue operating system.",
+    desc: "When you need to design the revenue operating system.",
   },
   {
     name: "Revenue Diagnostic",
-    desc: "Identify what's limiting performance.",
+    desc: "When performance isn't matching expectations.",
   },
   {
     name: "Revenue System Build",
-    desc: "Install the operating system.",
+    desc: "When it's time to operationalize growth.",
   },
   {
     name: "Revenue Advisory",
-    desc: "Ongoing optimization.",
+    desc: "When the operating system is built but the business continues to evolve.",
   },
   {
     name: "Revenue Bridge",
-    desc: "Leadership transitions.",
+    desc: "When leadership is changing but execution can't slow down.",
   },
 ];
 
