@@ -160,39 +160,25 @@ const Index = () => {
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed font-light">
                 Whether you're investing in a company or leading one, the moments that create the most value—and the most risk—are remarkably similar.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
-                <div className="space-y-4">
-                  <h4 className="text-xs uppercase tracking-widest text-foreground border-b border-border pb-2">
-                    Growth
-                  </h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    Scaling revenue without losing the operating discipline that made it possible.
-                  </p>
-                </div>
-                <div className="space-y-4">
-                  <h4 className="text-xs uppercase tracking-widest text-foreground border-b border-border pb-2">
-                    Acquisition
-                  </h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    Integrating teams and go-to-market motions without losing momentum.
-                  </p>
-                </div>
-                <div className="space-y-4">
-                  <h4 className="text-xs uppercase tracking-widest text-foreground border-b border-border pb-2">
-                    Leadership change
-                  </h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    Maintaining revenue continuity when leadership transitions.
-                  </p>
-                </div>
-                <div className="space-y-4">
-                  <h4 className="text-xs uppercase tracking-widest text-foreground border-b border-border pb-2">
-                    Exit
-                  </h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    Building the forecast reliability and documentation buyers expect.
-                  </p>
-                </div>
+              <div className="space-y-6">
+                {[
+                  { no: "01", label: "Growth" },
+                  { no: "02", label: "Acquisition" },
+                  { no: "03", label: "Leadership change" },
+                  { no: "04", label: "Exit" },
+                ].map((item) => (
+                  <div
+                    key={item.label}
+                    className="flex items-baseline gap-6 border-b border-border pb-6"
+                  >
+                    <span className="text-xs uppercase tracking-widest text-accent">
+                      {item.no}
+                    </span>
+                    <span className="font-display text-3xl md:text-4xl text-foreground">
+                      {item.label}
+                    </span>
+                  </div>
+                ))}
               </div>
               <p className="text-muted-foreground leading-relaxed">
                 Athena helps companies navigate each by building a revenue operating system that makes growth repeatable.
