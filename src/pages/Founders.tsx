@@ -205,7 +205,7 @@ const Founders = () => {
             From founder-led selling through scalable growth.
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-px bg-border border border-border">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-border border border-border rounded-2xl overflow-hidden shadow-sm">
             {[
               {
                 title: "Product-Market Fit",
@@ -223,10 +223,16 @@ const Founders = () => {
                 title: "Preparing for the Next Stage",
                 body: "Growth is starting to outpace the way you've always operated.\n\nThe founder is still the best salesperson.\n\nForecasts are still based on intuition.\n\nThe company is ready for a system.",
               },
-            ].map((item) => (
-              <div key={item.title} className="bg-background p-6 md:p-8">
-                <h3 className="font-display text-lg mb-3">{item.title}</h3>
-                <p className="text-sm text-muted-foreground whitespace-pre-line">
+            ].map((item, i) => (
+              <div key={item.title} className="group relative bg-background p-6 md:p-8 transition-colors hover:bg-secondary/40">
+                <div className="flex items-center justify-between mb-8">
+                  <span className="text-xs font-bold text-muted-foreground">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <div className="h-1.5 w-1.5 rounded-full bg-muted-foreground group-hover:bg-accent transition-colors" />
+                </div>
+                <h3 className="font-display text-xl mb-4">{item.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
                   {item.body}
                 </p>
               </div>
