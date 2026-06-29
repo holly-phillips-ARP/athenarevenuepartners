@@ -258,44 +258,6 @@ const Founders = () => {
         </div>
       </section>
 
-      {/* BEFORE / AFTER */}
-      <section className="border-t border-border py-24 md:py-32">
-        <div className="max-w-5xl mx-auto px-6 md:px-10">
-          <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
-            What changes
-          </p>
-          <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-12 max-w-4xl">
-            Before and after a revenue system is in place.
-          </h2>
-
-          <div className="border border-border">
-            <div className="grid grid-cols-2 bg-secondary/40">
-              <div className="px-5 py-3 text-xs uppercase tracking-widest text-muted-foreground border-r border-border">
-                Before
-              </div>
-              <div className="px-5 py-3 text-xs uppercase tracking-widest text-accent">
-                After
-              </div>
-            </div>
-            {fromTo.map((row, i) => (
-              <div
-                key={i}
-                className={`grid grid-cols-2 border-t border-border ${
-                  i % 2 === 1 ? "bg-secondary/20" : ""
-                }`}
-              >
-                <div className="px-5 py-4 text-sm text-muted-foreground leading-relaxed border-r border-border">
-                  {row.before}
-                </div>
-                <div className="px-5 py-4 text-sm font-medium leading-relaxed">
-                  {row.after}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* WHAT WE INSTALL */}
       <section className="border-t border-border py-24 md:py-32 bg-secondary/40">
         <div className="max-w-5xl mx-auto px-6 md:px-10">
