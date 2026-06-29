@@ -35,6 +35,53 @@ const scenarios = [
   },
 ];
 
+const evaluationCategories = [
+  {
+    title: "Revenue Quality",
+    question: "Can revenue be explained, repeated, and forecast with confidence?",
+    items: [
+      "Revenue concentration",
+      "Customer quality",
+      "Revenue mix",
+      "Retention trends",
+      "Expansion opportunity",
+    ],
+  },
+  {
+    title: "Forecast Confidence",
+    question: "Can leadership reliably predict future performance?",
+    items: [
+      "Forecast methodology",
+      "Pipeline coverage",
+      "Stage definitions",
+      "Conversion consistency",
+      "Forecast accuracy",
+    ],
+  },
+  {
+    title: "Revenue Operating System",
+    question: "Does the company have the infrastructure required to scale?",
+    items: [
+      "Sales process",
+      "Qualification methodology",
+      "CRM architecture",
+      "KPIs & dashboards",
+      "Management cadence",
+    ],
+  },
+  {
+    title: "Leadership Readiness",
+    question: "Can the current leadership team execute the investment thesis?",
+    items: [
+      "Organizational structure",
+      "Decision-making cadence",
+      "Sales management capability",
+      "Hiring readiness",
+      "Accountability systems",
+    ],
+  },
+];
+
 const methodology = [
   { phase: "Design", label: "Revenue Architecture Sprint", current: true },
   { phase: "Assess", label: "Revenue Diagnostic", current: false },
@@ -543,53 +590,6 @@ const RevenueArchitectureSprint = () => {
       <Footer />
     </main>
   );
-];
-
-const evaluationCategories = [
-  {
-    title: "Revenue Quality",
-    question: "Can revenue be explained, repeated, and forecast with confidence?",
-    items: [
-      "Revenue concentration",
-      "Customer quality",
-      "Revenue mix",
-      "Retention trends",
-      "Expansion opportunity",
-    ],
-  },
-  {
-    title: "Forecast Confidence",
-    question: "Can leadership reliably predict future performance?",
-    items: [
-      "Forecast methodology",
-      "Pipeline coverage",
-      "Stage definitions",
-      "Conversion consistency",
-      "Forecast accuracy",
-    ],
-  },
-  {
-    title: "Revenue Operating System",
-    question: "Does the company have the infrastructure required to scale?",
-    items: [
-      "Sales process",
-      "Qualification methodology",
-      "CRM architecture",
-      "KPIs & dashboards",
-      "Management cadence",
-    ],
-  },
-  {
-    title: "Leadership Readiness",
-    question: "Can the current leadership team execute the investment thesis?",
-    items: [
-      "Organizational structure",
-      "Decision-making cadence",
-      "Sales management capability",
-      "Hiring readiness",
-      "Accountability systems",
-    ],
-  },
-];
+}
 
 export default RevenueArchitectureSprint;
