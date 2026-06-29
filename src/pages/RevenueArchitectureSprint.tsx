@@ -120,27 +120,19 @@ const deliverables = [
 const timeline = [
   {
     week: "Week 1",
-    phase: "Discovery",
-    detail:
-      "Data pull, stakeholder interviews across sales, marketing, finance and product. We map the current revenue motion as it actually runs.",
+    items: ["Executive interviews", "Data collection", "CRM review"],
   },
   {
     week: "Week 2",
-    phase: "Assessment",
-    detail:
-      "Pipeline quality, forecast methodology, sales process maturity and operating cadence — pressure-tested against the value creation thesis.",
+    items: ["Revenue assessment", "Leadership assessment", "Pipeline analysis"],
   },
   {
     week: "Week 3",
-    phase: "Architecture",
-    detail:
-      "Target operating model designed across strategy, organization, operations and executive cadence. Risks quantified, priorities sequenced.",
+    items: ["Revenue Architecture", "Value creation planning", "Prioritization"],
   },
   {
     week: "Week 4",
-    phase: "Executive Readout",
-    detail:
-      "Board-ready presentation of findings, the revenue operating blueprint, and a 100-day roadmap aligned to the value creation plan.",
+    items: ["Executive presentation", "Investment recommendations", "100-Day roadmap"],
   },
 ];
 
@@ -441,24 +433,38 @@ const RevenueArchitectureSprint = () => {
         </div>
       </section>
 
-      {/* TIMELINE */}
+      {/* OUR PROCESS */}
       <section className="border-t border-border py-24 md:py-32">
         <div className="max-w-5xl mx-auto px-6 md:px-10">
           <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
-            Timeline
+            Our Process
           </p>
           <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-12 max-w-4xl">
-            Four weeks. Four phases.
+            Four weeks from kickoff to board-ready readout.
           </h2>
-          <div className="border-t border-border">
-            {timeline.map((t) => (
+          <div className="grid md:grid-cols-4 gap-4">
+            {timeline.map((t, i) => (
               <div
                 key={t.week}
-                className="grid md:grid-cols-[200px_180px_1fr] gap-4 md:gap-6 py-3 border-b border-border items-start"
+                className="relative bg-secondary/40 border border-border/60 p-6 flex flex-col gap-4"
               >
-                <div className="font-display text-lg text-accent">{t.week}</div>
-                <div className="font-display text-lg">{t.phase}</div>
-                <p className="text-muted-foreground leading-relaxed">{t.detail}</p>
+                <div className="flex items-center gap-3">
+                  <span className="flex items-center justify-center h-8 w-8 rounded-full bg-accent/10 text-accent font-display text-sm">
+                    {i + 1}
+                  </span>
+                  <span className="font-display text-lg">{t.week}</span>
+                </div>
+                <ul className="space-y-2">
+                  {t.items.map((item) => (
+                    <li
+                      key={item}
+                      className="text-sm md:text-base text-muted-foreground flex items-start gap-2"
+                    >
+                      <span className="mt-2 w-1 h-1 rounded-full bg-accent flex-shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
