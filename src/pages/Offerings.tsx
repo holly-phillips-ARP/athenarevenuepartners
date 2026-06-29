@@ -12,27 +12,31 @@ const ease = [0.22, 1, 0.36, 1] as const;
 const methodology = [
   {
     no: "01",
-    phase: "Design",
+    phase: "DESIGN",
+    product: "Revenue Architecture Sprint",
     body:
-      "Define the revenue operating system the business actually needs—shaped by stage, motion, and the leadership team in place.",
+      "Define the revenue operating system the business needs before investing in people, process, or technology.",
   },
   {
     no: "02",
-    phase: "Assess",
+    phase: "ASSESS",
+    product: "Revenue Diagnostic",
     body:
-      "Pressure-test the current state. Forecast credibility, pipeline quality, process maturity, and leadership cadence—measured against what the next stage requires.",
+      "Identify the operational constraints limiting predictable growth and prioritize the improvements with the greatest impact.",
   },
   {
     no: "03",
-    phase: "Build",
+    phase: "BUILD",
+    product: "Revenue System Build",
     body:
-      "Install the system. Forecast methodology, qualification, repeatable process, and operating cadence—trained into the team that will run it.",
+      "Install the people, process, metrics, technology, and leadership cadence that create a repeatable revenue operating system.",
   },
   {
     no: "04",
-    phase: "Optimize",
+    phase: "OPTIMIZE",
+    product: "Revenue Advisory",
     body:
-      "Tune the system as the business evolves. New leaders, new motions, new stages—the operating system adapts without starting over.",
+      "Provide ongoing strategic oversight to help leadership teams evolve the operating system as the business grows.",
   },
 ];
 
@@ -159,12 +163,10 @@ const Offerings = () => {
           <div className="grid md:grid-cols-2 gap-px bg-border border border-border">
             {methodology.map((m) => (
               <div key={m.no} className="bg-background p-6 md:p-8 flex flex-col">
-                <div className="flex items-baseline gap-4 mb-3">
-                  <span className="font-display text-sm text-muted-foreground">
-                    {m.no}
-                  </span>
-                  <h3 className="font-display text-2xl">{m.phase}</h3>
-                </div>
+                <span className="inline-block self-start text-[10px] uppercase tracking-widest text-accent bg-accent/10 px-2 py-1 rounded mb-4">
+                  {m.phase}
+                </span>
+                <h3 className="font-display text-2xl mb-3">{m.product}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   {m.body}
                 </p>
