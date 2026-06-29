@@ -23,6 +23,13 @@ const whenToUse = [
   "The company has outgrown founder-led sales",
 ];
 
+const methodology = [
+  { phase: "Design", label: "Revenue Architecture Sprint", current: true },
+  { phase: "Assess", label: "Revenue Diagnostic", current: false },
+  { phase: "Build", label: "Revenue System Build", current: false },
+  { phase: "Optimize", label: "Revenue Advisory", current: false },
+];
+
 const pillars = [
   {
     title: "Revenue Strategy",
