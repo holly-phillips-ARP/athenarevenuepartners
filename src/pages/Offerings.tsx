@@ -66,27 +66,27 @@ const offerings = [
 const buyers = [
   {
     tag: "Private Equity",
-    title: "Portfolio Companies",
+    title: "For investment teams and portfolio companies executing a value creation plan.",
     body:
-      "For sponsor-backed companies between thesis and exit—where revenue predictability is a board-level requirement.",
+      "From commercial diligence through exit, we help sponsor-backed companies build revenue operating systems that increase enterprise value.",
     href: "/who-we-work-with/investors/private-equity",
-    cta: "View private equity investor offerings",
+    cta: "View Private Equity Offerings",
   },
   {
     tag: "Venture Capital",
-    title: "Founder-Led Companies",
+    title: "For founders building companies that scale beyond founder-led selling.",
     body:
-      "For post-product-market-fit companies scaling past founder-led selling toward a repeatable revenue motion.",
+      "We help venture-backed companies transform product-market fit into a repeatable go-to-market motion.",
     href: "/who-we-work-with/investors/venture-capital",
-    cta: "View venture capital investor offerings",
+    cta: "View Venture Capital Offerings",
   },
   {
     tag: "Founders & CEOs",
-    title: "Operating Companies",
+    title: "For leadership teams building the revenue operating system themselves.",
     body:
-      "For founders and CEOs building the revenue operation directly—without an investor mandate driving the timeline.",
+      "Whether you're preparing for your first sales hire or your next stage of growth, we help build the infrastructure that supports scale.",
     href: "/who-we-work-with/founders",
-    cta: "View founder & CEO offerings",
+    cta: "View Founder & CEO Offerings",
   },
 ];
 
