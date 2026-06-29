@@ -182,7 +182,7 @@ const VentureCapital = () => {
             What we see at the board table
           </p>
           <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-12 max-w-4xl">
-            Four patterns that quietly cost the next round.
+            Four predictable gaps between product-market fit and repeatable growth.
           </h2>
           <div className="grid md:grid-cols-2 gap-px bg-border/60 border border-border/60">
             {problems.map((p) => (
