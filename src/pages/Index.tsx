@@ -147,22 +147,54 @@ const Index = () => {
       {/* ROUTING CARDS */}
       <section className="border-t border-border py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-6 md:px-10">
-          <div className="grid md:grid-cols-12 gap-10 mb-14">
-            <div className="md:col-span-5">
-              <p className="text-xs uppercase tracking-[0.2em] text-accent mb-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start mb-20">
+            <div className="space-y-6 border-t border-border pt-8">
+              <p className="text-xs uppercase tracking-[0.2em] text-accent">
                 Who we work with
               </p>
-              <h2 className="font-display text-2xl md:text-3xl leading-snug text-balance">
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-balance">
                 Built for moments that matter.
               </h2>
             </div>
-            <div className="md:col-span-5 md:col-start-8">
-              <p className="text-muted-foreground leading-relaxed md:pt-10 whitespace-pre-line">
-                Whether you're investing in a company or leading one, the moments that create the most value—and the most risk—are remarkably similar.{"\n\n"}
-                Growth.{"\n"}
-                Acquisition.{"\n"}
-                Leadership change.{"\n"}
-                Exit.{"\n\n"}
+            <div className="flex flex-col gap-12 border-t border-border pt-8">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed font-light">
+                Whether you're investing in a company or leading one, the moments that create the most value—and the most risk—are remarkably similar.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+                <div className="space-y-4">
+                  <h4 className="text-xs uppercase tracking-widest text-foreground border-b border-border pb-2">
+                    Growth
+                  </h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Scaling revenue without losing the operating discipline that made it possible.
+                  </p>
+                </div>
+                <div className="space-y-4">
+                  <h4 className="text-xs uppercase tracking-widest text-foreground border-b border-border pb-2">
+                    Acquisition
+                  </h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Integrating teams and go-to-market motions without losing momentum.
+                  </p>
+                </div>
+                <div className="space-y-4">
+                  <h4 className="text-xs uppercase tracking-widest text-foreground border-b border-border pb-2">
+                    Leadership change
+                  </h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Maintaining revenue continuity when leadership transitions.
+                  </p>
+                </div>
+                <div className="space-y-4">
+                  <h4 className="text-xs uppercase tracking-widest text-foreground border-b border-border pb-2">
+                    Exit
+                  </h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Building the forecast reliability and documentation buyers expect.
+                  </p>
+                </div>
+              </div>
+              <p className="text-muted-foreground leading-relaxed">
                 Athena helps companies navigate each by building a revenue operating system that makes growth repeatable.
               </p>
             </div>
