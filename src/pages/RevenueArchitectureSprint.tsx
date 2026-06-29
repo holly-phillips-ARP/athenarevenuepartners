@@ -206,9 +206,34 @@ const RevenueArchitectureSprint = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease }}
             >
-              <p className="text-xs uppercase tracking-[0.2em] text-accent mb-6">
-                Revenue Architecture Sprint
-              </p>
+              <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 mb-6">
+                <p className="text-xs uppercase tracking-[0.2em] text-accent">
+                  Revenue Architecture Sprint
+                </p>
+                <div className="flex items-center gap-2 overflow-x-auto pb-1 lg:pb-0">
+                  {methodology.map((m, i) => (
+                    <div key={m.phase} className="flex items-center gap-2 flex-shrink-0">
+                      <div className="flex items-center gap-1.5">
+                        <div
+                          className={`h-1.5 w-1.5 rounded-full ${
+                            m.current ? "bg-accent" : "bg-muted-foreground/30"
+                          }`}
+                        />
+                        <span
+                          className={`text-[10px] uppercase tracking-[0.15em] whitespace-nowrap ${
+                            m.current ? "text-accent" : "text-muted-foreground"
+                          }`}
+                        >
+                          {m.phase}
+                        </span>
+                      </div>
+                      {i < methodology.length - 1 && (
+                        <ChevronRight className="h-3 w-3 text-muted-foreground/30 flex-shrink-0" />
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
               <h1 className="font-display text-4xl md:text-6xl lg:text-7xl leading-[1.02] mb-8 text-balance">
                 Know what you're buying before you buy it.
               </h1>
