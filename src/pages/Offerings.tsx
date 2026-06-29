@@ -163,12 +163,10 @@ const Offerings = () => {
           <div className="grid md:grid-cols-2 gap-px bg-border border border-border">
             {methodology.map((m) => (
               <div key={m.no} className="bg-background p-6 md:p-8 flex flex-col">
-                <div className="flex items-baseline gap-4 mb-3">
-                  <span className="font-display text-sm text-muted-foreground">
-                    {m.no}
-                  </span>
-                  <h3 className="font-display text-2xl">{m.phase}</h3>
-                </div>
+                <span className="inline-block self-start text-[10px] uppercase tracking-widest text-accent bg-accent/10 px-2 py-1 rounded mb-4">
+                  {m.phase}
+                </span>
+                <h3 className="font-display text-2xl mb-3">{m.product}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   {m.body}
                 </p>
