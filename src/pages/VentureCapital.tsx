@@ -84,40 +84,34 @@ const moments = [
 
 const engagements = [
   {
+    slug: "revenue-architecture-sprint",
     tag: "POST-PRODUCT MARKET FIT",
     name: "Revenue Architecture Sprint",
     desc:
-      "For founder-led companies preparing for the next stage of growth. Design the revenue operating system before scaling the team.",
-    link: "/who-we-work-with/investors/private-equity/revenue-architecture-sprint",
+      "For founder-led companies preparing for the next stage of growth.\n\nDesign the revenue operating system before scaling the team.",
   },
   {
+    slug: "revenue-diagnostic",
     tag: "SCALING COMPANY",
     name: "Revenue Diagnostic",
     desc:
-      "For companies missing growth targets or struggling to create predictable execution. Identify the operational constraints limiting scale and prioritize improvements with the greatest business impact.",
-    link: "/who-we-work-with/investors/private-equity/revenue-diagnostic",
+      "For companies missing growth targets or struggling to create predictable execution.\n\nIdentify the operational constraints limiting scale and prioritize improvements with the greatest business impact.",
   },
   {
+    slug: "revenue-system-build",
     tag: "CORE ENGAGEMENT",
     name: "Revenue System Build",
     desc:
-      "For companies ready to operationalize growth. Install the people, process, metrics, technology, and leadership cadence that create predictable revenue.",
-    link: "/who-we-work-with/investors/private-equity/revenue-system-build",
+      "For companies ready to operationalize growth.\n\nInstall the people, process, metrics, technology and operating cadence that create predictable revenue.",
     featured: true,
   },
   {
+    slug: "revenue-advisory",
     tag: "ONGOING",
     name: "Revenue Advisory",
     desc:
-      "For companies committed to continuous improvement. Quarterly strategic oversight to pressure-test forecasts, coach leadership, and evolve the revenue operating system as the business grows.",
-    link: "/who-we-work-with/investors/private-equity/revenue-advisory",
-  },
-  {
-    tag: "LEADERSHIP TRANSITION",
-    name: "Revenue Bridge",
-    desc:
-      "A leadership transition doesn't require a different methodology—it requires a different starting point. Whether you're hiring your first VP of Sales, your first CRO, or replacing an executive, we install the operating system before or alongside the transition so new leaders spend their first months executing—not diagnosing.",
-    link: "/who-we-work-with/investors/private-equity/revenue-bridge",
+      "For companies committed to continuous improvement.\n\nQuarterly strategic oversight to pressure-test forecasts, coach leadership, and evolve the revenue operating system as the business grows.",
+    advisory: true,
   },
 ];
 
