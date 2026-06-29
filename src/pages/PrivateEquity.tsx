@@ -197,7 +197,7 @@ const PrivateEquity = () => {
       <section className="border-t border-border py-24 md:py-32">
         <div className="max-w-5xl mx-auto px-6 md:px-10">
           <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
-            What we install
+            THE REVENUE OPERATING SYSTEM
           </p>
           <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-8 max-w-4xl">
             Four deliverables. Ninety days. A revenue operation your board can trust.
