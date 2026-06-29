@@ -161,15 +161,13 @@ const PrivateEquity = () => {
               For Private Equity Investors
             </p>
             <h1 className="font-display text-5xl md:text-7xl leading-[1.05] mb-8 text-balance">
-              You bought a business.{" "}
+              Every investment comes with a value creation plan.{" "}
               <em className="italic text-accent font-light">
-                You inherited the prior owner's revenue habits.
+                Very few come with the revenue operating system needed to execute it.
               </em>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">
-              In most PE-backed companies, revenue was built on the founder's relationships,
-              reputation, and gut. That doesn't scale, and it doesn't underwrite. We install the
-              system that replaces it — so the value-creation plan runs on architecture, not personality.
+              Whether you're evaluating an acquisition, integrating a new portfolio company, preparing for a leadership transition, or positioning for exit, Athena installs the revenue operating systems that turn investment theses into operational reality.
             </p>
           </motion.div>
         </div>
@@ -179,7 +177,7 @@ const PrivateEquity = () => {
       <section className="border-t border-border py-24 md:py-32 bg-secondary/40">
         <div className="max-w-5xl mx-auto px-6 md:px-10">
           <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
-            What we see at close
+            WHAT WE SEE MOST OFTEN
           </p>
           <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-12 max-w-4xl">
             Four predictable gaps between the CIM and reality.
@@ -199,7 +197,7 @@ const PrivateEquity = () => {
       <section className="border-t border-border py-24 md:py-32">
         <div className="max-w-5xl mx-auto px-6 md:px-10">
           <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
-            What we install
+            THE REVENUE OPERATING SYSTEM
           </p>
           <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-8 max-w-4xl">
             Four deliverables. Ninety days. A revenue operation your board can trust.
