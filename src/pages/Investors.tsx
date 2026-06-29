@@ -15,7 +15,7 @@ const audiences = [
     title: "Private Equity Investors",
     href: "/who-we-work-with/investors/private-equity",
     description: "Increase enterprise value through revenue quality",
-    items: ["Due diligence", "First 100 days", "Leadership transition", "Exit readiness"],
+    items: ["Pre-close diligence", "First 100 days", "Leadership transition", "Exit readiness"],
   },
   {
     title: "Venture Capital Investors",
@@ -64,7 +64,7 @@ const Investors = () => {
             transition={{ duration: 0.7, ease }}
           >
             <p className="text-xs uppercase tracking-[0.2em] text-accent mb-6">
-              For investors · Operating Partners · Portfolio Leaders
+              FOR INVESTORS · OPERATING PARTNERS · PORTFOLIO LEADERS
             </p>
             <h1 className="font-display text-5xl md:text-7xl leading-[1.05] mb-8 text-balance">
               Revenue problems rarely start with revenue.{" "}
@@ -121,7 +121,7 @@ const Investors = () => {
             Let's talk about your portfolio.
           </h2>
           <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10">
-            If you're evaluating an investment, accelerating a portfolio company, or preparing for a leadership transition or exit, we'd be happy to have a candid conversation about whether we're the right partner.
+            Whether you're evaluating an investment, accelerating a portfolio company, or preparing for a leadership transition or exit, determine whether the revenue operating system is the next constraint to solve.
           </p>
           <Button
             onClick={() => setContactOpen(true)}
