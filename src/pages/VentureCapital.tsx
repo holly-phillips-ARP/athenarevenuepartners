@@ -240,7 +240,6 @@ const VentureCapital = () => {
         </div>
       </section>
 
-
       {/* OFFERINGS */}
       <section className="border-t border-border py-24 md:py-32 bg-secondary/40">
         <div className="max-w-5xl mx-auto px-6 md:px-10">
