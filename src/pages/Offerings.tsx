@@ -133,11 +133,14 @@ const Offerings = () => {
                 Tailored to the buyer.
               </em>
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">
-              Every engagement follows the same four phases—Design, Assess, Build, Optimize.
-              How we apply them depends on who's at the table: a private equity sponsor, a
-              venture investor, or the founder running the company.
-            </p>
+            <div className="space-y-6">
+              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">
+                Every Athena Revenue Partners engagement&nbsp;is built on the same Revenue Operating System methodology. The engagement you start with depends on where your business is today - not who you are.
+              </p>
+              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">
+                Whether you're an investor evaluating a company, a portfolio executive driving transformation, or a founder preparing for the next stage of growth, we meet you where you are and build from there.
+              </p>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -147,7 +150,7 @@ const Offerings = () => {
         <div className="max-w-5xl mx-auto px-6 md:px-10">
           <div className="mb-14 max-w-3xl">
             <p className="text-xs uppercase tracking-[0.2em] text-accent mb-4">
-              Methodology
+              THE ATHENA METHOD
             </p>
             <h2 className="font-display text-4xl md:text-5xl leading-[1.05] text-balance">
               Design. Assess. Build. Optimize.
