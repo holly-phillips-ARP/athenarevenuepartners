@@ -147,6 +147,22 @@ const Index = () => {
       {/* ROUTING CARDS */}
       <section className="border-t border-border py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-6 md:px-10">
+          <div className="grid md:grid-cols-12 gap-10 mb-14">
+            <div className="md:col-span-5">
+              <p className="text-xs uppercase tracking-[0.2em] text-accent mb-4">
+                Who we work with
+              </p>
+              <h2 className="font-display text-2xl md:text-3xl leading-snug text-balance">
+                Every investor backed company eventually reaches a point where growth depends less on individual talent and more on a repeatable revenue operating system.
+              </h2>
+            </div>
+            <div className="md:col-span-5 md:col-start-8">
+              <p className="text-muted-foreground leading-relaxed md:pt-10">
+                Whether you're investing in the business or leading it, Athena helps install the systems that make revenue predictable, measurable, and scalable.
+              </p>
+            </div>
+          </div>
+
           <div className="grid md:grid-cols-2 gap-px bg-border border border-border">
             {routes.map((r) => (
               <Link
