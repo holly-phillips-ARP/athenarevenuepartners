@@ -27,9 +27,9 @@ const stats = [
 const routes = [
   {
     label: "For investors",
-    headline: "Protecting portfolio value starts with predictable revenue.",
+    headline: "Creating and protecting portfolio value starts with predictable revenue.",
     body:
-      "We work with operating partners and deal teams to install revenue architecture in portfolio companies — post-acquisition, pre-raise, and pre-hire.",
+      "We partner with venture capital and private equity firms to evaluate, build and scale revenue operating systems across portfolio companies - from pre-investment diligence to post acquisition transformation, leadership transitions and exit readiness.",
     href: "/who-we-work-with/investors",
     cta: "How we work with investors",
   },
