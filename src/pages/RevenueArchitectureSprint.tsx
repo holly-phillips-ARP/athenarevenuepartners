@@ -7,7 +7,6 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ContactDialog } from "@/components/ContactDialog";
-import { ContactDialog } from "@/components/ContactDialog";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
