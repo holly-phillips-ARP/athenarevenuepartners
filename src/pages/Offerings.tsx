@@ -159,6 +159,9 @@ const Offerings = () => {
             <h2 className="font-display text-4xl md:text-5xl leading-[1.05] text-balance">
               Design. Assess. Build. Optimize.
             </h2>
+            <p className="text-muted-foreground leading-relaxed mt-6">
+              Every engagement fits within one repeatable methodology.
+            </p>
           </div>
           <div className="grid md:grid-cols-2 gap-px bg-border border border-border">
             {methodology.map((m) => (
