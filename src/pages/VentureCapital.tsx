@@ -34,27 +34,23 @@ const problems = [
 const deliverables = [
   {
     no: "01",
-    title: "Forecast methodology",
-    body:
-      "A defined process for building, reviewing, and defending a forecast number. ±10% accuracy is the benchmark we hold ourselves to.",
+    title: "Forecast Methodology",
+    body: "A repeatable process for forecasting, inspection, and executive decision-making.",
   },
   {
     no: "02",
-    title: "Pipeline qualification",
-    body:
-      "A consistent standard for what's real versus assumed — so coverage gaps are visible before the quarter closes short.",
+    title: "Revenue Qualification",
+    body: "A common framework that separates real opportunities from optimistic ones.",
   },
   {
     no: "03",
-    title: "Repeatable sales process",
-    body:
-      "A defined motion from first contact to close — so wins are replicable, losses are diagnosable, and the company stops depending on the founder to close.",
+    title: "Repeatable Sales Process",
+    body: "A documented motion that allows new sales leaders and new hires to execute consistently—not invent their own process.",
   },
   {
     no: "04",
-    title: "Leadership operating cadence",
-    body:
-      "A weekly and monthly inspection rhythm that surfaces problems early and keeps the team accountable to the number — between board meetings, not at them.",
+    title: "Leadership Operating Cadence",
+    body: "A management rhythm that gives founders, executives, and boards confidence in the number between meetings—not after them.",
   },
 ];
 
@@ -202,11 +198,14 @@ const VentureCapital = () => {
             THE REVENUE OPERATING SYSTEM
           </p>
           <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-8 max-w-4xl">
-            Four deliverables. Ninety days. A revenue operation your board can trust.
+            Four pillars. One methodology. A revenue operating system your board can trust.
           </h2>
           <p className="text-muted-foreground leading-relaxed max-w-3xl mb-12">
-            We don't advise. We install. Every engagement ends with a working system — not a deck,
-            not a strategy, not a set of recommendations.
+            We don't advise.
+            <br />
+            We install.
+            <br />
+            Every engagement ends with a working operating system—not a deck, not a strategy, not a list of recommendations.
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-border/60 border border-border/60">
