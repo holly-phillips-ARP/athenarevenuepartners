@@ -354,7 +354,7 @@ const Founders = () => {
                 <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">{e.desc}</p>
                 <div className="mt-6 pt-2">
                   <Link
-                    to={`/who-we-work-with/investors/private-equity/${e.slug}`}
+                    to={`/who-we-work-with/founders/${e.slug}`}
                     className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent/80 transition-colors"
                   >
                     Learn More →
