@@ -110,7 +110,7 @@ const Index = () => {
             {...fadeUp(0)}
             className="text-xs uppercase tracking-[0.2em] text-accent mb-6"
           >
-            BUILD A REVENUE ORGANIZATION INVESTORS CAN TRUST
+            BUILD REVENUE ORGANIZATIONS INVESTORS CAN TRUST
           </motion.p>
           <motion.h1
             {...fadeUp(0.08)}
