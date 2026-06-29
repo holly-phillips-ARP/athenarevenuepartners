@@ -95,29 +95,29 @@ const levers = [
 
 const engagements = [
   {
+    tag: "PRE-INVESTMENT",
+    name: "Revenue Architecture Sprint",
+    desc:
+      "For companies you're evaluating before acquisition.\n\n\nEvaluate the quality of the revenue operating system and leave with a value creation blueprint before you close.\u00a0",
+  },
+  {
     tag: "EXISTING PORTFOLIO COMPANY",
     name: "Revenue Diagnostic",
     desc:
-      "For portfolio companies that are missing plan, struggling to forecast accurately, or preparing for operational improvement.\nWe evaluate the current revenue operating system, identify what's limiting performance and prioritize the improvements with the greatest impact on enterprise value.",
+      "For portfolio companies missing plan or struggling to forecast.\n\n\nIdentify what's limiting performance and prioritize the improvement with the greatest impact on enterprise value.",
   },
   {
-    tag: "Core engagement",
+    tag: "CORE ENGAGEMENT",
     name: "Revenue System Build",
     desc:
-      "For portfolio companies ready to install a repeatable revenue operating system.\nWe implement the people, process, metrics, technology and operating cadence that turns revenue into a repeatable business capability - not individual heroics.",
+      "For companies ready to operationalize growth.\n\n\nInstall the people, process, metrics, technology and operating cadence that create predictable revenue.\u00a0",
     featured: true,
   },
   {
-    tag: "Pre-investment",
-    name: "Revenue Architecture Sprint",
-    desc:
-      "For companies you're evaluating before acquisition.\nWe assess the quality of the existing revenue operating system, identify investment risks and deliver a value creation blueprint with a prioritized 100-day roadmap.",
-  },
-  {
     tag: "LEADERSHIP TRANSITION",
-    name: "Executive Advisory",
+    name: "Revenue Advisory",
     desc:
-      "For companies that want ongoing strategic oversight after implementation.\nWe continue partnering with operating partners and executive teams to review performance, pressure-test forecasts, coach leaders and evolve the revenue operating system as the business grows.",
+      "For companies committed to continuous improvement.\n\n\nQuarterly strategic oversight to pressure-test forecasts, coach leadership, and optimize the revenue operating system.",
     note:
       "You own the system. We're the outside eyes. Available to Revenue System Build alumni on a defined quarterly basis.",
     advisory: true,
