@@ -311,11 +311,11 @@ const VentureCapital = () => {
             Let's talk about your portfolio.
           </h2>
           <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10">
-            If you have a portfolio company stuck between founder-led selling and a repeatable
-            motion, we're happy to have a candid conversation about fit.
+            If a founder has achieved product-market fit but growth still depends on them, let's
+            determine whether the revenue operating system is the next constraint to solve.
           </p>
           <Button onClick={() => setContactOpen(true)} size="lg" className="rounded-full px-8 h-12">
-            Schedule a conversation →
+            Start the conversation →
           </Button>
         </div>
       </section>
