@@ -204,7 +204,7 @@ const Founders = () => {
             From founder-led selling through scalable growth.
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-px bg-border border border-border">
+          <div className="border border-border">
             {[
               {
                 title: "Product-Market Fit",
@@ -222,8 +222,11 @@ const Founders = () => {
                 title: "Preparing for the Next Stage",
                 body: "Growth is starting to outpace the way you've always operated.\n\nThe founder is still the best salesperson.\n\nForecasts are still based on intuition.\n\nThe company is ready for a system.",
               },
-            ].map((item) => (
-              <div key={item.title} className="bg-background p-6 md:p-8">
+            ].map((item, i) => (
+              <div
+                key={item.title}
+                className={`p-6 md:p-8 ${i !== 0 ? "border-t border-border" : ""}`}
+              >
                 <h3 className="font-display text-lg mb-3">{item.title}</h3>
                 <p className="text-sm text-muted-foreground whitespace-pre-line">
                   {item.body}
@@ -249,44 +252,6 @@ const Founders = () => {
               <div key={s.title} className="bg-background p-6 md:p-8">
                 <h3 className="font-display text-lg mb-3">{s.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{s.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* BEFORE / AFTER */}
-      <section className="border-t border-border py-24 md:py-32">
-        <div className="max-w-5xl mx-auto px-6 md:px-10">
-          <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
-            What changes
-          </p>
-          <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-12 max-w-4xl">
-            Before and after a revenue system is in place.
-          </h2>
-
-          <div className="border border-border">
-            <div className="grid grid-cols-2 bg-secondary/40">
-              <div className="px-5 py-3 text-xs uppercase tracking-widest text-muted-foreground border-r border-border">
-                Before
-              </div>
-              <div className="px-5 py-3 text-xs uppercase tracking-widest text-accent">
-                After
-              </div>
-            </div>
-            {fromTo.map((row, i) => (
-              <div
-                key={i}
-                className={`grid grid-cols-2 border-t border-border ${
-                  i % 2 === 1 ? "bg-secondary/20" : ""
-                }`}
-              >
-                <div className="px-5 py-4 text-sm text-muted-foreground leading-relaxed border-r border-border">
-                  {row.before}
-                </div>
-                <div className="px-5 py-4 text-sm font-medium leading-relaxed">
-                  {row.after}
-                </div>
               </div>
             ))}
           </div>
