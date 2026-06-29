@@ -78,16 +78,16 @@ const Index = () => {
   return (
     <main className="min-h-screen bg-background">
       <Helmet>
-        <title>Athena Revenue Partners — B2B Revenue Architecture</title>
+        <title>Athena Revenue Partners — BUILD A REVENUE ORGANIZATIONS INVESTORS CAN TRUST</title>
         <meta
           name="description"
-          content="We install repeatable revenue systems for investor-backed companies and B2B founders — replacing founder-dependent sales with a process your board can underwrite and your team can execute."
+          content="Athena Revenue Partners builds revenue operating systems that make growth predictable, forecasts defensible and leadership transitions scalable."
         />
         <link rel="canonical" href="https://athenarevenuepartners.com/" />
-        <meta property="og:title" content="Athena Revenue Partners — B2B Revenue Architecture" />
+        <meta property="og:title" content="Athena Revenue Partners — BUILD A REVENUE ORGANIZATIONS INVESTORS CAN TRUST" />
         <meta
           property="og:description"
-          content="Revenue that runs on a system, not on the people who built it."
+          content="Revenue that runs on a system, not on heroics."
         />
         <meta property="og:url" content="https://athenarevenuepartners.com/" />
         <meta property="og:type" content="website" />
@@ -110,7 +110,7 @@ const Index = () => {
             {...fadeUp(0)}
             className="text-xs uppercase tracking-[0.2em] text-accent mb-6"
           >
-            B2B Revenue Architecture
+            BUILD A REVENUE ORGANIZATIONS INVESTORS CAN TRUST
           </motion.p>
           <motion.h1
             {...fadeUp(0.08)}
@@ -118,16 +118,14 @@ const Index = () => {
           >
             Revenue that runs on a system,{" "}
             <em className="italic text-accent font-light">
-              not on the people who built it.
+              not on heroics.
             </em>
           </motion.h1>
           <motion.p
             {...fadeUp(0.16)}
             className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl"
           >
-            We install repeatable revenue systems for investor-backed companies and B2B founders —
-            replacing founder-dependent sales with a process your board can underwrite and
-            your team can execute.
+            Athena Revenue Partners builds revenue operating systems that make growth predictable, forecasts defensible and leadership transitions scalable.
           </motion.p>
 
           <motion.div
