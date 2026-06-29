@@ -470,10 +470,10 @@ const RevenueArchitectureSprint = () => {
       <section className="border-t border-border py-24 md:py-32">
         <div className="max-w-5xl mx-auto px-6 md:px-10 text-center">
           <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-6 max-w-3xl mx-auto">
-            Design the operating system before you build it.
+            Know what you're buying before you buy it.
           </h2>
           <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10">
-            Four weeks to a defensible read on the revenue engine and a 100-day roadmap your
+            2–4 weeks to a defensible read on the revenue engine and a 100-day roadmap your
             board can act on.
           </p>
           <Button
