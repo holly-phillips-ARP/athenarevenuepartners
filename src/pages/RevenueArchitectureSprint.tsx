@@ -497,9 +497,15 @@ const RevenueArchitectureSprint = () => {
           <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
             Typical next steps
           </p>
-          <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-12 max-w-4xl">
+          <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-6 max-w-4xl">
             Where the sprint usually leads.
           </h2>
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-3xl mb-12">
+            If the Revenue Architecture Sprint identifies opportunities to strengthen the revenue
+            operating system, the next step is typically a Revenue System Build to implement the
+            people, process, metrics, technology, and operating cadence required to execute the
+            value creation plan.
+          </p>
           <div className="grid md:grid-cols-3 gap-px bg-border/60 border border-border/60">
             {nextSteps.map((n) => (
               <Link
