@@ -98,26 +98,26 @@ const engagements = [
     tag: "PRE-INVESTMENT",
     name: "Revenue Architecture Sprint",
     desc:
-      "For companies you're evaluating before acquisition.\n\n\nEvaluate the quality of the revenue operating system and leave with a value creation blueprint before you close.\u00a0",
+      "For companies you're evaluating before acquisition.\n\nEvaluate the quality of the revenue operating system and leave with a value creation blueprint before you close.\u00a0",
   },
   {
     tag: "EXISTING PORTFOLIO COMPANY",
     name: "Revenue Diagnostic",
     desc:
-      "For portfolio companies missing plan or struggling to forecast.\n\n\nIdentify what's limiting performance and prioritize the improvement with the greatest impact on enterprise value.",
+      "For portfolio companies missing plan or struggling to forecast.\n\nIdentify what's limiting performance and prioritize the improvement with the greatest impact on enterprise value.",
   },
   {
     tag: "CORE ENGAGEMENT",
     name: "Revenue System Build",
     desc:
-      "For companies ready to operationalize growth.\n\n\nInstall the people, process, metrics, technology and operating cadence that create predictable revenue.\u00a0",
+      "For companies ready to operationalize growth.\n\nInstall the people, process, metrics, technology and operating cadence that create predictable revenue.\u00a0",
     featured: true,
   },
   {
     tag: "LEADERSHIP TRANSITION",
     name: "Revenue Advisory",
     desc:
-      "For companies committed to continuous improvement.\n\n\nQuarterly strategic oversight to pressure-test forecasts, coach leadership, and optimize the revenue operating system.",
+      "For portfolio companies committed to continuous improvement.\n\nQuarterly strategic oversight to pressure-test forecasts, coach leadership, and optimize the revenue operating system.",
     note:
       "You own the system. We're the outside eyes. Available to Revenue System Build alumni on a defined quarterly basis.",
     advisory: true,
