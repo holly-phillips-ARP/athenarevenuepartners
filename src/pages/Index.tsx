@@ -37,7 +37,7 @@ const routes = [
     label: "For founders & CEOs",
     headline: "You built the revenue. Now let's make it run without you.",
     body:
-      "We work with post-PMF B2B founders who are ready to step back from deals and build a sales motion that doesn't depend on them being in every room.",
+      "We help founders and leadership teams replace founder dependence with a repeatable revenue operation system - that scales beyond any one individual.",
     href: "/who-we-work-with/founders",
     cta: "How we work with founders",
   },
