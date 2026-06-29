@@ -223,10 +223,12 @@ const RevenueArchitectureSprint = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-border/60 border border-border/60">
             {pillars.map((p, i) => (
               <div key={p.title} className="bg-background p-6 flex flex-col">
-                <div className="font-display text-xs text-accent mb-4 tracking-widest">
-                  {String(i + 1).padStart(2, "0")}
+                <div className="flex items-baseline gap-3 mb-4">
+                  <span className="font-display text-xs text-accent tracking-widest">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <h3 className="font-display text-lg leading-snug">{p.title}</h3>
                 </div>
-                <h3 className="font-display text-lg mb-4 leading-snug">{p.title}</h3>
                 <ul className="space-y-2">
                   {p.items.map((it) => (
                     <li
@@ -277,7 +279,7 @@ const RevenueArchitectureSprint = () => {
             {timeline.map((t) => (
               <div
                 key={t.week}
-                className="grid md:grid-cols-[200px_180px_1fr] gap-4 md:gap-10 py-6 border-b border-border items-start"
+                className="grid md:grid-cols-[200px_180px_1fr] gap-4 md:gap-6 py-3 border-b border-border items-start"
               >
                 <div className="font-display text-lg text-accent">{t.week}</div>
                 <div className="font-display text-lg">{t.phase}</div>
