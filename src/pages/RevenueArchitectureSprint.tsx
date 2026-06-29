@@ -279,7 +279,7 @@ const RevenueArchitectureSprint = () => {
             {timeline.map((t) => (
               <div
                 key={t.week}
-                className="grid md:grid-cols-[200px_180px_1fr] gap-4 md:gap-10 py-6 border-b border-border items-start"
+                className="grid md:grid-cols-[200px_180px_1fr] gap-4 md:gap-6 py-3 border-b border-border items-start"
               >
                 <div className="font-display text-lg text-accent">{t.week}</div>
                 <div className="font-display text-lg">{t.phase}</div>
