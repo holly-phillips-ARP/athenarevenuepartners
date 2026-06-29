@@ -204,7 +204,7 @@ const Founders = () => {
             From founder-led selling through scalable growth.
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-px bg-border border border-border">
+          <div className="border border-border">
             {[
               {
                 title: "Product-Market Fit",
@@ -222,8 +222,11 @@ const Founders = () => {
                 title: "Preparing for the Next Stage",
                 body: "Growth is starting to outpace the way you've always operated.\n\nThe founder is still the best salesperson.\n\nForecasts are still based on intuition.\n\nThe company is ready for a system.",
               },
-            ].map((item) => (
-              <div key={item.title} className="bg-background p-6 md:p-8">
+            ].map((item, i) => (
+              <div
+                key={item.title}
+                className={`p-6 md:p-8 ${i !== 0 ? "border-t border-border" : ""}`}
+              >
                 <h3 className="font-display text-lg mb-3">{item.title}</h3>
                 <p className="text-sm text-muted-foreground whitespace-pre-line">
                   {item.body}
