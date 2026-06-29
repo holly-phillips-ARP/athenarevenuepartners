@@ -252,8 +252,9 @@ const Offerings = () => {
           <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-6 max-w-3xl mx-auto">
             Not sure where to start?
           </h2>
-          <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10 whitespace-pre-line">
+          <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10">
             You don't need to know which engagement you need. Just tell us where you are today.
+            <br />
             We'll help determine whether you're ready to design, assess, build or optimize your revenue operating system - and if we're not the right fit, we'll tell you that too.
           </p>
           <Button
