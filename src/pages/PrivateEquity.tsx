@@ -177,7 +177,7 @@ const PrivateEquity = () => {
       <section className="border-t border-border py-24 md:py-32 bg-secondary/40">
         <div className="max-w-5xl mx-auto px-6 md:px-10">
           <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
-            What we see at close
+            WHAT WE SEE MOST OFTEN
           </p>
           <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-12 max-w-4xl">
             Four predictable gaps between the CIM and reality.
