@@ -147,13 +147,13 @@ const RevenueArchitectureSprint = () => {
         <title>Revenue Architecture Sprint | Athena Revenue Partners</title>
         <meta
           name="description"
-          content="A four-week sprint to design the revenue operating system before you build it. For PE firms evaluating acquisitions and portfolio companies outgrowing founder-led sales."
+          content="Evaluate the quality of a company's revenue operating system before acquisition and leave with a roadmap for post-close value creation."
         />
         <link rel="canonical" href={url} />
         <meta property="og:title" content="Revenue Architecture Sprint | Athena Revenue Partners" />
         <meta
           property="og:description"
-          content="Design the revenue operating system before you build it. A four-week diligence-grade sprint for PE-backed companies."
+          content="Evaluate the quality of a company's revenue operating system before acquisition and leave with a roadmap for post-close value creation."
         />
         <meta property="og:url" content={url} />
         <meta property="og:type" content="website" />
@@ -185,16 +185,45 @@ const RevenueArchitectureSprint = () => {
               transition={{ duration: 0.7, ease }}
             >
               <p className="text-xs uppercase tracking-[0.2em] text-accent mb-6">
-                Pre-investment · 4 weeks
-              </p>
-              <h1 className="font-display text-5xl md:text-7xl leading-[1.02] mb-8 text-balance">
                 Revenue Architecture Sprint
-              </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl leading-relaxed">
-                <em className="italic text-foreground/90 font-light">
-                  Design the revenue operating system before you build it.
-                </em>
               </p>
+              <h1 className="font-display text-4xl md:text-6xl lg:text-7xl leading-[1.02] mb-8 text-balance">
+                Know what you're buying before you buy it.
+              </h1>
+              <div className="space-y-4 text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">
+                <p>
+                  The Revenue Architecture Sprint evaluates the quality of a company's revenue operating system before acquisition and delivers the roadmap for post-close value creation.
+                </p>
+                <p>
+                  Because financial diligence tells you what happened.
+                </p>
+                <p>
+                  Revenue diligence tells you what happens next.
+                </p>
+              </div>
+              <div className="mt-10 p-5 border border-border/60 bg-background/50">
+                <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground mb-4">
+                  Typical Engagement
+                </p>
+                <ul className="grid sm:grid-cols-2 gap-3">
+                  <li className="flex items-start gap-2 text-sm">
+                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0" />
+                    2–4 weeks
+                  </li>
+                  <li className="flex items-start gap-2 text-sm">
+                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0" />
+                    Executive-level assessment
+                  </li>
+                  <li className="flex items-start gap-2 text-sm">
+                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0" />
+                    Fixed-fee engagement
+                  </li>
+                  <li className="flex items-start gap-2 text-sm">
+                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0" />
+                    Designed for commercial due diligence
+                  </li>
+                </ul>
+              </div>
             </motion.div>
 
             <motion.div
@@ -441,10 +470,10 @@ const RevenueArchitectureSprint = () => {
       <section className="border-t border-border py-24 md:py-32">
         <div className="max-w-5xl mx-auto px-6 md:px-10 text-center">
           <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-6 max-w-3xl mx-auto">
-            Design the operating system before you build it.
+            Know what you're buying before you buy it.
           </h2>
           <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10">
-            Four weeks to a defensible read on the revenue engine and a 100-day roadmap your
+            2–4 weeks to a defensible read on the revenue engine and a 100-day roadmap your
             board can act on.
           </p>
           <Button
