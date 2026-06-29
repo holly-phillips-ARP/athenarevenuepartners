@@ -16,11 +16,23 @@ import {
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
-const whenToUse = [
-  "You're evaluating an acquisition",
-  "A founder is hiring their first sales leader",
-  "You need confidence in the revenue model",
-  "The company has outgrown founder-led sales",
+const scenarios = [
+  {
+    title: "Commercial Due Diligence",
+    body: "Understand whether the revenue assumptions in the investment model are supported by a repeatable operating system.",
+  },
+  {
+    title: "Final Investment Committee Review",
+    body: "Pressure-test the revenue story before capital is committed.",
+  },
+  {
+    title: "Platform Acquisition",
+    body: "Build a prioritized value creation roadmap before Day One.",
+  },
+  {
+    title: "Add-on Acquisition",
+    body: "Determine how the acquired company should integrate into the broader revenue operating model.",
+  },
 ];
 
 const methodology = [
@@ -303,13 +315,17 @@ const RevenueArchitectureSprint = () => {
             WHEN TO BRING US IN
           </p>
           <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-12 max-w-4xl">
-            You should consider an Architecture Sprint if…
+            This engagement is designed for four common investment scenarios.
           </h2>
           <div className="grid md:grid-cols-2 gap-px bg-border/60 border border-border/60">
-            {whenToUse.map((w) => (
-              <div key={w} className="bg-background p-6 flex items-start gap-4">
-                <Check className="h-5 w-5 text-accent mt-1 flex-shrink-0" />
-                <p className="text-lg leading-relaxed">{w}</p>
+            {scenarios.map((s) => (
+              <div key={s.title} className="bg-background p-8 flex flex-col gap-3">
+                <h3 className="font-display text-xl md:text-2xl leading-tight">
+                  {s.title}
+                </h3>
+                <p className="text-base md:text-lg leading-relaxed text-muted-foreground">
+                  {s.body}
+                </p>
               </div>
             ))}
           </div>
