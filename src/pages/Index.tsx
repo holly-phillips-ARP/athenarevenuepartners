@@ -296,7 +296,7 @@ const Index = () => {
               size="lg"
               className="rounded-full px-7 h-12"
             >
-              Start with a diagnostic
+              Find your starting point
             </Button>
             <Button
               onClick={() => setContactOpen(true)}
