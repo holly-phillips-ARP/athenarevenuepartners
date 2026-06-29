@@ -385,9 +385,6 @@ const RevenueArchitectureSprint = () => {
           <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
             What We Evaluate
           </p>
-          <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-12 max-w-4xl">
-            Instead of listing deliverables, organize them into the questions every PE investor is asking.
-          </h2>
           <div className="grid md:grid-cols-2 gap-6">
             {evaluationCategories.map((category) => (
               <div
