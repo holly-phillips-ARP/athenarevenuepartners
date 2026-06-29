@@ -198,6 +198,49 @@ const RevenueArchitectureSprint = () => {
         </div>
       </section>
 
+      {/* METHODOLOGY PROGRESSION */}
+      <section className="border-t border-border py-16 md:py-20 bg-secondary/40">
+        <div className="max-w-5xl mx-auto px-6 md:px-10">
+          <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-6">
+            Athena Methodology
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-border/60 border border-border/60">
+            {methodology.map((m) => (
+              <div
+                key={m.phase}
+                className={`bg-background p-5 ${
+                  m.current ? "md:col-span-1 ring-1 ring-inset ring-accent/30" : ""
+                }`}
+              >
+                <div className="flex items-center justify-between mb-2">
+                  <span
+                    className={`text-xs uppercase tracking-[0.2em] ${
+                      m.current ? "text-accent" : "text-muted-foreground"
+                    }`}
+                  >
+                    {m.phase}
+                  </span>
+                  {m.current && (
+                    <ChevronRight className="h-4 w-4 text-accent hidden md:block" />
+                  )}
+                </div>
+                <p
+                  className={`font-display text-sm leading-snug ${
+                    m.current ? "text-foreground" : "text-muted-foreground"
+                  }`}
+                >
+                  {m.label}
+                </p>
+              </div>
+            ))}
+          </div>
+          <p className="text-sm text-muted-foreground mt-4 max-w-3xl">
+            The Revenue Architecture Sprint is the Design phase of Athena's methodology —
+            the starting point before assessment, build, and optimization.
+          </p>
+        </div>
+      </section>
+
       {/* WHEN TO USE */}
       <section className="border-t border-border py-24 md:py-32 bg-secondary/40">
         <div className="max-w-5xl mx-auto px-6 md:px-10">
