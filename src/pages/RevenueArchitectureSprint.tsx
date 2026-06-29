@@ -170,7 +170,7 @@ const RevenueArchitectureSprint = () => {
 
       {/* HERO */}
       <section className="pt-40 pb-20 md:pt-48 md:pb-24">
-        <div className="max-w-5xl mx-auto px-6 md:px-10">
+        <div className="max-w-5xl mx-auto px-6 md:px-10 relative">
           <Link
             to="/who-we-work-with/investors/private-equity"
             className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-12"
@@ -178,66 +178,92 @@ const RevenueArchitectureSprint = () => {
             <ArrowLeft className="h-4 w-4" /> Back to Private Equity
           </Link>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease }}
-          >
-            <p className="text-xs uppercase tracking-[0.2em] text-accent mb-6">
-              Pre-investment · 4 weeks
-            </p>
-            <h1 className="font-display text-5xl md:text-7xl leading-[1.02] mb-8 text-balance">
-              Revenue Architecture Sprint
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl leading-relaxed">
-              <em className="italic text-foreground/90 font-light">
-                Design the revenue operating system before you build it.
-              </em>
-            </p>
-          </motion.div>
+          <div className="grid lg:grid-cols-[1fr_280px] gap-12 lg:gap-16 items-start">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, ease }}
+            >
+              <p className="text-xs uppercase tracking-[0.2em] text-accent mb-6">
+                Pre-investment · 4 weeks
+              </p>
+              <h1 className="font-display text-5xl md:text-7xl leading-[1.02] mb-8 text-balance">
+                Revenue Architecture Sprint
+              </h1>
+              <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl leading-relaxed">
+                <em className="italic text-foreground/90 font-light">
+                  Design the revenue operating system before you build it.
+                </em>
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, ease, delay: 0.15 }}
+              className="hidden lg:block border border-border/60 bg-background/80 backdrop-blur-sm p-5 sticky top-24"
+            >
+              <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground mb-4">
+                Athena Methodology
+              </p>
+              <div className="space-y-3">
+                {methodology.map((m) => (
+                  <div key={m.phase} className="flex items-center gap-3">
+                    <div
+                      className={`h-2 w-2 rounded-full flex-shrink-0 ${
+                        m.current ? "bg-accent" : "bg-muted-foreground/30"
+                      }`}
+                    />
+                    <div className="flex-1 min-w-0">
+                      <p
+                        className={`text-xs uppercase tracking-[0.15em] ${
+                          m.current ? "text-accent" : "text-muted-foreground"
+                        }`}
+                      >
+                        {m.phase}
+                      </p>
+                      <p
+                        className={`text-sm font-display truncate ${
+                          m.current ? "text-foreground" : "text-muted-foreground/70"
+                        }`}
+                      >
+                        {m.label}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
-      {/* METHODOLOGY PROGRESSION */}
-      <section className="border-t border-border py-16 md:py-20 bg-secondary/40">
+      {/* METHODOLOGY — MOBILE */}
+      <section className="border-t border-border lg:hidden py-6 bg-secondary/40">
         <div className="max-w-5xl mx-auto px-6 md:px-10">
-          <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-6">
-            Athena Methodology
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-border/60 border border-border/60">
-            {methodology.map((m) => (
-              <div
-                key={m.phase}
-                className={`bg-background p-5 ${
-                  m.current ? "md:col-span-1 ring-1 ring-inset ring-accent/30" : ""
-                }`}
-              >
-                <div className="flex items-center justify-between mb-2">
+          <div className="flex items-center gap-2 overflow-x-auto pb-1">
+            {methodology.map((m, i) => (
+              <div key={m.phase} className="flex items-center gap-2 flex-shrink-0">
+                <div className="flex items-center gap-1.5">
+                  <div
+                    className={`h-1.5 w-1.5 rounded-full ${
+                      m.current ? "bg-accent" : "bg-muted-foreground/30"
+                    }`}
+                  />
                   <span
-                    className={`text-xs uppercase tracking-[0.2em] ${
+                    className={`text-[10px] uppercase tracking-[0.15em] whitespace-nowrap ${
                       m.current ? "text-accent" : "text-muted-foreground"
                     }`}
                   >
                     {m.phase}
                   </span>
-                  {m.current && (
-                    <ChevronRight className="h-4 w-4 text-accent hidden md:block" />
-                  )}
                 </div>
-                <p
-                  className={`font-display text-sm leading-snug ${
-                    m.current ? "text-foreground" : "text-muted-foreground"
-                  }`}
-                >
-                  {m.label}
-                </p>
+                {i < methodology.length - 1 && (
+                  <ChevronRight className="h-3 w-3 text-muted-foreground/30 flex-shrink-0" />
+                )}
               </div>
             ))}
           </div>
-          <p className="text-sm text-muted-foreground mt-4 max-w-3xl">
-            The Revenue Architecture Sprint is the Design phase of Athena's methodology —
-            the starting point before assessment, build, and optimization.
-          </p>
         </div>
       </section>
 
