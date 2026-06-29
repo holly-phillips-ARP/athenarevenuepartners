@@ -238,6 +238,35 @@ const RevenueArchitectureSprint = () => {
         </div>
       </section>
 
+      {/* METHODOLOGY — MOBILE */}
+      <section className="border-t border-border lg:hidden py-6 bg-secondary/40">
+        <div className="max-w-5xl mx-auto px-6 md:px-10">
+          <div className="flex items-center gap-2 overflow-x-auto pb-1">
+            {methodology.map((m, i) => (
+              <div key={m.phase} className="flex items-center gap-2 flex-shrink-0">
+                <div className="flex items-center gap-1.5">
+                  <div
+                    className={`h-1.5 w-1.5 rounded-full ${
+                      m.current ? "bg-accent" : "bg-muted-foreground/30"
+                    }`}
+                  />
+                  <span
+                    className={`text-[10px] uppercase tracking-[0.15em] whitespace-nowrap ${
+                      m.current ? "text-accent" : "text-muted-foreground"
+                    }`}
+                  >
+                    {m.phase}
+                  </span>
+                </div>
+                {i < methodology.length - 1 && (
+                  <ChevronRight className="h-3 w-3 text-muted-foreground/30 flex-shrink-0" />
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* WHEN TO USE */}
       <section className="border-t border-border py-24 md:py-32 bg-secondary/40">
         <div className="max-w-5xl mx-auto px-6 md:px-10">
