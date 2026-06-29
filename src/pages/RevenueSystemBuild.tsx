@@ -2,57 +2,161 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
-import { ArrowLeft, ArrowUpRight } from "lucide-react";
+import { ArrowLeft, Check, ChevronRight } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { DiagnosticDialog } from "@/components/DiagnosticDialog";
-import { offerings, getOfferingBySlug } from "@/data/offerings";
-import { EngagementTimeline } from "@/components/EngagementTimeline";
+import { ContactDialog } from "@/components/ContactDialog";
 
-const systemElements = [
-  "Sales process",
-  "Forecasting methodology",
-  "Pipeline management",
-  "Leadership cadence",
-  "Customer handoffs",
-  "Accountability structures",
-  "Coaching",
-  "CRM workflows",
-  "Revenue reporting",
+const ease = [0.22, 1, 0.36, 1] as const;
+
+const scenarios = [
+  {
+    title: "First 100 Days",
+    body: "Install the operating system that supports your value creation plan while leadership attention is highest.",
+  },
+  {
+    title: "Revenue Transformation",
+    body: "The company has identified operational gaps and is ready to implement lasting change.",
+  },
+  {
+    title: "Post-Diagnostic",
+    body: "Turn the recommendations from a Revenue Diagnostic into a functioning operating system.",
+  },
+  {
+    title: "Leadership Transition",
+    body: "Give incoming executives infrastructure they can execute against instead of spending months rebuilding.",
+  },
 ];
 
-const engagementAreas = [
+const buildCategories = [
   {
-    title: "Revenue Operating Rhythm",
-    body: "Forecast calls, inspection cadence, leadership accountability, KPI structure.",
+    title: "Revenue Process",
+    question: "A repeatable sales motion leadership can inspect and improve.",
+    items: [
+      "Sales process",
+      "Qualification framework",
+      "Stage definitions",
+      "Exit criteria",
+      "Deal inspection methodology",
+    ],
   },
   {
-    title: "Pipeline Management",
-    body: "Coverage modeling, progression standards, qualification discipline, funnel visibility.",
+    title: "Revenue Operations",
+    question: "The infrastructure that makes execution measurable.",
+    items: [
+      "CRM optimization",
+      "KPI dashboards",
+      "Forecast methodology",
+      "Pipeline management",
+      "Revenue reporting",
+    ],
   },
   {
-    title: "Sales Process Architecture",
-    body: "Stage design, opportunity management, MEDDIC alignment, inspection rigor.",
+    title: "Revenue Organization",
+    question: "The systems that allow teams to scale consistently.",
+    items: [
+      "Territory design",
+      "Compensation framework",
+      "Hiring profiles",
+      "Onboarding framework",
+      "Performance management",
+    ],
   },
   {
-    title: "CRM & Workflow Optimization",
-    body: "Operational structure that supports forecasting accuracy and executive visibility.",
-  },
-  {
-    title: "Leadership & Team Enablement",
-    body: "Manager coaching systems, deal reviews, accountability frameworks.",
-  },
-  {
-    title: "Founder Independence",
-    body: "Building a revenue engine that no longer relies on executive escalation to close deals.",
+    title: "Leadership Operating System",
+    question: "The management cadence that drives accountability.",
+    items: [
+      "Weekly operating cadence",
+      "Forecast reviews",
+      "Pipeline inspections",
+      "Executive scorecards",
+      "Board reporting framework",
+    ],
   },
 ];
+
+const methodology = [
+  { phase: "Design", label: "Revenue Architecture Sprint", current: false },
+  { phase: "Assess", label: "Revenue Diagnostic", current: false },
+  { phase: "Build", label: "Revenue System Build", current: true },
+  { phase: "Optimize", label: "Revenue Advisory", current: false },
+];
+
+const deliverables = [
+  {
+    title: "Revenue Operating System™",
+    body: "A fully implemented operating model designed around Athena's four pillars.",
+  },
+  {
+    title: "Forecast Framework",
+    body: "A documented forecasting methodology leadership can consistently execute and defend.",
+  },
+  {
+    title: "Revenue Playbooks",
+    body: "Standardized sales processes, qualification, inspection, and management documentation.",
+  },
+  {
+    title: "KPI Dashboard Suite",
+    body: "Executive dashboards that provide visibility into performance, pipeline health, and forecast confidence.",
+  },
+  {
+    title: "Leadership Operating Cadence",
+    body: "Documented meeting structure, inspection routines, reporting cadence, and accountability framework.",
+  },
+  {
+    title: "Executive Handoff",
+    body: "A trained leadership team capable of operating the system independently.",
+  },
+];
+
+const timeline = [
+  {
+    week: "Month 1",
+    items: ["Design", "Prioritize implementation", "Executive alignment", "Foundation build"],
+  },
+  {
+    week: "Month 2",
+    items: ["System implementation", "CRM optimization", "Forecast methodology", "Management cadence"],
+  },
+  {
+    week: "Month 3",
+    items: ["Leadership coaching", "Team enablement", "Operational refinement", "Executive handoff"],
+  },
+];
+
+const outcomes = [
+  "A repeatable revenue operating system owned by your leadership team",
+  "Forecasts leadership can confidently defend",
+  "A standardized sales process that scales beyond individual contributors",
+  "Clear executive dashboards and performance visibility",
+  "Leadership routines that identify problems before they impact results",
+  "Infrastructure capable of supporting future growth, acquisitions, and leadership transitions",
+];
+
+const nextSteps = [
+  {
+    title: "Revenue Advisory",
+    body: "Once the Revenue Operating System is installed, many firms continue with Revenue Advisory to pressure-test forecasts, coach leadership, and evolve the system as the business grows.",
+    to: "/who-we-work-with/investors/private-equity/revenue-advisory",
+  },
+  {
+    title: "Revenue Diagnostic",
+    body: "Re-assess the operating system as the business scales to identify new constraints before they impact performance.",
+    to: "/who-we-work-with/investors/private-equity/revenue-diagnostic",
+  },
+  {
+    title: "Revenue Bridge",
+    body: "Pair the system with a leadership transition. Install the operating system before or alongside a new CRO, VP of Sales, GM or CEO.",
+    to: "/who-we-work-with/investors/private-equity/revenue-bridge",
+  },
+];
+
+const url =
+  "https://athenarevenuepartners.com/who-we-work-with/investors/private-equity/revenue-system-build";
 
 const RevenueSystemBuild = () => {
-  const [open, setOpen] = useState(false);
-  const others = offerings.filter((o) => o.slug !== "revenue-system-build");
-  const phases = getOfferingBySlug("revenue-system-build")?.process ?? [];
+  const [contactOpen, setContactOpen] = useState(false);
 
   return (
     <main className="min-h-screen bg-background">
@@ -60,177 +164,313 @@ const RevenueSystemBuild = () => {
         <title>Revenue System Build | Athena Revenue Partners</title>
         <meta
           name="description"
-          content="A 3–6 month transformation that designs, installs, and coaches a scalable revenue operating system for SaaS startups."
+          content="Transform recommendations into execution by installing the people, process, metrics, technology, and operating cadence that make revenue predictable, scalable, and defensible."
         />
-        <link rel="canonical" href="https://athenarevenuepartners.com/offerings/revenue-system-build" />
+        <link rel="canonical" href={url} />
         <meta property="og:title" content="Revenue System Build | Athena Revenue Partners" />
         <meta
           property="og:description"
-          content="Design, install, and coach a scalable revenue operating system in three to six months."
+          content="Transform recommendations into execution by installing the people, process, metrics, technology, and operating cadence that make revenue predictable, scalable, and defensible."
         />
-        <meta property="og:url" content="https://athenarevenuepartners.com/offerings/revenue-system-build" />
+        <meta property="og:url" content={url} />
         <meta property="og:type" content="website" />
-        <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Service",
-          "name": "Revenue System Build",
-          "description": "A 3–6 month transformation of your revenue function — process, pipeline, hiring, forecast, and leadership cadence.",
-          "provider": { "@type": "Organization", "name": "Athena Revenue Partners", "url": "https://athenarevenuepartners.com/" },
-          "areaServed": "Global",
-          "url": "https://athenarevenuepartners.com/offerings/revenue-system-build",
-        })}</script>
       </Helmet>
 
       <Navbar />
+      <ContactDialog
+        open={contactOpen}
+        onOpenChange={setContactOpen}
+        title="Start a Revenue System Build"
+        description="Tell us a bit about the company — we'll reply within one business day."
+        source="Private Equity — Revenue System Build"
+      />
 
       {/* HERO */}
-      <section className="pt-40 pb-24 md:pt-48 md:pb-32">
-        <div className="max-w-5xl mx-auto px-6 md:px-10">
+      <section className="pt-40 pb-20 md:pt-48 md:pb-24">
+        <div className="max-w-5xl mx-auto px-6 md:px-10 relative">
           <Link
-            to="/#offerings"
+            to="/who-we-work-with/investors/private-equity"
             className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-12"
           >
-            <ArrowLeft className="h-4 w-4" /> All offerings
+            <ArrowLeft className="h-4 w-4" /> Back to Private Equity
           </Link>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as const }}
-          >
-            <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-6">
-              03 · Revenue System Build
-            </p>
-            <h1 className="font-display text-5xl md:text-7xl leading-[1.02] mb-8 text-balance">
-              Growth Stops When the Revenue System Can’t Scale.
-            </h1>
-            <div className="space-y-5 max-w-3xl text-lg md:text-xl text-muted-foreground leading-relaxed">
-              <p>Most companies don't fail because they lack talent.</p>
-              <p>
-                They fail because their revenue engine was never designed to scale beyond the
-                founder, the first sales team, or early-stage chaos.
-              </p>
-              <p>
-                We help companies build operationally disciplined revenue systems that create
-                predictable growth.
-              </p>
-            </div>
-            <div className="mt-12">
-              <Button onClick={() => setOpen(true)} size="lg" className="rounded-full px-8">
-                Build a Scalable Revenue System
-              </Button>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* WHAT A REVENUE SYSTEM ACTUALLY MEANS */}
-      <section className="py-24 md:py-32 border-t border-border">
-        <div className="max-w-5xl mx-auto px-6 md:px-10">
-          <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
-            What a revenue system actually means
-          </p>
-          <h2 className="font-display text-4xl md:text-5xl leading-[1.1] mb-10 text-balance max-w-3xl">
-            A Revenue System Is More Than RevOps
-          </h2>
-
-          <div className="grid md:grid-cols-[1fr_1.2fr] gap-12 md:gap-16">
-            <div className="space-y-5 text-muted-foreground leading-relaxed text-lg">
-              <p>Technology alone does not create revenue predictability.</p>
-              <p>A scalable revenue system aligns:</p>
-              <p className="italic">
-                Without alignment, growth becomes inconsistent and difficult to scale.
-              </p>
-            </div>
-            <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-3">
-              {systemElements.map((s) => (
-                <li key={s} className="flex items-start gap-3 text-base">
-                  <span className="mt-2.5 w-1 h-1 rounded-full bg-accent flex-shrink-0" />
-                  {s}
-                </li>
-              ))}
-            </ul>
+          <div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, ease }}
+            >
+              <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 mb-6">
+                <p className="text-xs uppercase tracking-[0.2em] text-accent">
+                  Revenue System Build
+                </p>
+                <div className="flex items-center gap-2 overflow-x-auto pb-1 lg:pb-0">
+                  {methodology.map((m, i) => (
+                    <div key={m.phase} className="flex items-center gap-2 flex-shrink-0">
+                      <div className="flex items-center gap-1.5">
+                        <div
+                          className={`h-1.5 w-1.5 rounded-full ${
+                            m.current ? "bg-accent" : "bg-muted-foreground/30"
+                          }`}
+                        />
+                        <span
+                          className={`text-[10px] uppercase tracking-[0.15em] whitespace-nowrap ${
+                            m.current ? "text-accent" : "text-muted-foreground"
+                          }`}
+                        >
+                          {m.phase}
+                        </span>
+                      </div>
+                      {i < methodology.length - 1 && (
+                        <ChevronRight className="h-3 w-3 text-muted-foreground/30 flex-shrink-0" />
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <h1 className="font-display text-4xl md:text-6xl lg:text-7xl leading-[1.02] mb-8 text-balance">
+                Install the revenue operating system your investment thesis depends on.
+              </h1>
+              <div className="space-y-4 text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">
+                <p>
+                  The Revenue System Build transforms recommendations into execution by installing the people, process, metrics, technology, and operating cadence that make revenue predictable, scalable, and defensible.
+                </p>
+                <p>
+                  Because value creation doesn't come from recommendations.
+                </p>
+                <p>
+                  It comes from execution.
+                </p>
+              </div>
+              <div className="mt-10 p-5 border border-border/60 bg-background/50">
+                <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground mb-4">
+                  Typical Engagement
+                </p>
+                <ul className="grid sm:grid-cols-2 gap-3">
+                  <li className="flex items-start gap-2 text-sm">
+                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0" />
+                    3–6 months
+                  </li>
+                  <li className="flex items-start gap-2 text-sm">
+                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0" />
+                    Executive implementation partnership
+                  </li>
+                  <li className="flex items-start gap-2 text-sm">
+                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0" />
+                    Fixed-scope engagement
+                  </li>
+                  <li className="flex items-start gap-2 text-sm">
+                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0" />
+                    Designed for operational transformation
+                  </li>
+                </ul>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      {/* CORE ENGAGEMENT AREAS */}
-      <section className="py-24 md:py-32 border-t border-border bg-secondary/30">
+      {/* WHEN TO USE */}
+      <section className="border-t border-border py-24 md:py-32 bg-secondary/40">
         <div className="max-w-5xl mx-auto px-6 md:px-10">
           <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
-            What we help build
+            WHEN TO BRING US IN
           </p>
-          <h2 className="font-display text-4xl md:text-5xl leading-[1.1] mb-16 text-balance">
-            Core Engagement Areas
+          <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-12 max-w-4xl">
+            The Revenue System Build is designed for four common portfolio situations.
           </h2>
-
-          <div className="grid md:grid-cols-2 gap-px bg-border/60 border border-border/60 rounded-sm overflow-hidden">
-            {engagementAreas.map((e, i) => (
-              <motion.div
-                key={e.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.5, delay: i * 0.05 }}
-                className="bg-background p-8 md:p-10 flex flex-col"
-              >
-                <span className="font-display text-sm text-muted-foreground mb-4">
-                  0{i + 1}
-                </span>
-                <h3 className="font-display text-2xl mb-3">{e.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{e.body}</p>
-              </motion.div>
+          <div className="grid md:grid-cols-2 gap-px bg-border/60 border border-border/60">
+            {scenarios.map((s) => (
+              <div key={s.title} className="bg-background p-8 flex flex-col gap-3">
+                <h3 className="font-display text-xl md:text-2xl leading-tight">
+                  {s.title}
+                </h3>
+                <p className="text-base md:text-lg leading-relaxed text-muted-foreground">
+                  {s.body}
+                </p>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      <EngagementTimeline phases={phases} heading="What happens, month by month." />
-
-      {/* CTA */}
-      <section className="py-24 md:py-32 border-t border-border bg-primary text-primary-foreground">
+      {/* WHAT WE BUILD */}
+      <section className="border-t border-border py-24 md:py-32">
         <div className="max-w-5xl mx-auto px-6 md:px-10">
-          <h2 className="font-display text-4xl md:text-6xl leading-[1.05] mb-8 text-balance max-w-3xl">
-            Ready to build the system your next stage of growth requires?
+          <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
+            What We Build
+          </p>
+          <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-12 max-w-4xl">
+            The four pillars of a scalable revenue operating system.
           </h2>
-          <Button
-            onClick={() => setOpen(true)}
-            size="lg"
-            variant="secondary"
-            className="rounded-full px-8 mt-4"
-          >
-            Build a Scalable Revenue System
-          </Button>
+          <div className="grid md:grid-cols-2 gap-6">
+            {buildCategories.map((category) => (
+              <div
+                key={category.title}
+                className="bg-secondary/40 border border-border/60 p-8 flex flex-col gap-4"
+              >
+                <h3 className="font-display text-2xl md:text-3xl leading-tight">
+                  {category.title}
+                </h3>
+                <p className="text-base md:text-lg leading-relaxed text-muted-foreground">
+                  {category.question}
+                </p>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2">
+                  {category.items.map((item) => (
+                    <li
+                      key={item}
+                      className="flex items-start gap-2 text-sm md:text-base text-muted-foreground"
+                    >
+                      <span className="text-accent mt-1.5">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* OTHER OFFERINGS */}
-      <section className="py-24 border-t border-border">
+      {/* DELIVERABLES */}
+      <section className="border-t border-border py-24 md:py-32 bg-secondary/40">
         <div className="max-w-5xl mx-auto px-6 md:px-10">
-          <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-8">
-            Other offerings
+          <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
+            What You Receive
           </p>
+          <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-12 max-w-4xl">
+            What you leave with.
+          </h2>
           <div className="grid md:grid-cols-2 gap-6">
-            {others.map((o) => (
-              <Link
-                key={o.slug}
-                to={`/offerings/${o.slug}`}
-                className="group p-8 border border-border rounded-sm hover:border-foreground/40 transition-colors flex items-start justify-between gap-4"
+            {deliverables.map((d) => (
+              <div
+                key={d.title}
+                className="bg-background border border-border/60 p-8 flex flex-col gap-3"
               >
-                <div>
-                  <p className="font-display text-sm text-muted-foreground mb-2">{o.no}</p>
-                  <h3 className="font-display text-2xl mb-2">{o.name}</h3>
-                  <p className="text-sm text-muted-foreground">{o.summary}</p>
+                <h3 className="font-display text-xl md:text-2xl leading-tight">
+                  {d.title}
+                </h3>
+                <p className="text-base md:text-lg leading-relaxed text-muted-foreground">
+                  {d.body}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* OUR PROCESS */}
+      <section className="border-t border-border py-24 md:py-32">
+        <div className="max-w-5xl mx-auto px-6 md:px-10">
+          <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
+            Our Process
+          </p>
+          <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-12 max-w-4xl">
+            Three months to a fully installed operating system.
+          </h2>
+          <div className="grid md:grid-cols-3 gap-4">
+            {timeline.map((t, i) => (
+              <div
+                key={t.week}
+                className="relative bg-secondary/40 border border-border/60 p-6 flex flex-col gap-4"
+              >
+                <div className="flex items-center gap-3">
+                  <span className="flex items-center justify-center h-8 w-8 rounded-full bg-accent/10 text-accent font-display text-sm">
+                    {i + 1}
+                  </span>
+                  <span className="font-display text-lg">{t.week}</span>
                 </div>
-                <ArrowUpRight className="h-5 w-5 text-muted-foreground group-hover:text-foreground transition-colors flex-shrink-0" />
+                <ul className="space-y-2">
+                  {t.items.map((item) => (
+                    <li
+                      key={item}
+                      className="text-sm md:text-base text-muted-foreground flex items-start gap-2"
+                    >
+                      <span className="mt-2 w-1 h-1 rounded-full bg-accent flex-shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+          <p className="text-sm text-muted-foreground mt-6">
+            Larger organizations may extend implementation through Months 4–6.
+          </p>
+        </div>
+      </section>
+
+      {/* OUTCOMES */}
+      <section className="border-t border-border py-24 md:py-32 bg-secondary/40">
+        <div className="max-w-5xl mx-auto px-6 md:px-10">
+          <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
+            Typical Outcomes
+          </p>
+          <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-12 max-w-4xl">
+            By the end of the engagement you'll have:
+          </h2>
+          <ul className="grid md:grid-cols-2 gap-px bg-border/60 border border-border/60">
+            {outcomes.map((o) => (
+              <li key={o} className="bg-background p-6 flex items-start gap-4">
+                <Check className="h-5 w-5 text-accent mt-1 flex-shrink-0" />
+                <span className="text-lg">{o}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* TYPICAL NEXT STEPS */}
+      <section className="border-t border-border py-24 md:py-32">
+        <div className="max-w-5xl mx-auto px-6 md:px-10">
+          <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
+            What's next?
+          </p>
+          <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-6 max-w-4xl">
+            Where the build usually leads.
+          </h2>
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-3xl mb-12">
+            The Revenue System Build is the Build phase of the Athena Method. Once the Revenue Operating System is installed, many firms continue with Revenue Advisory to pressure-test forecasts, coach leadership, and evolve the system as the business grows.
+          </p>
+          <div className="grid md:grid-cols-3 gap-px bg-border/60 border border-border/60">
+            {nextSteps.map((n) => (
+              <Link
+                key={n.title}
+                to={n.to}
+                className="bg-background p-6 flex flex-col hover:bg-secondary/40 transition-colors"
+              >
+                <h3 className="font-display text-lg mb-3">{n.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-6 flex-1">
+                  {n.body}
+                </p>
+                <span className="text-sm text-accent">Learn more →</span>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
+      {/* CTA */}
+      <section className="border-t border-border py-24 md:py-32">
+        <div className="max-w-5xl mx-auto px-6 md:px-10 text-center">
+          <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-6 max-w-3xl mx-auto">
+            Install the revenue operating system your investment thesis depends on.
+          </h2>
+          <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10">
+            3–6 months to transform recommendations into a functioning revenue engine your leadership team can operate.
+          </p>
+          <Button
+            onClick={() => setContactOpen(true)}
+            size="lg"
+            className="rounded-full px-8 h-12"
+          >
+            Start the conversation →
+          </Button>
+        </div>
+      </section>
+
       <Footer />
-      <DiagnosticDialog open={open} onOpenChange={setOpen} />
     </main>
   );
 };
