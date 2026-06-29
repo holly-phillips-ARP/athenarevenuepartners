@@ -10,24 +10,24 @@ const ease = [0.22, 1, 0.36, 1] as const;
 
 const problems = [
   {
-    title: "Founder-as-CRO",
+    title: "Founder-Dependent Revenue",
     body:
-      "The founder is still the best closer. Every deal that matters runs through them — which caps growth and makes the forecast a function of their calendar.",
+      "The founder is still the best salesperson, the best closer, and the source of every major customer relationship. Growth becomes constrained by one person's bandwidth.",
   },
   {
-    title: "Pipeline theater",
+    title: "No Revenue Operating System",
     body:
-      "CRM hygiene is poor, qualification is loose, and coverage looks fine until the quarter closes 40% short. The board sees it last.",
+      "Sales processes, qualification, forecasting, and leadership cadence exist—but only informally. Success depends on individual judgment rather than repeatable execution.",
   },
   {
-    title: "Premature scaling",
+    title: "Premature Scaling",
     body:
-      "Reps were hired before the motion was repeatable. Ramp is slow, attribution is murky, and CAC payback is moving the wrong direction.",
+      "Sales hires were added before the operating system existed. Performance varies wildly, ramp times increase, and leadership struggles to understand why.",
   },
   {
-    title: "No forecast methodology",
+    title: "Revenue Without Visibility",
     body:
-      "The number is a vibe. There's no inspection cadence, no accountability, and no way to defend it to the board — or to the next round's lead.",
+      "Pipeline exists. Forecasts exist. But leadership can't confidently explain either to the board or future investors.",
   },
 ];
 
@@ -182,7 +182,7 @@ const VentureCapital = () => {
             What we see at the board table
           </p>
           <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-12 max-w-4xl">
-            Four patterns that quietly cost the next round.
+            Four predictable gaps between product-market fit and repeatable growth.
           </h2>
           <div className="grid md:grid-cols-2 gap-px bg-border/60 border border-border/60">
             {problems.map((p) => (
