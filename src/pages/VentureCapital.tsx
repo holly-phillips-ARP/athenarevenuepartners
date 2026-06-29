@@ -257,48 +257,63 @@ const VentureCapital = () => {
             We build the operating system your leadership team owns.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-px bg-border border border-border">
-            {engagements.map((e) => (
+          <div className="border border-border">
+            {[
+              {
+                tag: "POST-PRODUCT MARKET FIT",
+                name: "Revenue Architecture Sprint",
+                body:
+                  "For founder-led companies preparing for the next stage of growth.\n\nDesign the revenue operating system before scaling the team.",
+                slug: "revenue-architecture-sprint",
+              },
+              {
+                tag: "SCALING COMPANY",
+                name: "Revenue Diagnostic",
+                body:
+                  "For companies missing growth targets or struggling to create predictable execution.\n\nIdentify the operational constraints limiting scale and prioritize improvements with the greatest business impact.",
+                slug: "revenue-diagnostic",
+              },
+              {
+                tag: "CORE ENGAGEMENT",
+                name: "Revenue System Build",
+                body:
+                  "For companies ready to operationalize growth.\n\nInstall the people, process, metrics, technology and operating cadence that create predictable revenue.",
+                slug: "revenue-system-build",
+              },
+              {
+                tag: "ONGOING",
+                name: "Revenue Advisory",
+                body:
+                  "For companies committed to continuous improvement.\n\nQuarterly strategic oversight to pressure-test forecasts, coach leadership, and evolve the revenue operating system as the business grows.",
+                slug: "revenue-advisory",
+              },
+              {
+                tag: "LEADERSHIP TRANSITION",
+                name: "Revenue Bridge",
+                body:
+                  "A leadership transition doesn't require a different methodology—it requires a different starting point.\n\nWhether you're hiring your first VP of Sales, your first CRO, or replacing an executive, we install the operating system before or alongside the transition so new leaders spend their first months executing—not diagnosing.",
+                slug: "revenue-bridge",
+              },
+            ].map((item, i) => (
               <div
-                key={e.name}
-                className={`bg-background p-6 md:p-8 flex flex-col ${
-                  e.featured ? "border-2 border-accent" : ""
-                } ${e.advisory ? "bg-secondary/40" : ""}`}
+                key={item.name}
+                className={`p-6 md:p-8 ${i !== 0 ? "border-t border-border" : ""}`}
               >
-                <span className="inline-block self-start text-[10px] uppercase tracking-widest text-accent bg-accent/10 px-2 py-1 rounded mb-4">
-                  {e.tag}
+                <span className="inline-block text-[10px] uppercase tracking-widest text-accent bg-accent/10 px-2 py-1 rounded mb-4">
+                  {item.tag}
                 </span>
-                <h3 className="font-display text-xl mb-3">{e.name}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">{e.desc}</p>
-                <div className="mt-6 pt-2">
-                  <Link
-                    to={`/who-we-work-with/investors/private-equity/${e.slug}`}
-                    className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent/80 transition-colors"
-                  >
-                    Learn more →
-                  </Link>
-                </div>
-              </div>
-            ))}
-            <div className="bg-accent/10 p-6 md:p-8 md:col-span-2 border border-accent/20 flex flex-col">
-              <span className="inline-block self-start text-[10px] uppercase tracking-widest text-accent bg-accent/10 px-2 py-1 rounded mb-4">
-                Leadership Transition
-              </span>
-              <h3 className="font-display text-xl mb-3">Revenue Bridge</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
-                A leadership transition doesn't require a different methodology—it requires a different starting point.
-
-                Whether you're hiring your first VP of Sales, your first CRO, or replacing an executive, we install the operating system before or alongside the transition so new leaders spend their first months executing—not diagnosing.
-              </p>
-              <div className="mt-6 pt-2">
+                <h3 className="font-display text-xl mb-3">{item.name}</h3>
+                <p className="text-sm text-muted-foreground whitespace-pre-line mb-6">
+                  {item.body}
+                </p>
                 <Link
-                  to="/who-we-work-with/investors/private-equity/revenue-bridge"
+                  to={`/who-we-work-with/investors/private-equity/${item.slug}`}
                   className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent/80 transition-colors"
                 >
                   Learn more →
                 </Link>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

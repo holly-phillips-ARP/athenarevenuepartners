@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { Navbar } from "@/components/Navbar";
@@ -286,39 +287,78 @@ const Founders = () => {
         </div>
       </section>
 
-      {/* HOW WE WORK */}
+      {/* OFFERINGS */}
       <section className="border-t border-border py-24 md:py-32">
         <div className="max-w-5xl mx-auto px-6 md:px-10">
           <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
             Offerings
           </p>
           <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-8 max-w-4xl">
-            Project-based. Defined scope. Clean handoff.
+            Project-based. Fixed scope. Defined handoff.
           </h2>
           <p className="text-muted-foreground leading-relaxed max-w-3xl mb-12">
-            We're not a fractional VP of Sales. We come in, install the system, train your
-            team on it, and hand it back. The goal is for you not to need us — and to know
-            it's working before we leave.
+            We're not your fractional VP of Sales.
+            <br />
+            We're not your long-term CRO.
+            <br />
+            We build the Revenue Operating System your company will own long after we're gone.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-px bg-border border border-border">
-            {engagements.map((e) => (
+          <div className="border border-border">
+            {[
+              {
+                tag: "BUILDING THE FOUNDATION",
+                name: "Revenue Architecture Sprint",
+                body:
+                  "For founder-led companies preparing for the next stage of growth.\n\nDesign the Revenue Operating System before investing in additional people, technology, or leadership.",
+                slug: "revenue-architecture-sprint",
+              },
+              {
+                tag: "PERFORMANCE PLATEAU",
+                name: "Revenue Diagnostic",
+                body:
+                  "For companies missing growth targets or struggling to create predictable execution.\n\nIdentify the operational constraints limiting scale and prioritize the improvements with the greatest business impact.",
+                slug: "revenue-diagnostic",
+              },
+              {
+                tag: "CORE ENGAGEMENT",
+                name: "Revenue System Build",
+                body:
+                  "For companies ready to operationalize growth.\n\nInstall the people, process, metrics, technology, and leadership cadence that create predictable revenue.",
+                slug: "revenue-system-build",
+              },
+              {
+                tag: "ONGOING",
+                name: "Revenue Advisory",
+                body:
+                  "For leadership teams committed to continuous improvement.\n\nQuarterly strategic oversight to pressure-test forecasts, coach leaders, and evolve the Revenue Operating System as the business grows.",
+                slug: "revenue-advisory",
+              },
+              {
+                tag: "LEADERSHIP TRANSITION",
+                name: "Revenue Bridge",
+                body:
+                  "A leadership transition doesn't require a different methodology—it requires a different starting point.\n\nWhether you're hiring your first VP of Sales, your first CRO, or replacing an executive, we install the operating system before or alongside the transition so new leaders spend their first months executing—not diagnosing.",
+                slug: "revenue-bridge",
+              },
+            ].map((item, i) => (
               <div
-                key={e.name}
-                className={`bg-background p-6 md:p-8 ${
-                  e.featured ? "border-2 border-accent" : ""
-                } ${e.advisory ? "bg-secondary/40" : ""}`}
+                key={item.name}
+                className={`p-6 md:p-8 ${i !== 0 ? "border-t border-border" : ""}`}
               >
                 <span className="inline-block text-[10px] uppercase tracking-widest text-accent bg-accent/10 px-2 py-1 rounded mb-4">
-                  {e.tag}
+                  {item.tag}
                 </span>
-                <h3 className="font-display text-xl mb-3">{e.name}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{e.desc}</p>
-                {e.note && (
-                  <p className="text-xs italic text-muted-foreground mt-4 pt-4 border-t border-border leading-relaxed">
-                    {e.note}
-                  </p>
-                )}
+                <h3 className="font-display text-xl mb-3">{item.name}</h3>
+                <p className="text-sm text-muted-foreground whitespace-pre-line mb-6">
+                  {item.body}
+                </p>
+                <Link
+                  to={`/who-we-work-with/investors/private-equity/${item.slug}`}
+                  className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent/80 transition-colors"
+                >
+                  Learn more →
+                </Link>
               </div>
             ))}
           </div>
