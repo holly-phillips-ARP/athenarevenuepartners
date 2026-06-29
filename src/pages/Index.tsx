@@ -160,7 +160,7 @@ const Index = () => {
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed font-light">
                 Whether you're investing in a company or leading one, the moments that create the most value—and the most risk—are remarkably similar.
               </p>
-              <div className="space-y-6">
+              <div className="space-y-3">
                 {[
                   { no: "01", label: "Growth" },
                   { no: "02", label: "Acquisition" },
@@ -169,7 +169,7 @@ const Index = () => {
                 ].map((item) => (
                   <div
                     key={item.label}
-                    className="flex items-baseline gap-6 border-b border-border pb-6"
+                    className="flex items-baseline gap-4"
                   >
                     <span className="text-xs uppercase tracking-widest text-accent">
                       {item.no}
