@@ -19,6 +19,7 @@ import PEOfferingDetail from "./pages/PEOfferingDetail.tsx";
 import RevenueArchitectureSprint from "./pages/RevenueArchitectureSprint.tsx";
 import RevenueAdvisoryBridge from "./pages/RevenueAdvisoryBridge.tsx";
 import VentureCapital from "./pages/VentureCapital.tsx";
+import FoundersRevenueArchitectureSprint from "./pages/founders/FoundersRevenueArchitectureSprint.tsx";
 import { ScrollToTop } from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
