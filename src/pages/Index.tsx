@@ -153,11 +153,12 @@ const Index = () => {
                 Who we work with
               </p>
               <h2 className="font-display text-2xl md:text-3xl leading-snug text-balance">
-                Every investor backed company eventually reaches a point where growth depends less on individual talent and more on a repeatable revenue operating system.
               </h2>
             </div>
             <div className="md:col-span-5 md:col-start-8">
-              <p className="text-muted-foreground leading-relaxed md:pt-10">
+              <p className="text-muted-foreground leading-relaxed md:pt-10 whitespace-pre-line">
+                Every investor backed company eventually reaches a point where growth depends less on individual talent and more on a repeatable revenue operating system.
+                {"\n\n\n"}
                 Whether you're investing in the business or leading it, Athena helps install the systems that make revenue predictable, measurable, and scalable.
               </p>
             </div>
