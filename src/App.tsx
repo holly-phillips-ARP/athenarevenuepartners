@@ -19,6 +19,7 @@ import PEOfferingDetail from "./pages/PEOfferingDetail.tsx";
 import RevenueArchitectureSprint from "./pages/RevenueArchitectureSprint.tsx";
 import RevenueAdvisoryBridge from "./pages/RevenueAdvisoryBridge.tsx";
 import VentureCapital from "./pages/VentureCapital.tsx";
+import FoundersRevenueArchitectureSprint from "./pages/founders/FoundersRevenueArchitectureSprint.tsx";
 import { ScrollToTop } from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -48,6 +49,7 @@ const App = () => (
           <Route path="/who-we-work-with/investors/private-equity/:slug" element={<PEOfferingDetail />} />
           <Route path="/who-we-work-with/investors/venture-capital" element={<VentureCapital />} />
           <Route path="/who-we-work-with/founders" element={<Founders />} />
+          <Route path="/who-we-work-with/founders/revenue-architecture-sprint" element={<FoundersRevenueArchitectureSprint />} />
           <Route path="/offerings" element={<Offerings />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
