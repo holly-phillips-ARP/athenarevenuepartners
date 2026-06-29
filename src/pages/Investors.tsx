@@ -63,15 +63,15 @@ const Investors = () => {
               For investors · Operating Partners · Portfolio Leaders
             </p>
             <h1 className="font-display text-5xl md:text-7xl leading-[1.05] mb-8 text-balance">
-              Your portfolio company has product-market fit.{" "}
+              Revenue problems rarely start with revenue.{" "}
               <em className="italic text-accent font-light">
-                What it doesn't have is a revenue system.
+                They start with the systems behind it.
               </em>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">
-              Most investor-backed companies are running on founder relationships, gut-feel
-              forecasts, and a sales process that lives in someone's head. That's not a people
-              problem. It's an architecture problem. We fix it in 90 days.
+              Whether you're evaluating a new investment or improving the performance of an
+              existing one, the quality of a company's revenue operating system determines how
+              confidently it can grow, forecast, hire and ultimately create enterprise value.
             </p>
           </motion.div>
         </div>
@@ -81,7 +81,7 @@ const Investors = () => {
       <section className="border-t border-border py-20 md:py-24">
         <div className="max-w-5xl mx-auto px-6 md:px-10">
           <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-6">
-            Who we serve
+            HOW WE PARTNER
           </p>
           <div className="grid md:grid-cols-2 gap-px bg-border border border-border">
             {audiences.map((a) => (
