@@ -95,10 +95,10 @@ const levers = [
 
 const engagements = [
   {
-    tag: "Pre-investment",
-    name: "Revenue Architecture Sprint",
+    tag: "EXISTING PORTFOLIO COMPANY",
+    name: "Revenue Diagnostic",
     desc:
-      "For companies you're evaluating before acquisition.\nWe assess the quality of the existing revenue operating system, identify investment risks and deliver a value creation blueprint with a prioritized 100-day roadmap.",
+      "For portfolio companies that are missing plan, struggling to forecast accurately, or preparing for operational improvement.\nWe evaluate the current revenue operating system, identify what's limiting performance and prioritize the improvements with the greatest impact on enterprise value.",
   },
   {
     tag: "Core engagement",
@@ -108,10 +108,10 @@ const engagements = [
     featured: true,
   },
   {
-    tag: "EXISTING PORTFOLIO COMPANY",
-    name: "Revenue Diagnostic",
+    tag: "Pre-investment",
+    name: "Revenue Architecture Sprint",
     desc:
-      "For portfolio companies that are missing plan, struggling to forecast accurately, or preparing for operational improvement.\nWe evaluate the current revenue operating system, identify what's limiting performance and prioritize the improvements with the greatest impact on enterprise value.",
+      "For companies you're evaluating before acquisition.\nWe assess the quality of the existing revenue operating system, identify investment risks and deliver a value creation blueprint with a prioritized 100-day roadmap.",
   },
   {
     tag: "LEADERSHIP TRANSITION",
