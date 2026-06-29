@@ -56,28 +56,28 @@ const deliverables = [
 
 const moments = [
   {
-    trigger: "Post-Series A",
-    sub: "First 12 months after the round",
+    trigger: "Post-Product Market Fit",
+    sub: "Founder still owns revenue",
     body:
-      "The window where the company has to prove the motion is repeatable without the founder. Installing the system now sets up the Series B story.",
+      "The product works. Customers are buying. But the founder is still driving every important deal, and the company hasn't built the systems required to scale beyond them.",
   },
   {
-    trigger: "Pre-CRO hire",
+    trigger: "First Sales Leadership Hire",
     sub: "Before or during the search",
     body:
-      "A CRO or VP of Sales stepping into infrastructure executes from Day 1. We install the system so the hire compounds — not compensates.",
+      "A VP of Sales or CRO stepping into infrastructure executes from Day One. We install the operating system so the hire compounds—not compensates.",
   },
   {
-    trigger: "Pre-raise",
-    sub: "6–12 months before the next round",
+    trigger: "Preparing for the Next Round",
+    sub: "6–12 months before fundraising",
     body:
-      "A defensible forecast methodology and clean pipeline are underwriting inputs. We make the revenue story as defensible as the product story.",
+      "Investors don't just underwrite product anymore. They underwrite predictable growth. We help companies build the operating discipline, forecasting, and execution required to support the next raise.",
   },
   {
-    trigger: "Board-driven intervention",
-    sub: "When the forecast keeps missing",
+    trigger: "Board-Driven Intervention",
+    sub: "When growth starts to plateau",
     body:
-      "When the board has lost confidence in the number, we step in as a neutral third party to diagnose, install, and hand back a working system.",
+      "Forecasts are slipping. Pipeline quality is inconsistent. The founder is becoming the bottleneck. We step in to build the operating system before those issues become company-defining.",
   },
 ];
 
@@ -227,7 +227,7 @@ const VentureCapital = () => {
             When to bring us in
           </p>
           <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-12 max-w-4xl">
-            Four inflection points where ARP delivers the highest leverage.
+            From product-market fit through scale.
           </h2>
           <div className="border-t border-border">
             {moments.map((t) => (
