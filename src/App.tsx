@@ -22,6 +22,8 @@ import VentureCapital from "./pages/VentureCapital.tsx";
 import FoundersRevenueArchitectureSprint from "./pages/founders/FoundersRevenueArchitectureSprint.tsx";
 import FoundersRevenueDiagnostic from "./pages/founders/FoundersRevenueDiagnostic.tsx";
 import FoundersRevenueSystemBuild from "./pages/founders/FoundersRevenueSystemBuild.tsx";
+import FoundersRevenueAdvisory from "./pages/founders/FoundersRevenueAdvisory.tsx";
+import FoundersRevenueBridge from "./pages/founders/FoundersRevenueBridge.tsx";
 import { ScrollToTop } from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -54,6 +56,8 @@ const App = () => (
           <Route path="/who-we-work-with/founders/revenue-architecture-sprint" element={<FoundersRevenueArchitectureSprint />} />
           <Route path="/who-we-work-with/founders/revenue-diagnostic" element={<FoundersRevenueDiagnostic />} />
           <Route path="/who-we-work-with/founders/revenue-system-build" element={<FoundersRevenueSystemBuild />} />
+          <Route path="/who-we-work-with/founders/revenue-advisory" element={<FoundersRevenueAdvisory />} />
+          <Route path="/who-we-work-with/founders/revenue-bridge" element={<FoundersRevenueBridge />} />
           <Route path="/offerings" element={<Offerings />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

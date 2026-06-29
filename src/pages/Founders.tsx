@@ -374,7 +374,7 @@ const Founders = () => {
               </p>
               <div className="mt-6 pt-2">
                 <Link
-                  to="/who-we-work-with/investors/private-equity/revenue-bridge"
+                  to="/who-we-work-with/founders/revenue-bridge"
                   className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent/80 transition-colors"
                 >
                   Learn More →
