@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { Navbar } from "@/components/Navbar";
@@ -95,18 +96,21 @@ const levers = [
 
 const engagements = [
   {
+    slug: "revenue-architecture-sprint",
     tag: "PRE-INVESTMENT",
     name: "Revenue Architecture Sprint",
     desc:
       "For companies you're evaluating before acquisition.\n\nEvaluate the quality of the revenue operating system and leave with a value creation blueprint before you close.\u00a0",
   },
   {
+    slug: "revenue-diagnostic",
     tag: "EXISTING PORTFOLIO COMPANY",
     name: "Revenue Diagnostic",
     desc:
       "For portfolio companies missing plan or struggling to forecast.\n\nIdentify what's limiting performance and prioritize the improvement with the greatest impact on enterprise value.",
   },
   {
+    slug: "revenue-system-build",
     tag: "CORE ENGAGEMENT",
     name: "Revenue System Build",
     desc:
@@ -114,6 +118,7 @@ const engagements = [
     featured: true,
   },
   {
+    slug: "revenue-advisory",
     tag: "ONGOING",
     name: "Revenue Advisory",
     desc:
