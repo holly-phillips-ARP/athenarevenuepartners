@@ -114,7 +114,7 @@ const engagements = [
     featured: true,
   },
   {
-    tag: "LEADERSHIP TRANSITION",
+    tag: "ONGOING",
     name: "Revenue Advisory",
     desc:
       "For portfolio companies committed to continuous improvement.\n\nQuarterly strategic oversight to pressure-test forecasts, coach leadership, and optimize the revenue operating system.",
