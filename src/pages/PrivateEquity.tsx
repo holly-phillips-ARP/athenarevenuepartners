@@ -96,30 +96,28 @@ const levers = [
 const engagements = [
   {
     tag: "Pre-investment",
-    name: "Revenue Diagnostic",
+    name: "Revenue Architecture Sprint",
     desc:
-      "A diligence-grade assessment of forecast accuracy, pipeline quality, and sales process maturity. Identifies the highest-ROI lever and quantifies the gap — before you close.",
+      "For companies you're evaluating before acquisition.\nWe assess the quality of the existing revenue operating system, identify investment risks and deliver a value creation blueprint with a prioritized 100-day roadmap. ",
   },
   {
     tag: "Core engagement",
     name: "Revenue System Build",
     desc:
-      "Full installation of all four pillars across 90 days. Ends with a trained team, a working forecast, and a sales process your next hire can step into.",
+      "For portfolio companies ready to install a repeatable revenue operating system. \nWe implement the people, process, metrics, technology and operating cadence that turns revenue into a repeatable business capability - not individual heroics.",
     featured: true,
   },
   {
-    tag: "Transition situations",
-    name: "Revenue Bridge",
+    tag: "EXISTING PORTFOLIO COMPANY",
+    name: "Revenue Diagnostic",
     desc:
-      "For companies mid-search for a CRO, VP of Sales, or GM — we stabilize and document the revenue operation so the incoming hire steps into infrastructure, not a blank page.",
-    note:
-      "For searches that run longer than expected, Revenue Bridge can extend to 3–6 months without changing what we're building.",
+      "For portfolio companies that are missing plan, struggling to forecast accurately, or preparing for operational improvement. \nWe evaluate the current revenue operating system, identify what's limiting performance and prioritize the improvements with the greatest impact on enterprise value. ",
   },
   {
-    tag: "Post-engagement",
+    tag: "LEADERSHIP TRANSITION",
     name: "Executive Advisory",
     desc:
-      "For companies that have completed a Revenue System Build and want ongoing outside perspective. A quarterly cadence to review performance, pressure-test the forecast, and identify what to tune.",
+      "For companies that want ongoing strategic oversight after implementation.\nWe continue partnering with operating partners and executive teams to review performance, pressure-test forecasts, coach leaders and evolve the revenue operating system as the business grows. ",
     note:
       "You own the system. We're the outside eyes. Available to Revenue System Build alumni on a defined quarterly basis.",
     advisory: true,
