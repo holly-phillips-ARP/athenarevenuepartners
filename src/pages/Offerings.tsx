@@ -134,7 +134,7 @@ const Offerings = () => {
             <h1 className="font-display text-5xl md:text-7xl leading-[1.05] mb-8 text-balance">
               One methodology.{" "}
               <em className="italic text-accent font-light">
-                Tailored to the buyer.
+                Different starting points.
               </em>
             </h1>
             <div className="space-y-6">
