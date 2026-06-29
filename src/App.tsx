@@ -15,6 +15,7 @@ import Investors from "./pages/Investors.tsx";
 import Founders from "./pages/Founders.tsx";
 import Offerings from "./pages/Offerings.tsx";
 import PrivateEquity from "./pages/PrivateEquity.tsx";
+import PEOfferingDetail from "./pages/PEOfferingDetail.tsx";
 import VentureCapital from "./pages/VentureCapital.tsx";
 import { ScrollToTop } from "./components/ScrollToTop";
 
@@ -37,6 +38,7 @@ const App = () => (
           <Route path="/unsubscribe" element={<Unsubscribe />} />
           <Route path="/who-we-work-with/investors" element={<Investors />} />
           <Route path="/who-we-work-with/investors/private-equity" element={<PrivateEquity />} />
+          <Route path="/who-we-work-with/investors/private-equity/:slug" element={<PEOfferingDetail />} />
           <Route path="/who-we-work-with/investors/venture-capital" element={<VentureCapital />} />
           <Route path="/who-we-work-with/founders" element={<Founders />} />
           <Route path="/offerings" element={<Offerings />} />
