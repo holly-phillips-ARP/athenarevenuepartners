@@ -17,6 +17,7 @@ import Offerings from "./pages/Offerings.tsx";
 import PrivateEquity from "./pages/PrivateEquity.tsx";
 import PEOfferingDetail from "./pages/PEOfferingDetail.tsx";
 import RevenueArchitectureSprint from "./pages/RevenueArchitectureSprint.tsx";
+import RevenueAdvisoryBridge from "./pages/RevenueAdvisoryBridge.tsx";
 import VentureCapital from "./pages/VentureCapital.tsx";
 import { ScrollToTop } from "./components/ScrollToTop";
 
@@ -42,6 +43,8 @@ const App = () => (
           <Route path="/who-we-work-with/investors/private-equity/revenue-architecture-sprint" element={<RevenueArchitectureSprint />} />
           <Route path="/who-we-work-with/investors/private-equity/revenue-diagnostic" element={<RevenueDiagnostic />} />
           <Route path="/who-we-work-with/investors/private-equity/revenue-system-build" element={<RevenueSystemBuild />} />
+          <Route path="/who-we-work-with/investors/private-equity/revenue-advisory" element={<RevenueAdvisoryBridge />} />
+          <Route path="/who-we-work-with/investors/private-equity/revenue-bridge" element={<RevenueAdvisoryBridge />} />
           <Route path="/who-we-work-with/investors/private-equity/:slug" element={<PEOfferingDetail />} />
           <Route path="/who-we-work-with/investors/venture-capital" element={<VentureCapital />} />
           <Route path="/who-we-work-with/founders" element={<Founders />} />
