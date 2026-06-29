@@ -121,9 +121,7 @@ const Investors = () => {
             Let's talk about your portfolio.
           </h2>
           <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10">
-            If you have a portfolio company where revenue predictability is the constraint —
-            or you're evaluating one — we're happy to have a candid conversation about whether
-            we're a fit.
+            If you're evaluating an investment, accelerating a portfolio company, or preparing for a leadership transition or exit, we'd be happy to have a candid conversation about whether we're the right partner.
           </p>
           <Button
             onClick={() => setContactOpen(true)}
