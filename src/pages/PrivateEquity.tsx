@@ -281,6 +281,17 @@ const PrivateEquity = () => {
                 )}
               </div>
             ))}
+            <div className="bg-background p-6 md:p-8 md:col-span-2">
+              <span className="inline-block text-[10px] uppercase tracking-widest text-accent bg-accent/10 px-2 py-1 rounded mb-4">
+                Leadership Transition
+              </span>
+              <h3 className="font-display text-xl mb-3">Revenue Bridge</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
+                A leadership transition doesn't require a different methodology—it requires a different starting point.
+
+                Whether you're onboarding a new CRO, VP of Sales, GM, or CEO, we install the operating system before or alongside the leadership change so new executives spend their first 90 days executing instead of diagnosing.
+              </p>
+            </div>
           </div>
         </div>
       </section>
