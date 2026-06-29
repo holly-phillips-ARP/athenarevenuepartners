@@ -250,11 +250,12 @@ const Offerings = () => {
       <section className="border-t border-border py-24 md:py-32">
         <div className="max-w-5xl mx-auto px-6 md:px-10 text-center">
           <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-6 max-w-3xl mx-auto">
-            Not sure which path fits?
+            Not sure where to start?
           </h2>
           <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10">
-            Tell us where you are — we'll tell you honestly whether we're a fit and which
-            engagement makes the most sense.
+            You don't need to know which engagement you need. Just tell us where you are today.
+            <br />
+            We'll help determine whether you're ready to design, assess, build or optimize your revenue operating system - and if we're not the right fit, we'll tell you that too.
           </p>
           <Button
             onClick={() => setContactOpen(true)}
