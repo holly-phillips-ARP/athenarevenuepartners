@@ -17,6 +17,7 @@ import Offerings from "./pages/Offerings.tsx";
 import PrivateEquity from "./pages/PrivateEquity.tsx";
 import PEOfferingDetail from "./pages/PEOfferingDetail.tsx";
 import RevenueArchitectureSprint from "./pages/RevenueArchitectureSprint.tsx";
+import RevenueAdvisoryBridge from "./pages/RevenueAdvisoryBridge.tsx";
 import VentureCapital from "./pages/VentureCapital.tsx";
 import { ScrollToTop } from "./components/ScrollToTop";
 
