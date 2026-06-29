@@ -7,12 +7,6 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ContactDialog } from "@/components/ContactDialog";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -162,28 +156,6 @@ const nextSteps = [
   },
 ];
 
-const faqs = [
-  {
-    q: "When in the deal cycle do you run the sprint?",
-    a: "Most often between LOI and close, or in the first 30 days post-close. Either way, the four-week timeline is designed to land before the value creation plan is locked.",
-  },
-  {
-    q: "Who needs to be involved from the target company?",
-    a: "The CEO, head of revenue, head of finance, and typically a marketing or product lead. We also sample 8–12 deals and speak with frontline sellers and CSMs.",
-  },
-  {
-    q: "How is this different from commercial diligence?",
-    a: "Commercial diligence tests the market thesis — TAM, ICP fit, win/loss patterns. The Architecture Sprint tests the revenue operating system that has to deliver on that thesis after close.",
-  },
-  {
-    q: "What happens after the readout?",
-    a: "You leave with a 100-day roadmap and a recommendation on the right next engagement — typically Revenue System Build, Revenue Bridge, or no further engagement at all.",
-  },
-  {
-    q: "Do you work directly with the management team or only the deal team?",
-    a: "Both. The deal team owns the investment decision; the management team owns execution. The sprint is designed so both walk away aligned on what comes next.",
-  },
-];
 
 const url =
   "https://athenarevenuepartners.com/who-we-work-with/investors/private-equity/revenue-architecture-sprint";
@@ -524,29 +496,6 @@ const RevenueArchitectureSprint = () => {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="border-t border-border py-24 md:py-32 bg-secondary/40">
-        <div className="max-w-5xl mx-auto px-6 md:px-10">
-          <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
-            FAQ
-          </p>
-          <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-12 max-w-4xl">
-            Common questions.
-          </h2>
-          <Accordion type="single" collapsible className="border-t border-border">
-            {faqs.map((f, i) => (
-              <AccordionItem key={f.q} value={`item-${i}`} className="border-b border-border">
-                <AccordionTrigger className="font-display text-lg text-left py-6 hover:no-underline">
-                  {f.q}
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed pb-6">
-                  {f.a}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
-      </section>
 
       {/* CTA */}
       <section className="border-t border-border py-24 md:py-32">
