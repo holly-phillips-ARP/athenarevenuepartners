@@ -20,6 +20,7 @@ import RevenueArchitectureSprint from "./pages/RevenueArchitectureSprint.tsx";
 import RevenueAdvisoryBridge from "./pages/RevenueAdvisoryBridge.tsx";
 import VentureCapital from "./pages/VentureCapital.tsx";
 import FoundersRevenueArchitectureSprint from "./pages/founders/FoundersRevenueArchitectureSprint.tsx";
+import FoundersRevenueDiagnostic from "./pages/founders/FoundersRevenueDiagnostic.tsx";
 import { ScrollToTop } from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
