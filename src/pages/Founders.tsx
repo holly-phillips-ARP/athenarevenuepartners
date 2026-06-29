@@ -174,11 +174,17 @@ const Founders = () => {
                 Now let's make it run without you.
               </em>
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">
-              You've proven the product works and customers will pay for it. The next
-              challenge isn't selling harder — it's building a system that sells without you in
-              every room. That's what we do.
-            </p>
+            <div className="space-y-6">
+              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">
+                You've proven customers will buy your product.
+              </p>
+              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">
+                Now it's time to build the Revenue Operating System that allows your company to grow without depending on you to close every deal, answer every question, or make every decision.
+              </p>
+              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">
+                Whether you're hiring your first salesperson, preparing for your first revenue leader, or getting ready for your next stage of growth, Athena installs the Revenue Operating System that turns founder-led success into a scalable business.
+              </p>
+            </div>
           </motion.div>
         </div>
       </section>
