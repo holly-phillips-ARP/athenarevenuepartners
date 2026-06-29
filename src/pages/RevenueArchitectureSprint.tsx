@@ -89,24 +89,6 @@ const methodology = [
   { phase: "Optimize", label: "Revenue Advisory", current: false },
 ];
 
-const pillars = [
-  {
-    title: "Revenue Strategy",
-    items: ["ICP", "Segmentation", "GTM motion"],
-  },
-  {
-    title: "Revenue Organization",
-    items: ["Org design", "Roles", "Hiring roadmap"],
-  },
-  {
-    title: "Revenue Operations",
-    items: ["Technology", "KPIs", "Forecast approach"],
-  },
-  {
-    title: "Executive Roadmap",
-    items: ["100-Day Plan", "Priorities", "Risks"],
-  },
-];
 
 const deliverables = [
   "Revenue Operating Blueprint",
@@ -414,40 +396,6 @@ const RevenueArchitectureSprint = () => {
         </div>
       </section>
 
-      {/* WHAT WE BUILD */}
-      <section className="border-t border-border py-24 md:py-32">
-        <div className="max-w-5xl mx-auto px-6 md:px-10">
-          <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
-            What we build
-          </p>
-          <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-12 max-w-4xl">
-            Four pillars of the revenue operating system.
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-border/60 border border-border/60">
-            {pillars.map((p, i) => (
-              <div key={p.title} className="bg-background p-6 flex flex-col">
-                <div className="flex items-baseline gap-3 mb-4">
-                  <span className="font-display text-xs text-accent tracking-widest">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <h3 className="font-display text-lg leading-snug">{p.title}</h3>
-                </div>
-                <ul className="space-y-2">
-                  {p.items.map((it) => (
-                    <li
-                      key={it}
-                      className="text-sm text-muted-foreground flex items-start gap-2"
-                    >
-                      <span className="mt-2 w-1 h-1 rounded-full bg-accent flex-shrink-0" />
-                      {it}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* DELIVERABLES */}
       <section className="border-t border-border py-24 md:py-32 bg-secondary/40">
