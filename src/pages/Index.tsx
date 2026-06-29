@@ -46,23 +46,23 @@ const routes = [
 const pillars = [
   {
     no: "01",
-    title: "Forecast methodology",
+    title: "Predictable Forecasts",
     body: "A defined process for building, reviewing, and defending a forecast number your board can trust.",
   },
   {
     no: "02",
-    title: "Revenue qualification",
-    body: "A consistent standard for what's real versus assumed — so coverage gaps are visible before they become misses.",
+    title: "Trusted Pipeline",
+    body: "A consistent qualification framework that separates real opportunities from hopeful ones.",
   },
   {
     no: "03",
-    title: "Repeatable sales process",
-    body: "A defined motion so wins are replicable and losses are diagnosable — regardless of who's selling.",
+    title: "Repeatable Execution",
+    body: "A sales motion that produces consistent outcomes regardless of who's selling.",
   },
   {
     no: "04",
-    title: "Leadership operating cadence",
-    body: "A weekly rhythm that surfaces problems early and keeps leadership accountable to the number.",
+    title: "Operational Discipline",
+    body: "A management rhythm that surfaces problems early and drives accountability week over week.",
   },
 ];
 
