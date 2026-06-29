@@ -65,7 +65,7 @@ const Investors = () => {
             <h1 className="font-display text-5xl md:text-7xl leading-[1.05] mb-8 text-balance">
               Revenue problems rarely start with revenue.{" "}
               <em className="italic text-accent font-light">
-                They start with the systems behind it.
+                They start with the operating system behind it.
               </em>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">
