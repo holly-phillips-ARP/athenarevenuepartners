@@ -147,13 +147,13 @@ const RevenueArchitectureSprint = () => {
         <title>Revenue Architecture Sprint | Athena Revenue Partners</title>
         <meta
           name="description"
-          content="A four-week sprint to design the revenue operating system before you build it. For PE firms evaluating acquisitions and portfolio companies outgrowing founder-led sales."
+          content="Evaluate the quality of a company's revenue operating system before acquisition and leave with a roadmap for post-close value creation."
         />
         <link rel="canonical" href={url} />
         <meta property="og:title" content="Revenue Architecture Sprint | Athena Revenue Partners" />
         <meta
           property="og:description"
-          content="Design the revenue operating system before you build it. A four-week diligence-grade sprint for PE-backed companies."
+          content="Evaluate the quality of a company's revenue operating system before acquisition and leave with a roadmap for post-close value creation."
         />
         <meta property="og:url" content={url} />
         <meta property="og:type" content="website" />
