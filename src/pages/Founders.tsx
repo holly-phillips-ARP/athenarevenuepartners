@@ -10,19 +10,24 @@ const ease = [0.22, 1, 0.36, 1] as const;
 
 const scenarios = [
   {
-    title: "The capacity problem",
+    title: "Founder-Dependent Revenue",
     body:
-      "You're still the best closer on your team — and part of you is proud of that. But you also know it means every important deal still runs through you, and that's not a business. That's a job.",
+      "The founder still owns the biggest opportunities, the most important customer relationships, and the final decision on nearly every deal. The company grows as fast as the founder's calendar allows.",
   },
   {
-    title: "The forecast problem",
+    title: "No Forecast Methodology",
     body:
-      "Your investors ask for a number and you give them your best read — but if you're being honest, it's informed intuition, not a system. You're not sure how to make it more defensible without it taking over your week.",
+      "Revenue projections are based on experience and intuition—not a repeatable process leadership can inspect, improve, or defend.",
   },
   {
-    title: "The scale problem",
+    title: "Premature Hiring",
     body:
-      "You've hired salespeople but the results still depend on you — on your relationships, your judgment calls, your presence in the room. The team is good. The system isn't there yet.",
+      "Salespeople were added before the operating system existed. Performance becomes inconsistent because every rep is inventing their own approach.",
+  },
+  {
+    title: "No Leadership Operating Cadence",
+    body:
+      "Pipeline reviews become status updates. Forecast reviews become debates. Leadership spends more time reacting than operating.",
   },
 ];
 
@@ -193,13 +198,13 @@ const Founders = () => {
       <section className="border-t border-border py-24 md:py-32 bg-secondary/40">
         <div className="max-w-5xl mx-auto px-6 md:px-10">
           <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
-            Sound familiar?
+            The gap between founder-led and scalable
           </p>
           <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-12 max-w-4xl">
-            Most founders who find us are somewhere in this picture.
+            Four predictable gaps between founder-led growth and a scalable business.
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-px bg-border border border-border">
+          <div className="grid md:grid-cols-2 gap-px bg-border border border-border">
             {scenarios.map((s) => (
               <div key={s.title} className="bg-background p-6 md:p-8">
                 <h3 className="font-display text-lg mb-3">{s.title}</h3>
