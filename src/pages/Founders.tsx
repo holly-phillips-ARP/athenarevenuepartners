@@ -175,9 +175,9 @@ const Founders = () => {
               For Founders & CEOs · B2B Companies · Post-Product-Market Fit
             </p>
             <h1 className="font-display text-5xl md:text-7xl leading-[1.05] mb-8 text-balance">
-              You built the revenue.{" "}
+              Every founder eventually becomes the bottleneck.&nbsp;
               <em className="italic text-accent font-light">
-                Now let's make it run without you.
+                The best companies recognize it before growth stalls.
               </em>
             </h1>
             <div className="space-y-6">
