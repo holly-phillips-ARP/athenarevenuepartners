@@ -264,21 +264,42 @@ const VentureCapital = () => {
                 key={e.name}
                 className={`bg-background p-6 md:p-8 flex flex-col ${
                   e.featured ? "border-2 border-accent" : ""
-                }`}
+                } ${e.advisory ? "bg-secondary/40" : ""}`}
               >
-                <span className="inline-block text-[10px] uppercase tracking-widest text-accent bg-accent/10 px-2 py-1 rounded mb-4">
+                <span className="inline-block self-start text-[10px] uppercase tracking-widest text-accent bg-accent/10 px-2 py-1 rounded mb-4">
                   {e.tag}
                 </span>
                 <h3 className="font-display text-xl mb-3">{e.name}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-6">{e.desc}</p>
-                <Link
-                  to={e.link}
-                  className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent/80 transition-colors mt-auto"
-                >
-                  Learn More <span aria-hidden="true">→</span>
-                </Link>
+                <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">{e.desc}</p>
+                <div className="mt-6 pt-2">
+                  <Link
+                    to={`/who-we-work-with/investors/private-equity/${e.slug}`}
+                    className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent/80 transition-colors"
+                  >
+                    Learn more →
+                  </Link>
+                </div>
               </div>
             ))}
+            <div className="bg-accent/10 p-6 md:p-8 md:col-span-2 border border-accent/20 flex flex-col">
+              <span className="inline-block self-start text-[10px] uppercase tracking-widest text-accent bg-accent/10 px-2 py-1 rounded mb-4">
+                Leadership Transition
+              </span>
+              <h3 className="font-display text-xl mb-3">Revenue Bridge</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
+                A leadership transition doesn't require a different methodology—it requires a different starting point.
+
+                Whether you're hiring your first VP of Sales, your first CRO, or replacing an executive, we install the operating system before or alongside the transition so new leaders spend their first months executing—not diagnosing.
+              </p>
+              <div className="mt-6 pt-2">
+                <Link
+                  to="/who-we-work-with/investors/private-equity/revenue-bridge"
+                  className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent/80 transition-colors"
+                >
+                  Learn more →
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
