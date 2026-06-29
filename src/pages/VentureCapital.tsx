@@ -191,6 +191,26 @@ const VentureCapital = () => {
         </div>
       </section>
 
+      {/* PROBLEM */}
+      <section className="border-t border-border py-24 md:py-32 bg-secondary/40">
+        <div className="max-w-5xl mx-auto px-6 md:px-10">
+          <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
+            What we see at the board table
+          </p>
+          <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-12 max-w-4xl">
+            Four predictable gaps between product-market fit and repeatable growth.
+          </h2>
+          <div className="grid md:grid-cols-2 gap-px bg-border/60 border border-border/60">
+            {problems.map((p) => (
+              <div key={p.title} className="bg-background p-6 border-l-2 border-accent">
+                <h3 className="font-display text-lg mb-2">{p.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{p.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* WHAT WE INSTALL */}
       <section className="border-t border-border py-24 md:py-32">
         <div className="max-w-5xl mx-auto px-6 md:px-10">
@@ -214,26 +234,6 @@ const VentureCapital = () => {
                 <div className="font-display text-xs text-accent mb-4 tracking-widest">{d.no}</div>
                 <h3 className="font-display text-lg mb-3 leading-snug">{d.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{d.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* PROBLEM */}
-      <section className="border-t border-border py-24 md:py-32 bg-secondary/40">
-        <div className="max-w-5xl mx-auto px-6 md:px-10">
-          <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
-            What we see at the board table
-          </p>
-          <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-12 max-w-4xl">
-            Four predictable gaps between product-market fit and repeatable growth.
-          </h2>
-          <div className="grid md:grid-cols-2 gap-px bg-border/60 border border-border/60">
-            {problems.map((p) => (
-              <div key={p.title} className="bg-background p-6 border-l-2 border-accent">
-                <h3 className="font-display text-lg mb-2">{p.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{p.body}</p>
               </div>
             ))}
           </div>
