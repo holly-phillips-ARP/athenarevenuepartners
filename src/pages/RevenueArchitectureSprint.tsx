@@ -137,11 +137,11 @@ const timeline = [
 ];
 
 const outcomes = [
-  "Clear investment priorities",
-  "Board-ready recommendations",
-  "Defined revenue operating system",
-  "Leadership alignment",
-  "Implementation roadmap",
+  "How much confidence you should place in the forecast",
+  "Whether the current revenue operating system supports your investment thesis",
+  "Which risks require immediate attention after close",
+  "Where to focus the first 100 days",
+  "Whether current leadership can execute the plan—or where additional support is needed",
 ];
 
 const nextSteps = [
@@ -478,7 +478,7 @@ const RevenueArchitectureSprint = () => {
             Outcomes
           </p>
           <h2 className="font-display text-3xl md:text-5xl leading-[1.05] text-balance mb-12 max-w-4xl">
-            After the engagement you'll have.
+            By the end of the engagement you'll know:
           </h2>
           <ul className="grid md:grid-cols-2 gap-px bg-border/60 border border-border/60">
             {outcomes.map((o) => (
