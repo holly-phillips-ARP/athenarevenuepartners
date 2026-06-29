@@ -174,7 +174,7 @@ const Index = () => {
                     <span className="text-xs uppercase tracking-widest text-accent">
                       {item.no}
                     </span>
-                    <span className="font-display text-3xl md:text-4xl text-foreground">
+                    <span className="font-display text-lg text-foreground">
                       {item.label}
                     </span>
                   </div>
