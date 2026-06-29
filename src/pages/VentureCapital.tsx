@@ -257,29 +257,32 @@ const VentureCapital = () => {
             Project-based. Fixed scope. Defined handoff.
           </h2>
           <p className="text-muted-foreground leading-relaxed max-w-3xl mb-12">
-            We don't take fractional VP of Sales roles. We don't embed indefinitely. We install a
-            system with a clear start, a clear end, and a clean handoff — so the business runs
-            without us.
+            We don't become your VP of Sales.
+            <br />
+            We don't become your CRO.
+            <br />
+            We build the operating system your leadership team owns.
           </p>
 
           <div className="grid md:grid-cols-2 gap-px bg-border border border-border">
             {engagements.map((e) => (
               <div
                 key={e.name}
-                className={`bg-background p-6 md:p-8 ${
+                className={`bg-background p-6 md:p-8 flex flex-col ${
                   e.featured ? "border-2 border-accent" : ""
-                } ${e.advisory ? "bg-secondary/40" : ""}`}
+                }`}
               >
                 <span className="inline-block text-[10px] uppercase tracking-widest text-accent bg-accent/10 px-2 py-1 rounded mb-4">
                   {e.tag}
                 </span>
                 <h3 className="font-display text-xl mb-3">{e.name}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{e.desc}</p>
-                {e.note && (
-                  <p className="text-xs italic text-muted-foreground mt-4 pt-4 border-t border-border leading-relaxed">
-                    {e.note}
-                  </p>
-                )}
+                <p className="text-sm text-muted-foreground leading-relaxed mb-6">{e.desc}</p>
+                <Link
+                  to={e.link}
+                  className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent/80 transition-colors mt-auto"
+                >
+                  Learn More <span aria-hidden="true">→</span>
+                </Link>
               </div>
             ))}
           </div>
