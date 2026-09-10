@@ -8,7 +8,7 @@ const focus = [
 ];
 
 const pov = [
-  "Most forecast issues are not data problems—they're execution and leadership discipline problems.",
+  "Most forecast issues are not data problems - they're execution and leadership discipline problems.",
   "Pipeline gaps are often qualification issues, not volume issues.",
   "Founder-led sales can't be scaled.",
 ];
