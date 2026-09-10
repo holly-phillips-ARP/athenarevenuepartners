@@ -181,7 +181,7 @@ const Index = () => {
                 ))}
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                Athena helps companies navigate each by building a revenue operating system that makes growth repeatable.
+                Athena helps companies navigate each with a revenue operating system built to scale.
               </p>
             </div>
           </div>
