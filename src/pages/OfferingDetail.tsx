@@ -35,7 +35,7 @@ const OfferingDetail = () => {
       <article className="pt-40 pb-24">
         <div className="max-w-5xl mx-auto px-6 md:px-10">
           <Link
-            to="/#offerings"
+            to="/offerings"
             className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-12"
           >
             <ArrowLeft className="h-4 w-4" /> All offerings
