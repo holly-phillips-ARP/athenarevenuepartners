@@ -15,7 +15,7 @@ const pillars = [
 
 const proofPoints = [
   "Former CRO, VP of Sales, and enterprise sales leaders",
-  "Built and scaled teams in startup SaaS companies",
+  "Built and scaled teams in early stage startup SaaS companies",
   "Led through acquisitions and ownership transitions",
   "Rebuilt pipeline and forecasting after missed quarters",
   "Consistently delivered and exceeded revenue targets",
