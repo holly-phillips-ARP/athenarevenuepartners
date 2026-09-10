@@ -52,7 +52,7 @@ const pillars = [
   {
     no: "02",
     title: "Trusted Pipeline",
-    body: "A consistent qualification framework that separates real opportunities from hopeful ones.",
+    body: "A consistent qualification framework that separates real opportunities from hopeful ones - so leadership always knows what's real.",
   },
   {
     no: "03",
