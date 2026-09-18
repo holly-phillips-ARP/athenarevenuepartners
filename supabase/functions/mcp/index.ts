@@ -228,7 +228,7 @@ var get_offering_default = defineTool({
     }
     return {
       content: [{ type: "text", text: JSON.stringify(found, null, 2) }],
-      structuredContent: { offering: found }
+      structuredContent: { offering: JSON.parse(JSON.stringify(found)) }
     };
   }
 });

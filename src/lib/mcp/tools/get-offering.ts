@@ -31,7 +31,7 @@ export default defineTool({
 
     return {
       content: [{ type: "text" as const, text: JSON.stringify(found, null, 2) }],
-      structuredContent: { offering: found },
+      structuredContent: { offering: JSON.parse(JSON.stringify(found)) },
     };
   },
 });
