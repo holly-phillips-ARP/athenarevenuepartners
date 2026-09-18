@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "sdk_version": "2.2.1",
+  "path": "/functions/v1/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "athena-revenue-partners",
+      "version": "0.1.0",
+      "title": "Athena Revenue Partners"
+    },
+    "tools": [
+      {
+        "name": "list_offerings",
+        "title": "List offerings",
+        "description": "List Athena Revenue Partners' consulting offerings with slug, name, duration and a short summary. Optionally filter by audience.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "audience": {
+              "type": "string",
+              "enum": [
+                "all",
+                "general",
+                "private-equity"
+              ],
+              "default": "all",
+              "description": "Which catalogue to list: 'general', 'private-equity', or 'all'."
+            }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_offering",
+        "title": "Get offering details",
+        "description": "Get the full details of one Athena Revenue Partners offering by slug: overview, who it's for, process, deliverables and outcome.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "slug": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Offering slug, e.g. 'revenue-diagnostic'."
+            },
+            "audience": {
+              "type": "string",
+              "enum": [
+                "general",
+                "private-equity"
+              ],
+              "default": "general",
+              "description": "Which catalogue the slug belongs to."
+            }
+          },
+          "required": [
+            "slug"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "request_diagnostic",
+        "title": "Request a revenue diagnostic",
+        "description": "Submit a diagnostic request to Athena Revenue Partners — the same enquiry the website's 'Book a diagnostic' form sends. Only submit with the person's explicit consent and their real contact details.",
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": false,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 100,
+              "description": "Full name of the person requesting."
+            },
+            "email": {
+              "type": "string",
+              "format": "email",
+              "maxLength": 255,
+              "description": "Business email address."
+            },
+            "company": {
+              "type": "string",
+              "maxLength": 150,
+              "description": "Company name."
+            },
+            "role": {
+              "type": "string",
+              "maxLength": 100,
+              "description": "Job title, e.g. CEO or CRO."
+            },
+            "arr_stage": {
+              "type": "string",
+              "maxLength": 100,
+              "description": "Current ARR or funding stage."
+            },
+            "challenge": {
+              "type": "string",
+              "maxLength": 1000,
+              "description": "The revenue challenge they want help with."
+            }
+          },
+          "required": [
+            "name",
+            "email"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
