@@ -335,17 +335,36 @@ var request_diagnostic_default = defineTool3({
   annotations: { readOnlyHint: false, destructiveHint: false, openWorldHint: false },
   handler: async ({ name, email, company, role, arr_stage, challenge }) => {
     const supabase = supabaseAnon();
-    const { error } = await supabase.from("diagnostic_requests").insert({
-      id: crypto.randomUUID(),
+    const id = crypto.randomUUID();
+    const payload = {
+      id,
       name,
       email,
       company: company || null,
       role: role || null,
       arr_stage: arr_stage || null,
       challenge: challenge || null
-    });
+    };
+    const { error } = await supabase.from("diagnostic_requests").insert(payload);
     if (error) {
       return { content: [{ type: "text", text: error.message }], isError: true };
+    }
+    const { error: emailError } = await supabase.functions.invoke("send-transactional-email", {
+      body: {
+        templateName: "diagnostic-request",
+        idempotencyKey: `diagnostic-request-${id}`,
+        templateData: {
+          name: payload.name,
+          email: payload.email,
+          company: payload.company,
+          role: payload.role,
+          arr_stage: payload.arr_stage,
+          challenge: payload.challenge
+        }
+      }
+    });
+    if (emailError) {
+      console.error("Diagnostic notification email failed", emailError);
     }
     return {
       content: [
