@@ -19,7 +19,6 @@ const fadeUp = (delay = 0) => ({
 });
 
 const stats = [
-  ["±10%", "Forecast accuracy target"],
   ["90 days", "Typical time to impact"],
   ["30+ yrs", "Combined experience"],
 ];
@@ -130,7 +129,7 @@ const Index = () => {
 
           <motion.div
             {...fadeUp(0.24)}
-            className="mt-14 grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-3xl"
+            className="mt-14 flex flex-wrap gap-x-20 gap-y-10 max-w-3xl"
           >
             {stats.map(([k, v]) => (
               <div key={v}>
