@@ -13,9 +13,9 @@ const methodology = [
   {
     no: "01",
     phase: "Design",
-    product: "Revenue Architecture Sprint",
+    product: "",
     body:
-      "Define the revenue operating system the business needs before investing in people, process, or technology.",
+      "The first phase of every build - define the revenue operating system the business needs before investing in people, process, or technology.",
   },
   {
     no: "02",
@@ -41,10 +41,6 @@ const methodology = [
 ];
 
 const offerings = [
-  {
-    name: "Revenue Architecture Sprint",
-    desc: "When you need to design the revenue operating system.",
-  },
   {
     name: "Revenue Diagnostic",
     desc: "When performance isn't matching expectations.",
@@ -167,9 +163,11 @@ const Offerings = () => {
             {methodology.map((m) => (
               <div key={m.no} className="bg-background p-6 md:p-8 flex flex-col">
                 <h3 className="font-display text-2xl mb-3">{m.phase}</h3>
-                <span className="inline-block self-start text-[10px] uppercase tracking-widest text-accent bg-accent/10 px-2 py-1 rounded mb-4">
-                  {m.product}
-                </span>
+                {m.product && (
+                  <span className="inline-block self-start text-[10px] uppercase tracking-widest text-accent bg-accent/10 px-2 py-1 rounded mb-4">
+                    {m.product}
+                  </span>
+                )}
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   {m.body}
                 </p>
@@ -187,7 +185,7 @@ const Offerings = () => {
               The engagements
             </p>
             <h2 className="font-display text-4xl md:text-5xl leading-[1.05] text-balance">
-              Five ways the methodology shows up.
+              Four ways the methodology shows up.
             </h2>
             <p className="text-muted-foreground leading-relaxed mt-6">
               The scope, sequencing, and emphasis shift by buyer. The underlying system does
