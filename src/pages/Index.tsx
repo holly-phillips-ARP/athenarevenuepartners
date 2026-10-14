@@ -36,7 +36,7 @@ const routes = [
     label: "For founders & CEOs",
     headline: "You built the revenue. Now let's make it run without you.",
     body:
-      "We help founders and leadership teams replace founder dependence with a repeatable revenue operation system - that scales beyond any one individual.",
+      "We help Seed through Series B founders and leadership teams replace founder dependence with a repeatable revenue operation system - that scales beyond any one individual.",
     href: "/who-we-work-with/founders",
     cta: "How we work with founders",
   },
@@ -124,7 +124,7 @@ const Index = () => {
             {...fadeUp(0.16)}
             className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl"
           >
-            Athena Revenue Partners builds revenue operating systems that make growth predictable, forecasts defensible and leadership transitions scalable.
+            We help <span className="text-foreground font-medium">Seed through Series B</span> tech companies build revenue operating systems that make growth predictable, forecasts defensible and leadership transitions scalable.
           </motion.p>
 
           <motion.div
