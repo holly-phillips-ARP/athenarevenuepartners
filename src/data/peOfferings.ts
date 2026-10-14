@@ -11,7 +11,6 @@ export interface PEOffering {
 
 export const peOfferings: PEOffering[] = [
   {
-  {
     slug: "revenue-diagnostic",
     tag: "Existing portfolio company",
     name: "Revenue Diagnostic",
