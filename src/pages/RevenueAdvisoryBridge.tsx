@@ -63,7 +63,6 @@ const partnerships = [
 ];
 
 const methodology = [
-  { phase: "Design", label: "Revenue Architecture Sprint", current: false },
   { phase: "Assess", label: "Revenue Diagnostic", current: false },
   { phase: "Build", label: "Revenue System Build", current: false },
   { phase: "Optimize", label: "Revenue Advisory", current: true },

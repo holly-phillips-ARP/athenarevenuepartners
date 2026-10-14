@@ -53,7 +53,6 @@ const buildItems = [
 ];
 
 const methodology = [
-  { phase: "Design", label: "Revenue Architecture Sprint", current: false },
   { phase: "Assess", label: "Revenue Diagnostic", current: false },
   { phase: "Build", label: "Revenue System Build", current: true },
   { phase: "Optimize", label: "Revenue Advisory", current: false },
