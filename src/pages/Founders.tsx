@@ -84,13 +84,6 @@ const deliverables = [
 
 const engagements = [
   {
-    slug: "revenue-architecture-sprint",
-    tag: "BUILDING THE FOUNDATION",
-    name: "Revenue Architecture Sprint",
-    desc:
-      "For founder-led companies preparing for the next stage of growth.\n\nDesign the Revenue Operating System before investing in additional people, technology, or leadership.",
-  },
-  {
     slug: "revenue-diagnostic",
     tag: "PERFORMANCE PLATEAU",
     name: "Revenue Diagnostic",

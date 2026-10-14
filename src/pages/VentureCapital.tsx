@@ -84,13 +84,6 @@ const moments = [
 
 const engagements = [
   {
-    slug: "revenue-architecture-sprint",
-    tag: "POST-PRODUCT MARKET FIT",
-    name: "Revenue Architecture Sprint",
-    desc:
-      "For founder-led companies preparing for the next stage of growth.\n\nDesign the revenue operating system before scaling the team.",
-  },
-  {
     slug: "revenue-diagnostic",
     tag: "SCALING COMPANY",
     name: "Revenue Diagnostic",

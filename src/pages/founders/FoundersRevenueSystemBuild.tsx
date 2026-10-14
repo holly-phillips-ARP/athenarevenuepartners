@@ -12,7 +12,7 @@ const ease = [0.22, 1, 0.36, 1] as const;
 
 const scenarios = [
   {
-    title: "After the Architecture Sprint",
+    title: "After diligence",
     body: "The blueprint is defined. Now it's time to install the operating system your team will run.",
   },
   {
@@ -77,7 +77,6 @@ const buildCategories = [
 ];
 
 const methodology = [
-  { phase: "Design", label: "Revenue Architecture Sprint", current: false },
   { phase: "Assess", label: "Revenue Diagnostic", current: false },
   { phase: "Build", label: "Revenue System Build", current: true },
   { phase: "Optimize", label: "Revenue Advisory", current: false },
@@ -143,11 +142,6 @@ const nextSteps = [
     title: "Revenue Diagnostic",
     body: "Re-assess the operating system as the business scales to identify new constraints before they impact performance.",
     to: "/who-we-work-with/founders/revenue-diagnostic",
-  },
-  {
-    title: "Revenue Architecture Sprint",
-    body: "If the system hasn't been designed yet, start with a blueprint before building.",
-    to: "/who-we-work-with/founders/revenue-architecture-sprint",
   },
 ];
 

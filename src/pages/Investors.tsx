@@ -21,7 +21,7 @@ const audiences = [
     title: "Venture Capital Investors",
     href: "/who-we-work-with/investors/venture-capital",
     description: "Build the revenue engine that gets companies to the next stage",
-    items: ["Founder transition", "First sales hires", "Revenue architecture sprint", "Revenue systems build"],
+    items: ["Founder transition", "First sales hires", "Revenue systems build", "Revenue advisory"],
   },
 ];
 

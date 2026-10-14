@@ -305,7 +305,7 @@ const Index = () => {
           </h2>
           <p className="text-muted-foreground leading-relaxed max-w-xl mx-auto mb-10 whitespace-pre-line">
             Every engagement starts with understanding where you are today.{"\n"}
-            Whether that's a Revenue Architecture Sprint or a Revenue Diagnostic depends on the maturity of your business. We'll help you determine the right starting point.
+            Whether that's a Revenue Diagnostic or a Revenue System Build depends on the maturity of your business. We'll help you determine the right starting point.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Button

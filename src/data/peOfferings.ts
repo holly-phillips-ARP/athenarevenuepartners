@@ -11,28 +11,6 @@ export interface PEOffering {
 
 export const peOfferings: PEOffering[] = [
   {
-    slug: "revenue-architecture-sprint",
-    tag: "Pre-investment",
-    name: "Revenue Architecture Sprint",
-    summary:
-      "For companies you're evaluating before acquisition. Evaluate the quality of the revenue operating system and leave with a value creation blueprint before you close.",
-    overview:
-      "A diligence-grade assessment of the target's revenue engine, run during the LOI-to-close window. We pressure-test forecast credibility, pipeline quality, and sales process maturity, then deliver a value creation blueprint with a prioritized 100-day roadmap so the revenue assumptions in the model are something you can defend at IC.",
-    whoFor: [
-      "PE firms in active diligence on a platform or add-on",
-      "Investment teams underwriting a revenue growth thesis",
-      "Operating partners stress-testing forecast assumptions before close",
-    ],
-    whatWeDo: [
-      "Forecast accuracy and pipeline coverage analysis",
-      "Sales process and revenue qualification review",
-      "Identification of investment risks and value creation levers",
-      "100-day post-close roadmap aligned to the value creation plan",
-    ],
-    outcome:
-      "A defensible read on the revenue engine — and a blueprint for the first 100 days post-close.",
-  },
-  {
     slug: "revenue-diagnostic",
     tag: "Existing portfolio company",
     name: "Revenue Diagnostic",

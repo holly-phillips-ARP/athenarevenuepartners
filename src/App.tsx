@@ -16,10 +16,8 @@ import Founders from "./pages/Founders.tsx";
 import Offerings from "./pages/Offerings.tsx";
 import PrivateEquity from "./pages/PrivateEquity.tsx";
 import PEOfferingDetail from "./pages/PEOfferingDetail.tsx";
-import RevenueArchitectureSprint from "./pages/RevenueArchitectureSprint.tsx";
 import RevenueAdvisoryBridge from "./pages/RevenueAdvisoryBridge.tsx";
 import VentureCapital from "./pages/VentureCapital.tsx";
-import FoundersRevenueArchitectureSprint from "./pages/founders/FoundersRevenueArchitectureSprint.tsx";
 import FoundersRevenueDiagnostic from "./pages/founders/FoundersRevenueDiagnostic.tsx";
 import FoundersRevenueSystemBuild from "./pages/founders/FoundersRevenueSystemBuild.tsx";
 import FoundersRevenueAdvisory from "./pages/founders/FoundersRevenueAdvisory.tsx";
@@ -45,7 +43,6 @@ const App = () => (
           <Route path="/unsubscribe" element={<Unsubscribe />} />
           <Route path="/who-we-work-with/investors" element={<Investors />} />
           <Route path="/who-we-work-with/investors/private-equity" element={<PrivateEquity />} />
-          <Route path="/who-we-work-with/investors/private-equity/revenue-architecture-sprint" element={<RevenueArchitectureSprint />} />
           <Route path="/who-we-work-with/investors/private-equity/revenue-diagnostic" element={<RevenueDiagnostic />} />
           <Route path="/who-we-work-with/investors/private-equity/revenue-system-build" element={<RevenueSystemBuild />} />
           <Route path="/who-we-work-with/investors/private-equity/revenue-advisory" element={<RevenueAdvisoryBridge />} />
@@ -53,7 +50,6 @@ const App = () => (
           <Route path="/who-we-work-with/investors/private-equity/:slug" element={<PEOfferingDetail />} />
           <Route path="/who-we-work-with/investors/venture-capital" element={<VentureCapital />} />
           <Route path="/who-we-work-with/founders" element={<Founders />} />
-          <Route path="/who-we-work-with/founders/revenue-architecture-sprint" element={<FoundersRevenueArchitectureSprint />} />
           <Route path="/who-we-work-with/founders/revenue-diagnostic" element={<FoundersRevenueDiagnostic />} />
           <Route path="/who-we-work-with/founders/revenue-system-build" element={<FoundersRevenueSystemBuild />} />
           <Route path="/who-we-work-with/founders/revenue-advisory" element={<FoundersRevenueAdvisory />} />

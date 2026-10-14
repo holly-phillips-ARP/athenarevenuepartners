@@ -79,7 +79,6 @@ const evaluationCategories = [
 ];
 
 const methodology = [
-  { phase: "Design", label: "Revenue Architecture Sprint", current: false },
   { phase: "Assess", label: "Revenue Diagnostic", current: true },
   { phase: "Build", label: "Revenue System Build", current: false },
   { phase: "Optimize", label: "Revenue Advisory", current: false },
@@ -140,11 +139,6 @@ const nextSteps = [
     title: "Revenue System Build",
     body: "Most founders move here next — turn the diagnostic findings into a working Revenue Operating System your team owns.",
     to: "/who-we-work-with/founders/revenue-system-build",
-  },
-  {
-    title: "Revenue Architecture Sprint",
-    body: "If the company hasn't yet designed the Revenue Operating System, start with the blueprint before building.",
-    to: "/who-we-work-with/founders/revenue-architecture-sprint",
   },
   {
     title: "Revenue Advisory",
