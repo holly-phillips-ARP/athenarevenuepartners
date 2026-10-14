@@ -12,17 +12,17 @@ const ease = [0.22, 1, 0.36, 1] as const;
 const methodology = [
   {
     no: "01",
-    phase: "Design",
-    product: "",
-    body:
-      "The first phase of every build - define the revenue operating system the business needs before investing in people, process, or technology.",
-  },
-  {
-    no: "02",
     phase: "Assess",
     product: "Revenue Diagnostic",
     body:
       "Identify the operational constraints limiting predictable growth and prioritize the improvements with the greatest impact.",
+  },
+  {
+    no: "02",
+    phase: "Design",
+    product: "",
+    body:
+      "Define the revenue operating system the business needs before investing in people, process, or technology.",
   },
   {
     no: "03",
@@ -95,7 +95,7 @@ const Offerings = () => {
         <title>Offerings | Athena Revenue Partners</title>
         <meta
           name="description"
-          content="A single methodology—Design, Assess, Build, Optimize—tailored to private equity, venture capital, and founder-led companies."
+          content="A single methodology—Assess, Design, Build, Optimize—tailored to private equity, venture capital, and founder-led companies."
         />
         <link rel="canonical" href="https://athenarevenuepartners.com/offerings" />
         <meta property="og:title" content="Offerings | Athena Revenue Partners" />
@@ -153,7 +153,7 @@ const Offerings = () => {
               THE ATHENA METHOD
             </p>
             <h2 className="font-display text-4xl md:text-5xl leading-[1.05] text-balance">
-              Design. Assess. Build. Optimize.
+              Assess. Design. Build. Optimize.
             </h2>
             <p className="text-muted-foreground leading-relaxed mt-6">
               Every engagement fits within one repeatable methodology.
@@ -253,7 +253,7 @@ const Offerings = () => {
           <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10">
             You don't need to know which engagement you need. Just tell us where you are today.
             <br />
-            We'll help determine whether you're ready to design, assess, build or optimize your revenue operating system - and if we're not the right fit, we'll tell you that too.
+            We'll help determine whether you're ready to assess, design, build or optimize your revenue operating system - and if we're not the right fit, we'll tell you that too.
           </p>
           <Button
             onClick={() => setContactOpen(true)}
