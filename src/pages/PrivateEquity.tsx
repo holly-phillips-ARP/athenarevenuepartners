@@ -96,13 +96,6 @@ const levers = [
 
 const engagements = [
   {
-    slug: "revenue-architecture-sprint",
-    tag: "PRE-INVESTMENT",
-    name: "Revenue Architecture Sprint",
-    desc:
-      "For companies you're evaluating before acquisition.\n\nEvaluate the quality of the revenue operating system and leave with a value creation blueprint before you close.\u00a0",
-  },
-  {
     slug: "revenue-diagnostic",
     tag: "EXISTING PORTFOLIO COMPANY",
     name: "Revenue Diagnostic",
