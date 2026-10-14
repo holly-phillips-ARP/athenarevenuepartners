@@ -141,11 +141,6 @@ const nextSteps = [
     to: "/who-we-work-with/founders/revenue-system-build",
   },
   {
-    title: "Revenue Architecture Sprint",
-    body: "If the company hasn't yet designed the Revenue Operating System, start with the blueprint before building.",
-    to: "/who-we-work-with/founders/revenue-architecture-sprint",
-  },
-  {
     title: "Revenue Advisory",
     body: "Ongoing quarterly oversight once the system is in place — coach leaders and evolve the operating model.",
     to: "/who-we-work-with/founders/revenue-advisory",
