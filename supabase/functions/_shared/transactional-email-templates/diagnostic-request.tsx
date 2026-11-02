@@ -55,7 +55,7 @@ const DiagnosticRequestEmail = ({
         <Row label="Company" value={company} />
         <Row label="Role" value={role} />
         <Row label="Current ARR / stage" value={arr_stage} />
-        <Row label="First AE situation" value={challenge} />
+        <Row label="First seller situation" value={challenge} />
         <Hr style={hr} />
         <Text style={footerNote}>
           Reply directly to this email to reach {name || 'the prospect'}.
@@ -80,7 +80,7 @@ export const template = {
     company: 'Acme Inc.',
     role: 'Founder',
     arr_stage: '$5M ARR, Series A',
-    challenge: 'Our first AE has been in seat 6 months and I am still on every deal.',
+    challenge: 'Our first seller has been in seat 6 months and I am still on every deal.',
   },
 } satisfies TemplateEntry
 

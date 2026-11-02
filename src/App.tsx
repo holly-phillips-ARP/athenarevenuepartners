@@ -32,8 +32,8 @@ const App = () => (
           <Route path="/offerings" element={<Offerings />} />
           {["revenue-diagnostic", "forecast-accuracy-sprint", "revenue-architecture-sprint", "revenue-system-build"].map(slug => <Route key={slug} path={`/offerings/${slug}`} element={<Navigate to="/offerings" replace />} />)}
           {["revenue-diagnostic", "revenue-architecture-sprint", "revenue-system-build"].map(slug => <Route key={slug} path={`/who-we-work-with/founders/${slug}`} element={<Navigate to="/offerings" replace />} />)}
-          {["revenue-advisory", "revenue-bridge"].map(slug => <Route key={slug} path={`/offerings/${slug}`} element={<Navigate to="/offerings#beyond-your-first-ae" replace />} />)}
-          {["revenue-advisory", "revenue-bridge"].map(slug => <Route key={slug} path={`/who-we-work-with/founders/${slug}`} element={<Navigate to="/offerings#beyond-your-first-ae" replace />} />)}
+          {["revenue-advisory", "revenue-bridge"].map(slug => <Route key={slug} path={`/offerings/${slug}`} element={<Navigate to="/offerings#beyond-your-first-seller" replace />} />)}
+          {["revenue-advisory", "revenue-bridge"].map(slug => <Route key={slug} path={`/who-we-work-with/founders/${slug}`} element={<Navigate to="/offerings#beyond-your-first-seller" replace />} />)}
           {["the-hire", "the-handoff", "the-step-back"].map(slug => <Route key={slug} path={`/offerings/${slug}`} element={<Navigate to={`/offerings#${slug}`} replace />} />)}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

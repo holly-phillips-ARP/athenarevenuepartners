@@ -12,8 +12,8 @@ import { z } from "npm:zod@^3.25.76";
 // src/data/offerings.ts
 var offerRules = {
   hire: { basePrice: 3500, plusPrice: 6500, approximateWeeks: 4, maxFinalists: 3, rampPlanDays: 90 },
-  handoff: { price: 24e3, days: 90, maxAEs: 2 },
-  stepBack: { price: 36e3, days: 90, maxAEs: 2, minMonthsInSeat: 3, maxMonthsInSeat: 9, assessmentWeeks: [1, 3], implementationWeeks: [4, 12] },
+  handoff: { price: 24e3, days: 90, maxSellers: 2 },
+  stepBack: { price: 36e3, days: 90, maxSellers: 2, minMonthsInSeat: 3, maxMonthsInSeat: 9, assessmentWeeks: [1, 3], implementationWeeks: [4, 12] },
   advisory: { minMonthlyPrice: 5e3, maxMonthlyPrice: 15e3 }
 };
 var offerings = [
@@ -22,7 +22,7 @@ var offerings = [
     no: "01",
     name: "The Hire",
     category: "primary",
-    situation: "Still deciding, or ready to hire your first AE.",
+    situation: "Still deciding, or ready to hire your first seller.",
     summary: "Get the most important hire right. Figure out what makes you successful, whether you're ready, and who can sell the way your customers buy.",
     investment: "$3,500 Base / $6,500 Plus",
     duration: "About 4 weeks \xB7 1:1",
@@ -41,32 +41,32 @@ var offerings = [
     no: "02",
     name: "The Handoff",
     category: "primary",
-    situation: "Offer signed. Your first AE is starting soon.",
-    summary: "Turn how you win into a playbook your AE can use. We're with you from the signed offer through their first 90 days, so the handoff doesn't land back on your calendar.",
+    situation: "Offer signed. Your first seller is starting soon.",
+    summary: "Turn how you win into a playbook your seller can use. We're with you from the signed offer through their first 90 days, so the handoff doesn't land back on your calendar.",
     investment: "$24K",
     price: offerRules.handoff.price,
     duration: "Signed offer through the first 90 days",
-    maxAEs: offerRules.handoff.maxAEs,
-    overview: "You signed the offer. Now the work is helping someone else sell what you've been selling. We capture your playbook before the AE starts, then work alongside you and the AE through the first 90 days.",
-    includes: ["Write the playbook of how you win before the AE starts", "Run the 90-day ramp plan from day one", "Hold weekly deal reviews and coach the AE", "Step you back deal by deal", "Covers up to two AEs"],
-    output: "We work toward an AE closing on a real process and on track, with you stepping back from more deals.",
-    process: [{ phase: "Before the AE starts", detail: "Write down how you win and prepare the ramp plan." }, { phase: "First 90 days", detail: "Run the ramp, review deals weekly, coach the AE and step you back deal by deal." }]
+    maxSellers: offerRules.handoff.maxSellers,
+    overview: "You signed the offer. Now the work is helping someone else sell what you've been selling. We capture your playbook before the seller starts, then work alongside you and the seller through the first 90 days.",
+    includes: ["Write the playbook of how you win before the seller starts", "Run the 90-day ramp plan from day one", "Hold weekly deal reviews and coach the seller", "Step you back deal by deal", "Covers up to two sellers"],
+    output: "We work toward a seller closing on a real process and on track, with you stepping back from more deals.",
+    process: [{ phase: "Before the seller starts", detail: "Write down how you win and prepare the ramp plan." }, { phase: "First 90 days", detail: "Run the ramp, review deals weekly, coach the seller and step you back deal by deal." }]
   },
   {
     slug: "the-step-back",
     no: "03",
     name: "The Step Back",
     category: "primary",
-    situation: "AE in seat 3\u20139 months, but not closing on their own.",
-    summary: "Find out what's in the way, then fix it together. We work with you and your AE on the process, coaching and real deals that make stepping back possible.",
+    situation: "A seller in seat 3\u20139 months, but not closing on their own.",
+    summary: "Find out what's in the way, then fix it together. We work with you and your seller on the process, coaching and real deals that make stepping back possible.",
     investment: "$36K",
     price: offerRules.stepBack.price,
-    duration: "90 days \xB7 Up to two AEs",
-    maxAEs: offerRules.stepBack.maxAEs,
-    overview: "You hired your first AE so you could step back. Let's get you there. We'll answer the question you've been carrying: is it the rep, the system, or both? Then we'll work on what's in the way, together.",
-    includes: ["Sit in on calls and review the pipeline", "Talk with you and your AE separately", "A clear answer and written plan after weeks 1\u20133", "Turn how you win into a playbook with stages and qualification", "Reset the AE's ramp on that playbook", "Weekly deal reviews and AE coaching", "Step you back deal by deal, working toward you running the review yourself", "Covers up to two AEs"],
-    output: "A clear answer, a written plan, and hands-on work toward an AE closing on a real process and a founder able to step back.",
-    process: [{ phase: "Weeks 1\u20133", detail: "Listen to calls, review the pipeline and talk with founder and AE separately. Answer whether the rep, system or both need support. Leave you with a clear answer and written plan." }, { phase: "Weeks 4\u201312", detail: "Build the playbook, stages and qualification. Reset the ramp, coach the AE and run weekly deal reviews. Step you back deal by deal until you can run the review yourself." }]
+    duration: "90 days \xB7 Up to two sellers",
+    maxSellers: offerRules.stepBack.maxSellers,
+    overview: "You hired your first seller so you could step back. Let's get you there. We'll answer the question you've been carrying: is it the rep, the system, or both? Then we'll work on what's in the way, together.",
+    includes: ["Sit in on calls and review the pipeline", "Talk with you and your seller separately", "A clear answer and written plan after weeks 1\u20133", "Turn how you win into a playbook with stages and qualification", "Reset the seller's ramp on that playbook", "Weekly deal reviews and seller coaching", "Step you back deal by deal, working toward you running the review yourself", "Covers up to two sellers"],
+    output: "A clear answer, a written plan, and hands-on work toward a seller closing on a real process and a founder able to step back.",
+    process: [{ phase: "Weeks 1\u20133", detail: "Listen to calls, review the pipeline and talk with founder and seller separately. Answer whether the rep, system or both need support. Leave you with a clear answer and written plan." }, { phase: "Weeks 4\u201312", detail: "Build the playbook, stages and qualification. Reset the ramp, coach the seller and run weekly deal reviews. Step you back deal by deal until you can run the review yourself." }]
   }
 ];
 var secondaryOfferings = [
@@ -80,7 +80,7 @@ var getOfferingBySlug = (slug) => [...offerings, ...secondaryOfferings].find((of
 var get_offering_default = defineTool({
   name: "get_offering",
   title: "Get Athena offer details",
-  description: "Get the scope, price and entry point for an Athena first-AE offer or secondary leadership support. No guaranteed results or full-ramp-by-day-90 promise.",
+  description: "Get the scope, price and entry point for an Athena first-seller offer or secondary leadership support. No guaranteed results or full-ramp-by-day-90 promise.",
   inputSchema: { slug: z.string().trim().min(1).describe("Offer slug: the-hire, the-handoff, the-step-back, revenue-advisory, revenue-bridge or fractional-revenue-leadership."), audience: z.literal("general").default("general").describe("Shared catalog for founders and investor referrals.") },
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
   handler: ({ slug }) => {
@@ -96,11 +96,11 @@ import { z as z2 } from "npm:zod@^3.25.76";
 var list_offerings_default = defineTool2({
   name: "list_offerings",
   title: "List Athena offers",
-  description: "Browse The Hire, The Handoff and The Step Back for a founder's first AE, plus clearly secondary leadership support. Same offers and pricing for founders and investor referrals.",
+  description: "Browse The Hire, The Handoff and The Step Back for a founder's first seller, plus clearly secondary leadership support. Same offers and pricing for founders and investor referrals.",
   inputSchema: { audience: z2.enum(["all", "general"]).default("all").describe("Shared founder and referral catalog; both values return the same offers.") },
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
   handler: () => {
-    const items = [...offerings, ...secondaryOfferings].map((offer) => ({ slug: offer.slug, name: offer.name, category: offer.category, summary: offer.summary, investment: offer.investment, url: `/offerings#${offer.category === "primary" ? offer.slug : "beyond-your-first-ae"}` }));
+    const items = [...offerings, ...secondaryOfferings].map((offer) => ({ slug: offer.slug, name: offer.name, category: offer.category, summary: offer.summary, investment: offer.investment, url: `/offerings#${offer.category === "primary" ? offer.slug : "beyond-your-first-seller"}` }));
     return { content: [{ type: "text", text: JSON.stringify(items, null, 2) }], structuredContent: { items } };
   }
 });
@@ -159,14 +159,14 @@ function supabaseAnon() {
 var request_diagnostic_default = defineTool3({
   name: "request_conversation",
   title: "Request a conversation",
-  description: "Ask Athena Revenue Partners for a conversation about hiring or supporting a founder's first AE \u2014 the same enquiry as the website's conversation form. Only submit with the person's explicit consent and their real contact details.",
+  description: "Ask Athena Revenue Partners for a conversation about hiring or supporting a founder's first seller \u2014 the same enquiry as the website's conversation form. Only submit with the person's explicit consent and their real contact details.",
   inputSchema: {
     name: z3.string().trim().min(1).max(100).describe("Full name of the person requesting."),
     email: z3.string().trim().email().max(255).describe("Business email address."),
     company: z3.string().trim().max(150).optional().describe("Company name."),
     role: z3.string().trim().max(100).optional().describe("Job title, e.g. founder or portfolio support lead."),
     arr_stage: z3.string().trim().max(100).optional().describe("Current ARR or funding stage."),
-    challenge: z3.string().trim().max(1e3).optional().describe("Where they are with their first AE and what they want help with.")
+    challenge: z3.string().trim().max(1e3).optional().describe("Where they are with their first seller and what they want help with.")
   },
   annotations: { readOnlyHint: false, destructiveHint: false, openWorldHint: false },
   handler: async ({ name, email, company, role, arr_stage, challenge }) => {

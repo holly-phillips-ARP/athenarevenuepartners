@@ -15,7 +15,7 @@
       {
         "name": "list_offerings",
         "title": "List Athena offers",
-        "description": "Browse The Hire, The Handoff and The Step Back for a founder's first AE, plus clearly secondary leadership support. Same offers and pricing for founders and investor referrals.",
+        "description": "Browse The Hire, The Handoff and The Step Back for a founder's first seller, plus clearly secondary leadership support. Same offers and pricing for founders and investor referrals.",
         "annotations": {
           "readOnlyHint": true,
           "idempotentHint": true,
@@ -42,7 +42,7 @@
       {
         "name": "get_offering",
         "title": "Get Athena offer details",
-        "description": "Get the scope, price and entry point for an Athena first-AE offer or secondary leadership support. No guaranteed results or full-ramp-by-day-90 promise.",
+        "description": "Get the scope, price and entry point for an Athena first-seller offer or secondary leadership support. No guaranteed results or full-ramp-by-day-90 promise.",
         "annotations": {
           "readOnlyHint": true,
           "idempotentHint": true,
@@ -74,7 +74,7 @@
       {
         "name": "request_conversation",
         "title": "Request a conversation",
-        "description": "Ask Athena Revenue Partners for a conversation about hiring or supporting a founder's first AE — the same enquiry as the website's conversation form. Only submit with the person's explicit consent and their real contact details.",
+        "description": "Ask Athena Revenue Partners for a conversation about hiring or supporting a founder's first seller — the same enquiry as the website's conversation form. Only submit with the person's explicit consent and their real contact details.",
         "annotations": {
           "readOnlyHint": false,
           "destructiveHint": false,
@@ -113,7 +113,7 @@
             "challenge": {
               "type": "string",
               "maxLength": 1000,
-              "description": "Where they are with their first AE and what they want help with."
+              "description": "Where they are with their first seller and what they want help with."
             }
           },
           "required": [

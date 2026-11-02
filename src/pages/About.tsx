@@ -108,7 +108,7 @@ const About = () => {
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl leading-relaxed">
               From founder-led to team-led. Built by operators, not consultants.
-              We’re Kami Cekosh and Holly Phillips. We help funded B2B tech founders hire their first AE,
+              We’re Kami Cekosh and Holly Phillips. We help funded B2B tech founders hire their first seller,
               get them selling on a real process, and start stepping back from every deal.
             </p>
           </motion.div>
@@ -216,7 +216,7 @@ const About = () => {
           </h2>
           <div className="space-y-6 text-lg leading-relaxed opacity-90 max-w-4xl">
             <p>Most revenue problems aren't people problems. They're systems problems. Nobody is at fault. Founder-led selling is a stage, not a failure.</p>
-            <p>We work with you and your AE on the actual calls and deals. We capture how you win, build a process the AE can use, and coach through the handoff. We work toward a seller closing on a real process and a founder who can step back.</p>
+            <p>We work with you and your seller on the actual calls and deals. We capture how you win, build a process the seller can use, and coach through the handoff. We work toward a seller closing on a real process and a founder who can step back.</p>
           </div>
           <div className="mt-12">
             <Button

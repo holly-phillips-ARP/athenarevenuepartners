@@ -6,14 +6,14 @@ export default defineTool({
   name: "request_conversation",
   title: "Request a conversation",
   description:
-    "Ask Athena Revenue Partners for a conversation about hiring or supporting a founder's first AE — the same enquiry as the website's conversation form. Only submit with the person's explicit consent and their real contact details.",
+    "Ask Athena Revenue Partners for a conversation about hiring or supporting a founder's first seller — the same enquiry as the website's conversation form. Only submit with the person's explicit consent and their real contact details.",
   inputSchema: {
     name: z.string().trim().min(1).max(100).describe("Full name of the person requesting."),
     email: z.string().trim().email().max(255).describe("Business email address."),
     company: z.string().trim().max(150).optional().describe("Company name."),
     role: z.string().trim().max(100).optional().describe("Job title, e.g. founder or portfolio support lead."),
     arr_stage: z.string().trim().max(100).optional().describe("Current ARR or funding stage."),
-    challenge: z.string().trim().max(1000).optional().describe("Where they are with their first AE and what they want help with."),
+    challenge: z.string().trim().max(1000).optional().describe("Where they are with their first seller and what they want help with."),
   },
   annotations: { readOnlyHint: false, destructiveHint: false, openWorldHint: false },
   handler: async ({ name, email, company, role, arr_stage, challenge }) => {

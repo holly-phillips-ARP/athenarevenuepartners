@@ -1,4 +1,4 @@
-# First-AE website rewrite
+# First-seller website rewrite
 - [x] Present the complete page/section change plan and receive approval.
 - [x] Update homepage, offers, founder/investor pages and About using the supplied brief.
 - [x] Remove retired offering and private-equity content; preserve useful links and working contact flows.

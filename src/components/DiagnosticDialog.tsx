@@ -90,7 +90,7 @@ export const DiagnosticDialog = ({ open, onOpenChange }: Props) => {
         <DialogHeader>
           <DialogTitle className="font-display text-2xl">Book a conversation</DialogTitle>
           <DialogDescription>
-            Tell us where you are with your first AE. We'll follow up by email to arrange a conversation.
+            Tell us where you are with your first seller. We'll follow up by email to arrange a conversation.
           </DialogDescription>
         </DialogHeader>
         <form onSubmit={onSubmit} className="space-y-4 mt-2">
@@ -116,7 +116,7 @@ export const DiagnosticDialog = ({ open, onOpenChange }: Props) => {
               <Input id="arr_stage" value={form.arr_stage} onChange={update("arr_stage")} maxLength={100} />
             </div>
             <div className="space-y-2 sm:col-span-2">
-              <Label htmlFor="challenge">Where are you with your first AE?</Label>
+              <Label htmlFor="challenge">Where are you with your first seller?</Label>
               <Textarea id="challenge" value={form.challenge} onChange={update("challenge")} maxLength={1000} rows={4} />
             </div>
           </div>
