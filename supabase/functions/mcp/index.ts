@@ -71,8 +71,7 @@ var offerings = [
 ];
 var secondaryOfferings = [
   { slug: "revenue-advisory", name: "Revenue Advisory", category: "secondary", investment: "$5K\u2013$15K per month, depending on scope", summary: "Ongoing forecast reviews, leadership coaching, and an independent read for the board. A natural next step after The Step Back." },
-  { slug: "revenue-bridge", name: "Revenue Bridge", category: "secondary", investment: "Scoped per engagement", summary: "Install the revenue operating system before or alongside a new sales leader or CEO." },
-  { slug: "fractional-revenue-leadership", name: "Fractional revenue leadership", category: "secondary", investment: "Scoped to the hours needed", summary: "Revenue leadership support, scoped to the hours your company needs." }
+  { slug: "revenue-bridge", name: "Revenue Bridge", category: "secondary", investment: "Scoped per engagement", summary: "Interim leadership while you search for your first or next leader. We hold the revenue function, keep the pipeline moving and leave a running process behind." }
 ];
 var getOfferingBySlug = (slug) => [...offerings, ...secondaryOfferings].find((offer) => offer.slug === slug);
 
@@ -81,7 +80,7 @@ var get_offering_default = defineTool({
   name: "get_offering",
   title: "Get Athena offer details",
   description: "Get the scope, price and entry point for an Athena first-seller offer or secondary leadership support. No guaranteed results or full-ramp-by-day-90 promise.",
-  inputSchema: { slug: z.string().trim().min(1).describe("Offer slug: the-hire, the-handoff, the-step-back, revenue-advisory, revenue-bridge or fractional-revenue-leadership."), audience: z.literal("general").default("general").describe("Shared catalog for founders and investor referrals.") },
+  inputSchema: { slug: z.string().trim().min(1).describe("Offer slug: the-hire, the-handoff, the-step-back, revenue-advisory or revenue-bridge."), audience: z.literal("general").default("general").describe("Shared catalog for founders and investor referrals.") },
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
   handler: ({ slug }) => {
     const offer = getOfferingBySlug(slug);

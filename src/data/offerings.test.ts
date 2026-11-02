@@ -20,7 +20,10 @@ describe("approved first-seller offer rules", () => {
   it("starts monthly Advisory at $5K", () => { expect(offerRules.advisory.minMonthlyPrice).toBe(5000); });
   it("ends monthly Advisory range at $15K", () => { expect(offerRules.advisory.maxMonthlyPrice).toBe(15000); });
   it("keeps three primary offers", () => { expect(offerings.map(o => o.slug)).toEqual(["the-hire", "the-handoff", "the-step-back"]); });
-  it("keeps leadership support secondary", () => { expect(secondaryOfferings.every(o => o.category === "secondary")).toBe(true); expect(secondaryOfferings).toHaveLength(3); });
+  it("keeps leadership support secondary", () => { expect(secondaryOfferings.every(o => o.category === "secondary")).toBe(true); expect(secondaryOfferings).toHaveLength(2); });
+  it("keeps only Revenue Advisory and Revenue Bridge secondary", () => { expect(secondaryOfferings.map(o => o.slug)).toEqual(["revenue-advisory", "revenue-bridge"]); });
+  it("describes Revenue Bridge as interim leadership while searching", () => { expect(getOfferingBySlug("revenue-bridge")?.summary).toBe("Interim leadership while you search for your first or next leader. We hold the revenue function, keep the pipeline moving and leave a running process behind."); });
+  it("drops fractional revenue leadership", () => { expect(getOfferingBySlug("fractional-revenue-leadership")).toBeUndefined(); });
   it("routes deciding or hiring to Hire", () => { expect(offerForSituation("deciding-or-hiring")).toBe("the-hire"); });
   it("routes a signed offer to Handoff", () => { expect(offerForSituation("offer-signed")).toBe("the-handoff"); });
   it("routes not closing to Step Back", () => { expect(offerForSituation("not-closing")).toBe("the-step-back"); });

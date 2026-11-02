@@ -48,8 +48,7 @@ export const offerings = [
 
 export const secondaryOfferings = [
   { slug: "revenue-advisory", name: "Revenue Advisory", category: "secondary", investment: "$5K–$15K per month, depending on scope", summary: "Ongoing forecast reviews, leadership coaching, and an independent read for the board. A natural next step after The Step Back." },
-  { slug: "revenue-bridge", name: "Revenue Bridge", category: "secondary", investment: "Scoped per engagement", summary: "Install the revenue operating system before or alongside a new sales leader or CEO." },
-  { slug: "fractional-revenue-leadership", name: "Fractional revenue leadership", category: "secondary", investment: "Scoped to the hours needed", summary: "Revenue leadership support, scoped to the hours your company needs." },
+  { slug: "revenue-bridge", name: "Revenue Bridge", category: "secondary", investment: "Scoped per engagement", summary: "Interim leadership while you search for your first or next leader. We hold the revenue function, keep the pipeline moving and leave a running process behind." },
 ] as const;
 
 export const getOfferingBySlug = (slug?: string) => [...offerings, ...secondaryOfferings].find((offer) => offer.slug === slug);

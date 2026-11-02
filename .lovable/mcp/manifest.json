@@ -54,7 +54,7 @@
             "slug": {
               "type": "string",
               "minLength": 1,
-              "description": "Offer slug: the-hire, the-handoff, the-step-back, revenue-advisory, revenue-bridge or fractional-revenue-leadership."
+              "description": "Offer slug: the-hire, the-handoff, the-step-back, revenue-advisory or revenue-bridge."
             },
             "audience": {
               "type": "string",
