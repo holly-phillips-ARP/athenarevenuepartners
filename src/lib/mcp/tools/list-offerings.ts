@@ -1,44 +1,14 @@
 import { defineTool } from "@lovable.dev/mcp-js";
 import { z } from "zod";
-import { offerings } from "../../../data/offerings";
-import { peOfferings } from "../../../data/peOfferings";
-
-const audienceSchema = z.enum(["all", "general", "private-equity"]);
+import { offerings, secondaryOfferings } from "../../../data/offerings";
 
 export default defineTool({
-  name: "list_offerings",
-  title: "List offerings",
-  description:
-    "List Athena Revenue Partners' consulting offerings with slug, name, duration and a short summary. Optionally filter by audience.",
-  inputSchema: {
-    audience: audienceSchema
-      .default("all")
-      .describe("Which catalogue to list: 'general', 'private-equity', or 'all'."),
-  },
+  name: "list_offerings", title: "List Athena offers",
+  description: "Browse The Hire, The Handoff and The Step Back for a founder's first AE, plus clearly secondary leadership support. Same offers and pricing for founders and investor referrals.",
+  inputSchema: { audience: z.enum(["all", "general"]).default("all").describe("Shared founder and referral catalog; both values return the same offers.") },
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
-  handler: ({ audience }) => {
-    const general = offerings.map((o) => ({
-      audience: "general" as const,
-      slug: o.slug,
-      name: o.name,
-      duration: o.duration,
-      summary: o.summary,
-      investment: o.investment,
-    }));
-    const pe = peOfferings.map((o) => ({
-      audience: "private-equity" as const,
-      slug: o.slug,
-      name: o.name,
-      stage: o.tag,
-      summary: o.summary,
-    }));
-
-    const items =
-      audience === "general" ? general : audience === "private-equity" ? pe : [...general, ...pe];
-
-    return {
-      content: [{ type: "text" as const, text: JSON.stringify(items, null, 2) }],
-      structuredContent: { items },
-    };
+  handler: () => {
+    const items = [...offerings, ...secondaryOfferings].map(offer => ({ slug: offer.slug, name: offer.name, category: offer.category, summary: offer.summary, investment: offer.investment, url: `/offerings#${offer.category === "primary" ? offer.slug : "beyond-your-first-ae"}` }));
+    return { content: [{ type: "text" as const, text: JSON.stringify(items, null, 2) }], structuredContent: { items } };
   },
 });

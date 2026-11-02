@@ -79,7 +79,7 @@ export const DiagnosticDialog = ({ open, onOpenChange }: Props) => {
     if (emailError) {
       console.error("Email notification failed", emailError);
     }
-    toast({ title: "Request received", description: "We'll be in touch within one business day." });
+    toast({ title: "Request received", description: "Thanks for reaching out. The Athena team will follow up by email." });
     setForm({ name: "", email: "", company: "", role: "", arr_stage: "", challenge: "" });
     onOpenChange(false);
   };
@@ -88,9 +88,9 @@ export const DiagnosticDialog = ({ open, onOpenChange }: Props) => {
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-lg">
         <DialogHeader>
-          <DialogTitle className="font-display text-2xl">Book a Revenue Diagnostic</DialogTitle>
+          <DialogTitle className="font-display text-2xl">Book a conversation</DialogTitle>
           <DialogDescription>
-            Tell us a bit about your company and we'll be in touch to schedule.
+            Tell us where you are with your first AE. We'll follow up by email to arrange a conversation.
           </DialogDescription>
         </DialogHeader>
         <form onSubmit={onSubmit} className="space-y-4 mt-2">
@@ -116,7 +116,7 @@ export const DiagnosticDialog = ({ open, onOpenChange }: Props) => {
               <Input id="arr_stage" value={form.arr_stage} onChange={update("arr_stage")} maxLength={100} />
             </div>
             <div className="space-y-2 sm:col-span-2">
-              <Label htmlFor="challenge">Top revenue challenge</Label>
+              <Label htmlFor="challenge">Where are you with your first AE?</Label>
               <Textarea id="challenge" value={form.challenge} onChange={update("challenge")} maxLength={1000} rows={4} />
             </div>
           </div>

@@ -26,7 +26,7 @@ export const ContactDialog = ({
   open,
   onOpenChange,
   title = "Send us a message",
-  description = "Drop us a note and we'll get back to you within one business day.",
+  description = "Tell us what's on your mind. We'll follow up by email.",
   source,
 }: Props) => {
   const [submitting, setSubmitting] = useState(false);

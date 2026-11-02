@@ -1,37 +1,15 @@
 import { ToolError, defineTool } from "@lovable.dev/mcp-js";
 import { z } from "zod";
-import { offerings } from "../../../data/offerings";
-import { peOfferings } from "../../../data/peOfferings";
+import { getOfferingBySlug } from "../../../data/offerings";
 
 export default defineTool({
-  name: "get_offering",
-  title: "Get offering details",
-  description:
-    "Get the full details of one Athena Revenue Partners offering by slug: overview, who it's for, process, deliverables and outcome.",
-  inputSchema: {
-    slug: z.string().trim().min(1).describe("Offering slug, e.g. 'revenue-diagnostic'."),
-    audience: z
-      .enum(["general", "private-equity"])
-      .default("general")
-      .describe("Which catalogue the slug belongs to."),
-  },
+  name: "get_offering", title: "Get Athena offer details",
+  description: "Get the scope, price and entry point for an Athena first-AE offer or secondary leadership support. No guaranteed results or full-ramp-by-day-90 promise.",
+  inputSchema: { slug: z.string().trim().min(1).describe("Offer slug: the-hire, the-handoff, the-step-back, revenue-advisory, revenue-bridge or fractional-revenue-leadership."), audience: z.literal("general").default("general").describe("Shared catalog for founders and investor referrals.") },
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
-  handler: ({ slug, audience }) => {
-    const found =
-      audience === "private-equity"
-        ? peOfferings.find((o) => o.slug === slug)
-        : offerings.find((o) => o.slug === slug);
-
-    if (!found) {
-      const available = (audience === "private-equity" ? peOfferings : offerings)
-        .map((o) => o.slug)
-        .join(", ");
-      throw new ToolError(`No offering with slug "${slug}". Available: ${available}`);
-    }
-
-    return {
-      content: [{ type: "text" as const, text: JSON.stringify(found, null, 2) }],
-      structuredContent: { offering: JSON.parse(JSON.stringify(found)) },
-    };
+  handler: ({ slug }) => {
+    const offer = getOfferingBySlug(slug);
+    if (!offer) throw new ToolError("Offer not found. Use list_offerings for current offers.");
+    return { content: [{ type: "text" as const, text: JSON.stringify(offer, null, 2) }] };
   },
 });

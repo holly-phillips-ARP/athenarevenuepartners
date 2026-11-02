@@ -40,14 +40,14 @@ const DiagnosticRequestEmail = ({
   <Html lang="en" dir="ltr">
     <Head />
     <Preview>
-      New Revenue Diagnostic request from {name || 'a prospect'}
+      New conversation request from {name || 'a prospect'}
       {company ? ` at ${company}` : ''}
     </Preview>
     <Body style={main}>
       <Container style={container}>
-        <Heading style={h1}>New Revenue Diagnostic request</Heading>
+        <Heading style={h1}>New conversation request</Heading>
         <Text style={lede}>
-          A new diagnostic request just came in from the website.
+          A new conversation request came in through the website or an AI assistant.
         </Text>
         <Hr style={hr} />
         <Row label="Name" value={name} />
@@ -55,7 +55,7 @@ const DiagnosticRequestEmail = ({
         <Row label="Company" value={company} />
         <Row label="Role" value={role} />
         <Row label="Current ARR / stage" value={arr_stage} />
-        <Row label="Top revenue challenge" value={challenge} />
+        <Row label="First AE situation" value={challenge} />
         <Hr style={hr} />
         <Text style={footerNote}>
           Reply directly to this email to reach {name || 'the prospect'}.
@@ -70,17 +70,17 @@ export const template = {
   subject: (data: Record<string, any>) => {
     const name = data?.name || 'New prospect'
     const company = data?.company ? ` (${data.company})` : ''
-    return `New diagnostic request — ${name}${company}`
+    return `New conversation request — ${name}${company}`
   },
-  displayName: 'Diagnostic request notification',
+  displayName: 'Conversation request notification',
   to: 'hello@athenarevenuepartners.com',
   previewData: {
     name: 'Jane Doe',
     email: 'jane@example.com',
     company: 'Acme Inc.',
-    role: 'VP Revenue',
+    role: 'Founder',
     arr_stage: '$5M ARR, Series A',
-    challenge: 'Plateau in net new logo growth and rising CAC.',
+    challenge: 'Our first AE has been in seat 6 months and I am still on every deal.',
   },
 } satisfies TemplateEntry
 

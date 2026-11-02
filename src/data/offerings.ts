@@ -1,122 +1,55 @@
-export interface Offering {
-  slug: string;
-  no: string;
-  name: string;
-  duration: string;
-  summary: string;
-  includes: string[];
-  output: string;
-  investment: string;
-  featured?: boolean;
-  overview: string;
-  whoFor: string[];
-  process: { phase: string; detail: string }[];
-  deliverables: string[];
-}
+export const offerRules = {
+  hire: { basePrice: 3500, plusPrice: 6500, approximateWeeks: 4, maxFinalists: 3, rampPlanDays: 90 },
+  handoff: { price: 24000, days: 90, maxAEs: 2 },
+  stepBack: { price: 36000, days: 90, maxAEs: 2, minMonthsInSeat: 3, maxMonthsInSeat: 9, assessmentWeeks: [1, 3], implementationWeeks: [4, 12] },
+  advisory: { minMonthlyPrice: 5000, maxMonthlyPrice: 15000 },
+} as const;
 
-export const offerings: Offering[] = [
-  {
-    slug: "revenue-diagnostic",
-    no: "01",
-    name: "Revenue Diagnostic",
-    duration: "2–3 weeks",
-    summary: "A fast, deep assessment of your revenue engine.",
-    includes: [
-      "Pipeline quality + coverage analysis",
-      "Forecast methodology review",
-      "Sales process + inspection gaps",
-      "Leadership cadence evaluation",
-    ],
-    output: "Forecast reality vs. fiction · Top 3 revenue blockers · 90-day action plan",
-    investment: "$15K – $25K",
-    overview:
-      "A focused, two-to-three week diagnostic that gives leadership an unflinching read on the health of your revenue engine. We look at the deals, the data, and the discipline behind them—then tell you what's real and what's not.",
-    whoFor: [
-      "CEOs and CROs questioning forecast credibility",
-      "Boards needing an independent revenue assessment",
-      "Leaders preparing for a fundraise or scaling event",
-    ],
-    process: [
-      { phase: "Week 1", detail: "Data pull, deal sampling, and stakeholder interviews across sales, marketing, and finance." },
-      { phase: "Week 2", detail: "Pipeline coverage, forecast methodology, and inspection cadence analysis." },
-      { phase: "Week 3", detail: "Findings, prioritized blockers, and a 90-day action plan delivered to the executive team." },
-    ],
-    deliverables: [
-      "Forecast credibility scorecard",
-      "Top 3 revenue blockers with root cause",
-      "90-day action plan with owners and milestones",
-    ],
-  },
-  {
-    slug: "forecast-accuracy-sprint",
-    no: "02",
-    name: "Forecast Accuracy Sprint",
-    duration: "6–8 weeks",
-    summary: "Our core engagement to stabilize revenue predictability.",
-    includes: [
-      "Deal inspection rigor",
-      "Forecast methodology",
-      "Pipeline coverage model",
-      "Executive operating cadence",
-    ],
-    output: "Move toward ±10–15% forecast accuracy",
-    investment: "$35K – $75K",
-    featured: true,
-    overview:
-      "A six-to-eight week sprint to install the inspection rigor, methodology, and cadence required to forecast within ±10–15%. We work alongside your leaders to rebuild the operating system of revenue—deal by deal, week by week.",
-    whoFor: [
-      "Companies with chronic forecast misses",
-      "Leaders ready to install discipline, not dashboards",
-      "Teams scaling past $20M ARR",
-    ],
-    process: [
-      { phase: "Weeks 1–2", detail: "Baseline current forecast, inspect open pipeline, and align leadership on standards." },
-      { phase: "Weeks 3–5", detail: "Implement deal inspection rituals, forecast methodology, and pipeline coverage model." },
-      { phase: "Weeks 6–8", detail: "Operationalize executive cadence and hand off the system to your team." },
-    ],
-    deliverables: [
-      "Forecast methodology and call playbook",
-      "Pipeline coverage model and inspection rhythm",
-      "Executive operating cadence template",
-      "Trained leaders running the system",
-    ],
-  },
-  {
-    slug: "revenue-system-build",
-    no: "03",
-    name: "Revenue System Build",
-    duration: "3–6 months",
-    summary: "A full transformation of your revenue engine.",
-    includes: [
-      "Scalable sales process",
-      "Pipeline generation system",
-      "Hiring and role design",
-      "Forecast discipline",
-      "Leadership coaching",
-    ],
-    output: "Predictable, scalable revenue",
-    investment: "$90K – $200K+",
-    overview:
-      "A three-to-six month transformation of your revenue function—from pipeline generation through forecast discipline. We design, install, and coach the system that turns revenue from a guess into a discipline.",
-    whoFor: [
-      "Founder-led companies stepping into a real revenue org",
-      "Investor-backed businesses preparing for the next leg of growth",
-      "CEOs replacing duct-tape with a true operating system",
-    ],
-    process: [
-      { phase: "Month 1", detail: "Diagnose the full engine, design the target operating model, and align the leadership team." },
-      { phase: "Months 2–4", detail: "Build the sales process, pipeline generation system, hiring plan, and forecast discipline." },
-      { phase: "Months 5–6", detail: "Coach leaders, embed cadence, and hand off a self-running revenue system." },
-    ],
-    deliverables: [
-      "Documented sales process and stage definitions",
-      "Pipeline generation system across sales and marketing",
-      "Role design, hiring scorecards, and ramp plans",
-      "Forecast and operating cadence",
-      "Coached leadership team",
-    ],
-  },
-];
+export const offerForSituation = (situation: "deciding-or-hiring" | "offer-signed" | "not-closing") =>
+  ({ "deciding-or-hiring": "the-hire", "offer-signed": "the-handoff", "not-closing": "the-step-back" } as const)[situation];
 
-export const getOfferingBySlug = (slug?: string) =>
-  offerings.find((o) => o.slug === slug);
+export const offerings = [
+  {
+    slug: "the-hire", no: "01", name: "The Hire", category: "primary",
+    situation: "Still deciding, or ready to hire your first AE.",
+    summary: "Get the most important hire right. Figure out what makes you successful, whether you're ready, and who can sell the way your customers buy.",
+    investment: "$3,500 Base / $6,500 Plus", duration: "About 4 weeks · 1:1",
+    overview: "Before you write a job description, let's get clear on how you win. We'll work out whether you're ready to hire, what needs fixing first, and who your first seller needs to be. You'll leave with a written hiring plan you can run yourself.",
+    tiers: [
+      { name: "Base", price: offerRules.hire.basePrice, includes: ["How you win today, and what a seller will need to repeat it", "Whether you're ready to hire, or what to fix first", "Who to hire, when, and how", "A compensation range and a plan to tap your network", "A written hiring plan you can run on your own"] },
+      { name: "Plus", price: offerRules.hire.plusPrice, includes: ["Everything in Base", "A hiring scorecard built around how you win", "An interview guide and custom role play", "A written 90-day ramp plan", "Kami or Holly on final interviews for up to 3 finalists"] },
+    ],
+    includes: ["Hiring readiness and written hiring plan", "Plus: scorecard, interview guide, role play, 90-day ramp plan and final interviews for up to 3 finalists"],
+    exclusions: ["Candidate sourcing", "Recruiting fees"],
+    output: "A written hiring plan, with the option to build the interview and ramp tools together.",
+    process: [{ phase: "About 4 weeks", detail: "1:1 work on your selling motion, readiness and hiring plan. Plus adds interview and ramp tools and support with finalists." }],
+  },
+  {
+    slug: "the-handoff", no: "02", name: "The Handoff", category: "primary",
+    situation: "Offer signed. Your first AE is starting soon.",
+    summary: "Turn how you win into a playbook your AE can use. We're with you from the signed offer through their first 90 days, so the handoff doesn't land back on your calendar.",
+    investment: "$24K", price: offerRules.handoff.price, duration: "Signed offer through the first 90 days", maxAEs: offerRules.handoff.maxAEs,
+    overview: "You signed the offer. Now the work is helping someone else sell what you've been selling. We capture your playbook before the AE starts, then work alongside you and the AE through the first 90 days.",
+    includes: ["Write the playbook of how you win before the AE starts", "Run the 90-day ramp plan from day one", "Hold weekly deal reviews and coach the AE", "Step you back deal by deal", "Covers up to two AEs"],
+    output: "We work toward an AE closing on a real process and on track, with you stepping back from more deals.",
+    process: [{ phase: "Before the AE starts", detail: "Write down how you win and prepare the ramp plan." }, { phase: "First 90 days", detail: "Run the ramp, review deals weekly, coach the AE and step you back deal by deal." }],
+  },
+  {
+    slug: "the-step-back", no: "03", name: "The Step Back", category: "primary",
+    situation: "AE in seat 3–9 months, but not closing on their own.",
+    summary: "Find out what's in the way, then fix it together. We work with you and your AE on the process, coaching and real deals that make stepping back possible.",
+    investment: "$36K", price: offerRules.stepBack.price, duration: "90 days · Up to two AEs", maxAEs: offerRules.stepBack.maxAEs,
+    overview: "You hired your first AE so you could step back. Let's get you there. We'll answer the question you've been carrying: is it the rep, the system, or both? Then we'll work on what's in the way, together.",
+    includes: ["Sit in on calls and review the pipeline", "Talk with you and your AE separately", "A clear answer and written plan after weeks 1–3", "Turn how you win into a playbook with stages and qualification", "Reset the AE's ramp on that playbook", "Weekly deal reviews and AE coaching", "Step you back deal by deal, working toward you running the review yourself", "Covers up to two AEs"],
+    output: "A clear answer, a written plan, and hands-on work toward an AE closing on a real process and a founder able to step back.",
+    process: [{ phase: "Weeks 1–3", detail: "Listen to calls, review the pipeline and talk with founder and AE separately. Answer whether the rep, system or both need support. Leave you with a clear answer and written plan." }, { phase: "Weeks 4–12", detail: "Build the playbook, stages and qualification. Reset the ramp, coach the AE and run weekly deal reviews. Step you back deal by deal until you can run the review yourself." }],
+  },
+] as const;
+
+export const secondaryOfferings = [
+  { slug: "revenue-advisory", name: "Revenue Advisory", category: "secondary", investment: "$5K–$15K per month, depending on scope", summary: "Ongoing forecast reviews, leadership coaching, and an independent read for the board. A natural next step after The Step Back." },
+  { slug: "revenue-bridge", name: "Revenue Bridge", category: "secondary", investment: "Scoped per engagement", summary: "Install the revenue operating system before or alongside a new sales leader or CEO." },
+  { slug: "fractional-revenue-leadership", name: "Fractional revenue leadership", category: "secondary", investment: "Scoped to the hours needed", summary: "Revenue leadership support, scoped to the hours your company needs." },
+] as const;
+
+export const getOfferingBySlug = (slug?: string) => [...offerings, ...secondaryOfferings].find((offer) => offer.slug === slug);

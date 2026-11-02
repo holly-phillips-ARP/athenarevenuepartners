@@ -1,13 +1,26 @@
 # Athena Revenue Partners
 
-> Revenue leadership consultancy helping Seed through Series B SaaS companies build predictable, scalable revenue systems. Founded by operators, not consultants.
+> From founder-led to team-led. Built by operators, not consultants.
 
-We help startup tech companies achieve forecast accuracy within 10% in six months by replacing intuition with systems, discipline, and repeatable execution.
+Co-founded by Kami Cekosh and Holly Phillips. We help funded B2B tech founders past product-market fit, usually $1M–$10M ARR with zero to two AEs, hire their first seller or get the AE they have closing on a real process. Seed founders may hire earlier. We also work with seed and Series A VCs, accelerators and portfolio support teams; same offers and pricing.
+
+## Primary offers — enter at any step
+- [The Hire](/offerings#the-hire): Base $3,500, about 4 weeks, 1:1, written hiring plan. Plus $6,500 adds scorecard, interview guide, custom role play, written 90-day ramp plan and Kami or Holly in final interviews for up to 3 finalists. No candidate sourcing or recruiting fees.
+- [The Handoff](/offerings#the-handoff): $24K, signed offer through first 90 days, up to two AEs. Founder playbook before start, ramp from day one, weekly deal reviews/coaching, founder steps back deal by deal.
+- [The Step Back](/offerings#the-step-back): $36K, 90 days, up to two AEs in seat 3–9 months and not closing independently. Weeks 1–3: calls, pipeline and separate founder/AE conversations, clear answer and written plan. Weeks 4–12: playbook, stages, qualification, ramp reset, weekly deal reviews/coaching and founder handoff.
+
+## Beyond your first AE — secondary support
+- Revenue Advisory: $5K–$15K/month depending on scope; forecast reviews, leadership coaching and an independent board read.
+- Revenue Bridge: scoped per engagement; operating system before or alongside a new sales leader or CEO.
+- Fractional revenue leadership: scoped to hours needed.
+
+We work toward outcomes; no guaranteed results or promise of full ramp by day 90. Founder-led selling is a stage, not a failure. Most revenue problems are systems problems, not people problems.
 
 ## Pages
+- [Home](/)
+- [Offers](/offerings)
+- [For Founders](/who-we-work-with/founders)
+- [For Investors](/who-we-work-with/investors)
+- [About](/about): 40+ years of combined revenue leadership. Degreed and Posit results are from Kami's prior operating roles, not Athena client engagements.
 
-- [Home](/): Overview of our approach, offerings, and proof.
-- [About](/about): Founders Kami Cekosh and Holly Phillips — operators who have led revenue at high-growth SaaS companies.
-- [Revenue Diagnostic](/offerings/revenue-diagnostic): A 2–3 week assessment of your revenue engine.
-- [Forecast Accuracy Sprint](/offerings/forecast-accuracy-sprint): A 6–8 week sprint to install forecast discipline and reach ±10–15% accuracy.
-- [Revenue System Build](/offerings/revenue-system-build): A 3–6 month transformation that builds a scalable revenue operating system.
+Book a conversation through the website or hello@athenarevenuepartners.com.

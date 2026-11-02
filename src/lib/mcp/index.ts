@@ -6,8 +6,8 @@ import requestDiagnosticTool from "./tools/request-diagnostic";
 export default defineMcp({
   name: "athena-revenue-partners",
   title: "Athena Revenue Partners",
-  version: "0.1.0",
+  version: "0.2.0",
   instructions:
-    "Tools for Athena Revenue Partners, a revenue leadership consultancy. Use `list_offerings` to browse the consulting offerings (general and private-equity catalogues), `get_offering` for the full detail of one offering, and `request_diagnostic` to submit a diagnostic enquiry on behalf of someone who has explicitly asked for it.",
+    "Athena Revenue Partners helps funded B2B tech founders move from founder-led to team-led sales. Use list_offerings for The Hire, The Handoff, The Step Back and secondary leadership support; get_offering for exact scope and pricing; request_conversation only with explicit consent and real contact details. These offers have the same pricing for investor referrals. Do not promise guaranteed results or full ramp by day 90.",
   tools: [listOfferingsTool, getOfferingTool, requestDiagnosticTool],
 });

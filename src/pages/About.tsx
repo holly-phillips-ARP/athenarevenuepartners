@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { Linkedin } from "lucide-react";
@@ -28,16 +27,16 @@ const partners: Partner[] = [
     linkedin: "https://linkedin.com/in/kami-c-281b481/",
     image: partnerKami,
     bio: [
-      "Kami is a revenue leader who has spent her career building and scaling revenue organizations inside both Fortune 50 and high-growth software companies.",
-      "Most recently serving as Global Vice President of Sales at a high-growth data science company, she has led go-to-market teams through every stage of growth — from founder-led selling into repeatable, forecastable revenue motions.",
-      "She is known across the industry for her ability to attract and retain top talent, installing the operational discipline that turns ambitious targets into predictable outcomes.",
-      "Personally, she resides in the Greater Minneapolis-St. Paul Metro Area and when she is not working, loves to watch her two boys on the field or rink (football, soccer, hockey). Also, a wanna be chef and sourdough baker + huge dog lover.",
+      "Kami has spent 24 years in revenue roles, starting at 3M and UnitedHealth Group before moving into venture-backed tech companies.",
+      "In prior roles, she helped take Degreed from $25M to $110M ARR. At Posit, she rebuilt the sales organization from scratch and scaled ARR from $72M to $130M. Those are results from her earlier operating roles, not Athena client engagements.",
+      "Two of the three startups she's been part of reached unicorn status. She's also a Techstars mentor.",
+      "Outside work, she's cheering on her two boys in hockey, football and soccer. She firmly believes a good margarita fixes most problems.",
     ],
     highlights: [
-      "Vice President of Sales at a high-growth data science company",
-      "Revenue leadership across Fortune 50 and high-growth software",
-      "Builder of high-performing, accountable revenue teams",
-      "Operator-first approach to forecasting and pipeline rigor",
+      "24 years in revenue roles",
+      "Fortune 50 discipline and venture-backed startup experience",
+      "Two of three startups reached unicorn status",
+      "Techstars mentor",
     ],
   },
   {
@@ -47,15 +46,14 @@ const partners: Partner[] = [
     linkedin: "https://www.linkedin.com/in/holly-marie-phillips/",
     image: partnerHolly,
     bio: [
-      "Holly is a revenue executive whose career spans some of the most respected names in modern go-to-market — culminating in her current role as Chief Revenue Officer at a leading product and GTM education company.",
-      "She has spent two decades architecting revenue functions, leading sales and customer organizations, and coaching executives through scale.",
-      "Her work blends commercial strategy, operational discipline, and a deep belief that revenue performance is a leadership problem before it is ever a tactics problem.",
+      "Holly has spent 15+ years building and scaling go-to-market teams across SaaS, EdTech and Healthcare, from early stage through Series C+ and acquisitions.",
+      "She's owned sales, customer success, enablement and revenue operations. She knows what it takes to help a seller use a process, and to help a founder hand over the deals she's used to leading.",
+      "Outside work, she's keeping up with three kids in sports, reading a good book, enjoying a glass of wine, or planning the next trip.",
     ],
     highlights: [
-      "Chief Revenue Officer at a leading product and GTM education company",
-      "Prior leadership across global SaaS, professional networks, and learning platforms",
-      "Two decades architecting GTM and revenue organizations",
-      "Executive coach to CEOs, founders, and revenue leaders",
+      "15+ years building and scaling go-to-market teams",
+      "Early stage through Series C+ and acquisitions",
+      "Sales, customer success, enablement and revenue operations",
     ],
   },
 ];
@@ -69,7 +67,7 @@ const About = () => {
         <title>About | Athena Revenue Partners</title>
         <meta
           name="description"
-          content="Founded by Kami Cekosh and Holly Phillips — operators who have built and scaled enterprise revenue organizations inside leading SaaS companies."
+          content="Meet Kami Cekosh and Holly Phillips: 40+ years of combined revenue leadership, helping funded B2B tech founders move from founder-led to team-led sales."
         />
         <link rel="canonical" href="https://athenarevenuepartners.com/about" />
         <meta property="og:title" content="About | Athena Revenue Partners" />
@@ -109,10 +107,9 @@ const About = () => {
               Built by operators. <em className="italic text-muted-foreground">Not consultants.</em>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl leading-relaxed">
-              Athena Revenue Partners was founded by two revenue leaders who have spent their
-              careers inside the companies they now advise — building forecastable revenue, hiring
-              and coaching the teams behind it, and installing the operational discipline that
-              turns growth into a system.
+              From founder-led to team-led. Built by operators, not consultants.
+              We’re Kami Cekosh and Holly Phillips. We help funded B2B tech founders hire their first AE,
+              get them selling on a real process, and start stepping back from every deal.
             </p>
           </motion.div>
         </div>
@@ -158,7 +155,7 @@ const About = () => {
 
                 <div>
                   <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-3">
-                    {p.role} · {p.location}
+                    {p.role}
                   </p>
                   <h2 className="font-display text-4xl md:text-5xl leading-[1.05] mb-6">
                     {p.name}
@@ -199,38 +196,14 @@ const About = () => {
         ))}
       </section>
 
-      {/* ABOUT THE NAME */}
       <section className="py-20 md:py-28 border-t border-border bg-secondary/30">
         <div className="max-w-5xl mx-auto px-6 md:px-10">
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as const }}
-          >
-            <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-6">
-              Why Athena
-            </p>
-            <h2 className="font-display text-3xl md:text-5xl leading-[1.05] mb-8 text-balance max-w-4xl">
-              Wisdom over spectacle.
-            </h2>
-            <div className="space-y-5 text-lg text-muted-foreground leading-relaxed max-w-3xl">
-              <p>
-                In ancient Greece, the gods competed to win patronage of a great city.
-                Poseidon struck the earth and produced a powerful spring. Athena reached
-                down and planted an olive tree.
-              </p>
-              <p>
-                The citizens chose Athena — not because the spring wasn't impressive,
-                but because the olive tree offered something more lasting: food, oil,
-                timber, and trade. Wealth that compounded over generations.
-              </p>
-              <p>
-                She didn't win with force or spectacle. She won with wisdom, simplicity,
-                and strategy. That's the company we set out to build.
-              </p>
-            </div>
-          </motion.div>
+          <p className="text-xs uppercase tracking-[0.2em] text-accent mb-6">How we got here</p>
+          <h2 className="font-display text-3xl md:text-5xl leading-[1.05] mb-8 text-balance max-w-4xl">We met doing the work.</h2>
+          <div className="space-y-5 text-lg text-muted-foreground leading-relaxed max-w-3xl">
+            <p>We met on the same enterprise SaaS team in 2018 and earned multiple Presidents Clubs. Between us, we bring 40+ years of revenue leadership: Fortune 50 discipline plus venture-backed startup experience.</p>
+            <p>We've hired sellers, coached teams and carried the responsibility for revenue. Athena puts that experience alongside the founder who's ready for someone else to close.</p>
+          </div>
         </div>
       </section>
 
@@ -239,15 +212,11 @@ const About = () => {
         <div className="max-w-5xl mx-auto px-6 md:px-10">
           <p className="text-xs uppercase tracking-[0.2em] opacity-60 mb-6">Our philosophy</p>
           <h2 className="font-display text-4xl md:text-6xl leading-[1.05] mb-10 text-balance max-w-4xl">
-            Most revenue problems get solved at the wrong level.
+            Something is in the way. Let's find it together.
           </h2>
           <div className="space-y-6 text-lg leading-relaxed opacity-90 max-w-4xl">
-            <p>
-              A new tool, a new hire, a new playbook — and the same forecast miss happens again. The issue isn't tactics. It's the absence of a system underneath them.
-            </p>
-            <p>
-              We work shoulder-to-shoulder with leadership teams to install that system — clarity on the deals, the pipeline, the process, and the cadence that holds it all together. The result isn't a deck. It's a revenue function that runs.
-            </p>
+            <p>Most revenue problems aren't people problems. They're systems problems. Nobody is at fault. Founder-led selling is a stage, not a failure.</p>
+            <p>We work with you and your AE on the actual calls and deals. We capture how you win, build a process the AE can use, and coach through the handoff. We work toward a seller closing on a real process and a founder who can step back.</p>
           </div>
           <div className="mt-12">
             <Button
@@ -256,7 +225,7 @@ const About = () => {
               variant="secondary"
               className="rounded-full px-8"
             >
-              Book a diagnostic
+              Book a conversation
             </Button>
           </div>
         </div>
