@@ -29,14 +29,14 @@ const partners: Partner[] = [
     bio: [
       "Kami has spent 24 years in revenue roles, starting at 3M and UnitedHealth Group before moving into venture-backed tech companies.",
       "In prior roles, she helped take Degreed from $25M to $110M ARR. At Posit, she rebuilt the sales organization from scratch and scaled ARR from $72M to $130M. Those are results from her earlier operating roles, not Athena client engagements.",
-      "Two of the three startups she's been part of reached unicorn status. She's also a Techstars mentor.",
+      "Two of the three startups she's been part of reached unicorn status. She's also a Techstars mentor and Executive in Residence for MATTER.",
       "Outside work, she's cheering on her two boys in hockey, football and soccer. She firmly believes a good margarita fixes most problems.",
     ],
     highlights: [
       "24 years in revenue roles",
       "Fortune 50 discipline and venture-backed startup experience",
       "Two of three startups reached unicorn status",
-      "Techstars mentor",
+      "Techstars mentor and Executive in Residence for MATTER",
     ],
   },
   {
